@@ -21,16 +21,16 @@ class _NewPageState extends State<NewPage> {
 
     var passValue = ModalRoute.of(context).settings.arguments;
 
-    return Scaffold(
-      appBar: AppBar(title: Text("new page")),
-      body: Center(
+    return CupertinoPageScaffold(
+      navigationBar: CupertinoNavigationBar(middle: Text("new page"),),
+      child: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text("hello world"),
             Text(widget.content),
             Text(passValue ?? "nil"),
-            RaisedButton(
+            CupertinoButton(
               onPressed: (){
                 Navigator.pop(context,"$_count");
               },

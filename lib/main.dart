@@ -1,6 +1,9 @@
 import 'dart:ffi';
 
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:testflutter/Constant/RouteConstant.dart';
+import 'package:testflutter/LifeCycleOfWidget.dart';
 import 'package:testflutter/Util/NavigatorHelper.dart';
 
 import 'NewPage.dart';
@@ -13,7 +16,6 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-
     testAsync();
 
     return MaterialApp(
@@ -36,15 +38,29 @@ class MyApp extends StatelessWidget {
       ),
       routes: {
 //          RouteConstant.NewPage : (context){return NewPage(content: ModalRoute.of(context).settings.arguments);},
-        "/" : (context){ return MyHomePage(title: "Flutter Demo Home Page~~~~");}
+        "/": (context) {
+          return MyHomePage(title: "Flutter Demo Home Page~~~~");
+        }
       },
-      onGenerateRoute: (routeSettigns){
+      onGenerateRoute: (routeSettigns) {
         print("---- onGenerateRoute");
         var routeName = routeSettigns.name;
         print(routeName);
-        return MaterialPageRoute(builder: (context){
-          return NewPage(content: routeSettigns.arguments,);
-        });
+        switch (routeName){
+          case RouteConstant.NewPage:
+            return CupertinoPageRoute(builder: (context) {
+              return NewPage(content: routeSettigns.arguments);
+            });
+          case RouteConstant.WidgetLifeCycle:
+            return MaterialPageRoute(builder: (context){
+              return LifeCycleOfWidget(initValue: 1,);
+            });
+            break;
+          default:
+            return null;
+        }
+
+        return null;
       },
       navigatorObservers: [],
 
@@ -56,14 +72,14 @@ class MyApp extends StatelessWidget {
     return "";
   }
 
-  Future<String> printData(int i ){
-    return Future.delayed(Duration(seconds: 2),(){
+  Future<String> printData(int i) {
+    return Future.delayed(Duration(seconds: 2), () {
       return "$i";
     });
   }
 
   void testAsync() async {
-    for(var i = 0 ; i < 5 ; i++){
+    for (var i = 0; i < 5; i++) {
       var res = await printData(i);
       print(res);
     }
@@ -94,10 +110,10 @@ class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
   String _backRes = "";
 
-  void _refreshBackRes(String value){
+  void _refreshBackRes(String value) {
     setState(() {
       print("route back");
-        _backRes = value;
+      _backRes = value;
     });
   }
 
@@ -151,18 +167,21 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             Text(
               '$_counter',
-              style: Theme.of(context).textTheme.headline4,
+              style: Theme
+                  .of(context)
+                  .textTheme
+                  .headline4,
             ),
             Text(
-              "res $_backRes"
+                "res $_backRes"
             ),
             FlatButton(
               child: Text("open new page"),
-              onPressed: (){
-
-                NavigatorHelper.go2NewPage(context, "another pass value").then((value)  {
+              onPressed: () {
+                NavigatorHelper.go2NewPage(context, "another pass value").then((
+                    value) {
                   _refreshBackRes("value");
-                },onError: (e){
+                }, onError: (e) {
 
                 });
 
@@ -177,7 +196,12 @@ class _MyHomePageState extends State<MyHomePage> {
 
               },
               textColor: Colors.lightBlueAccent,
-            )
+            ),
+            FlatButton(
+              child: Text("life cycle"),
+              onPressed:(){
+                NavigatorHelper.go2LifeCycle(context);
+              },)
           ],
         ),
       ),

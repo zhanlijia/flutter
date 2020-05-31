@@ -9,8 +9,15 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="43c65046-0e14-4bc8-95f6-4c8e450a5e14" name="Default Changelist" comment="" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="43c65046-0e14-4bc8-95f6-4c8e450a5e14" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/lib/LifeCycleOfWidget.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Constant/RouteConstant.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Constant/RouteConstant.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/NewPage.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/NewPage.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/RandomWord.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/RandomWord.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Util/NavigatorHelper.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Util/NavigatorHelper.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,7 +26,22 @@
   <component name="FavoritesManager">
     <favorites_list name="test_flutter" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Dart File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1c1rAGkixesZ9KVOlrLFGlYlmfe" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="dart.analysis.tool.window.force.activate" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
@@ -36,18 +58,6 @@
       <recent name="$PROJECT_DIR$/lib/Util" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -61,15 +71,42 @@
     </task>
     <servers />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="Dart">
-          <url>file://$PROJECT_DIR$/lib/main.dart</url>
-          <line>45</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="WindowStateProjectService">
+    <state x="453" y="112" key="#com.intellij.ide.util.MemberChooser" timestamp="1590890873838">
+      <screen x="0" y="23" width="1280" height="732" />
+    </state>
+    <state x="453" y="112" key="#com.intellij.ide.util.MemberChooser/0.23.1280.732@0.23.1280.732" timestamp="1590890873838" />
+    <state width="1238" height="175" key="GridCell.Tab.0.bottom" timestamp="1590895302637">
+      <screen x="0" y="23" width="1280" height="732" />
+    </state>
+    <state width="1238" height="175" key="GridCell.Tab.0.bottom/0.23.1280.732@0.23.1280.732" timestamp="1590895302637" />
+    <state width="1238" height="175" key="GridCell.Tab.0.center" timestamp="1590895302637">
+      <screen x="0" y="23" width="1280" height="732" />
+    </state>
+    <state width="1238" height="175" key="GridCell.Tab.0.center/0.23.1280.732@0.23.1280.732" timestamp="1590895302637" />
+    <state width="1238" height="175" key="GridCell.Tab.0.left" timestamp="1590895302636">
+      <screen x="0" y="23" width="1280" height="732" />
+    </state>
+    <state width="1238" height="175" key="GridCell.Tab.0.left/0.23.1280.732@0.23.1280.732" timestamp="1590895302636" />
+    <state width="1238" height="175" key="GridCell.Tab.0.right" timestamp="1590895302637">
+      <screen x="0" y="23" width="1280" height="732" />
+    </state>
+    <state width="1238" height="175" key="GridCell.Tab.0.right/0.23.1280.732@0.23.1280.732" timestamp="1590895302637" />
+    <state x="141" y="28" key="SettingsEditor" timestamp="1590891027994">
+      <screen x="0" y="23" width="1280" height="732" />
+    </state>
+    <state x="141" y="28" key="SettingsEditor/0.23.1280.732@0.23.1280.732" timestamp="1590891027994" />
+    <state x="310" y="221" key="com.intellij.ide.util.TipDialog" timestamp="1590890490503">
+      <screen x="0" y="23" width="1280" height="732" />
+    </state>
+    <state x="310" y="221" key="com.intellij.ide.util.TipDialog/0.23.1280.732@0.23.1280.732" timestamp="1590890490503" />
+    <state x="292" y="146" width="695" height="486" key="find.popup" timestamp="1590893805531">
+      <screen x="0" y="23" width="1280" height="732" />
+    </state>
+    <state x="292" y="146" width="695" height="486" key="find.popup/0.23.1280.732@0.23.1280.732" timestamp="1590893805531" />
+    <state width="385" height="62" key="javadoc.popup.new" timestamp="1590897303070">
+      <screen x="0" y="23" width="1280" height="732" />
+    </state>
+    <state width="385" height="62" key="javadoc.popup.new/0.23.1280.732@0.23.1280.732" timestamp="1590897303070" />
   </component>
 </project>

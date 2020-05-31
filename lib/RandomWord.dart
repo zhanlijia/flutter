@@ -14,8 +14,8 @@ class RandomWord extends StatelessWidget{
           children: <Widget>[
             Text(word.toString()),
             Builder(builder: (context){
-              Scaffold scaffold = context.findAncestorWidgetOfExactType<Scaffold>();
-              return (scaffold.appBar as AppBar).title;
+              CupertinoPageScaffold scaffold = context.findAncestorWidgetOfExactType<CupertinoPageScaffold>();
+              return (scaffold.navigationBar as CupertinoNavigationBar).middle;
             })
           ],
         ),
