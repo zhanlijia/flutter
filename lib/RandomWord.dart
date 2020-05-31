@@ -2,7 +2,9 @@ import 'package:english_words/english_words.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class RandomWord extends StatelessWidget{
+import 'BaseWidget.dart';
+
+class RandomWord extends BaseStatelessWidget{
   @override
   Widget build(BuildContext context) {
     // TODO: implement build

@@ -1,9 +1,9 @@
-import 'package:english_words/english_words.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:testflutter/BaseWidget.dart';
 import 'package:testflutter/RandomWord.dart';
 
-class NewPage extends StatefulWidget{
+class NewPage extends BaseStatefulWidget{
 
   NewPage({Key key,this.content}):super(key:key);
   final String content;
@@ -12,7 +12,7 @@ class NewPage extends StatefulWidget{
   _NewPageState createState() => _NewPageState();
 }
 
-class _NewPageState extends State<NewPage> {
+class _NewPageState extends BaseState<NewPage> {
   int _count = 0;
 
   @override

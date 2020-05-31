@@ -11,4 +11,7 @@ class NavigatorHelper {
     return Navigator.pushNamed(context, RouteConstant.WidgetLifeCycle);
   }
 
+  static Future go2StateManager(BuildContext context){
+    return Navigator.pushNamed(context, RouteConstant.StateManager);
+  }
 }

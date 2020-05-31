@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 
-class LifeCycleOfWidget extends StatefulWidget {
+import '../BaseWidget.dart';
+
+class LifeCycleOfWidget extends BaseStatefulWidget {
   final int initValue;
 
-  const LifeCycleOfWidget({Key key, this.initValue});
+  LifeCycleOfWidget({Key key, this.initValue}):super(key:key);
 
   @override
   _LifeCycleOfWidgetState createState() {
@@ -12,7 +13,7 @@ class LifeCycleOfWidget extends StatefulWidget {
   }
 }
 
-class _LifeCycleOfWidgetState extends State<LifeCycleOfWidget> {
+class _LifeCycleOfWidgetState extends BaseState<LifeCycleOfWidget> {
   int _clickNum;
 
   @override

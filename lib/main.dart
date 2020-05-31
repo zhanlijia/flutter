@@ -1,18 +1,20 @@
-import 'dart:ffi';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:testflutter/Constant/RouteConstant.dart';
-import 'package:testflutter/LifeCycleOfWidget.dart';
+import 'package:testflutter/Widget/LifeCycleOfWidget.dart';
 import 'package:testflutter/Util/NavigatorHelper.dart';
+import 'package:testflutter/Widget/MyWidgetPage.dart';
+import 'package:testflutter/Widget/WidgetStateManager.dart';
 
+import 'BaseWidget.dart';
 import 'NewPage.dart';
 
 void main() {
   runApp(MyApp());
 }
 
-class MyApp extends StatelessWidget {
+class MyApp extends BaseStatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
@@ -39,7 +41,8 @@ class MyApp extends StatelessWidget {
       routes: {
 //          RouteConstant.NewPage : (context){return NewPage(content: ModalRoute.of(context).settings.arguments);},
         "/": (context) {
-          return MyHomePage(title: "Flutter Demo Home Page~~~~");
+//          return MyHomePage(title: "Flutter Demo Home Page~~~~");
+        return MyWidgetPage();
         }
       },
       onGenerateRoute: (routeSettigns) {
@@ -51,9 +54,14 @@ class MyApp extends StatelessWidget {
             return CupertinoPageRoute(builder: (context) {
               return NewPage(content: routeSettigns.arguments);
             });
-          case RouteConstant.WidgetLifeCycle:
+          case RouteConstant.WidgetLifeCycle://widget生命周期
             return MaterialPageRoute(builder: (context){
               return LifeCycleOfWidget(initValue: 1,);
+            });
+            break;
+          case RouteConstant.StateManager://widget state
+            return MaterialPageRoute(builder: (context){
+              return WidgetStateManager();
             });
             break;
           default:
@@ -88,7 +96,7 @@ class MyApp extends StatelessWidget {
 
 }
 
-class MyHomePage extends StatefulWidget {
+class MyHomePage extends BaseStatefulWidget {
   MyHomePage({Key key, this.title}) : super(key: key);
 
   // This widget is the home page of your application. It is stateful, meaning
@@ -106,7 +114,7 @@ class MyHomePage extends StatefulWidget {
   _MyHomePageState createState() => _MyHomePageState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _MyHomePageState extends BaseState<MyHomePage> {
   int _counter = 0;
   String _backRes = "";
 
