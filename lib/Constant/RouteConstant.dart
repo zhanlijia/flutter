@@ -8,4 +8,6 @@ class RouteConstant{
   static const String TextAndFont = "TextAndFont";
 
   static const String Button = "Button";
+
+  static const String Image = "Image";
 }

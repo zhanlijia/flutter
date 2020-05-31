@@ -27,4 +27,9 @@ class NavigatorHelper {
   static Future go2Button(BuildContext context){
     return Navigator.pushNamed(context, RouteConstant.Button);
   }
+
+  ///图片
+  static Future go2Image(BuildContext context){
+    return Navigator.pushNamed(context, RouteConstant.Image);
+  }
 }

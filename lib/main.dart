@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:testflutter/Constant/RouteConstant.dart';
 import 'package:testflutter/Widget/Button.dart';
+import 'package:testflutter/Widget/ImageVC.dart';
 import 'package:testflutter/Widget/LifeCycleOfWidget.dart';
 import 'package:testflutter/Util/NavigatorHelper.dart';
 import 'package:testflutter/Widget/MyWidgetPage.dart';
@@ -57,7 +58,9 @@ class MyApp extends BaseStatelessWidget {
             });
           case RouteConstant.WidgetLifeCycle: //widget生命周期
             return MaterialPageRoute(builder: (context) {
-              return LifeCycleOfWidget(initValue: 1,);
+              return LifeCycleOfWidget(
+                initValue: 1,
+              );
             });
             break;
           case RouteConstant.StateManager: //widget state
@@ -70,9 +73,13 @@ class MyApp extends BaseStatelessWidget {
               return TextAndStyle();
             });
             break;
-          case RouteConstant.Button://按钮
-            return MaterialPageRoute(builder: (context){
+          case RouteConstant.Button: //按钮
+            return MaterialPageRoute(builder: (context) {
               return Button();
+            });
+          case RouteConstant.Image: //图片
+            return MaterialPageRoute(builder: (context) {
+              return ImageVC();
             });
           default:
             return null;
@@ -102,8 +109,6 @@ class MyApp extends BaseStatelessWidget {
       print(res);
     }
   }
-
-
 }
 
 class MyHomePage extends BaseStatefulWidget {
@@ -185,23 +190,16 @@ class _MyHomePageState extends BaseState<MyHomePage> {
             ),
             Text(
               '$_counter',
-              style: Theme
-                  .of(context)
-                  .textTheme
-                  .headline4,
+              style: Theme.of(context).textTheme.headline4,
             ),
-            Text(
-                "res $_backRes"
-            ),
+            Text("res $_backRes"),
             FlatButton(
               child: Text("open new page"),
               onPressed: () {
-                NavigatorHelper.go2NewPage(context, "another pass value").then((
-                    value) {
+                NavigatorHelper.go2NewPage(context, "another pass value").then(
+                    (value) {
                   _refreshBackRes("value");
-                }, onError: (e) {
-
-                });
+                }, onError: (e) {});
 
 //                  Navigator.push(context, MaterialPageRoute(builder: (context){
 //                      return NewPage(content: "test flutter");
@@ -210,8 +208,6 @@ class _MyHomePageState extends BaseState<MyHomePage> {
 //                  },onError: (e){
 //
 //                  });
-
-
               },
               textColor: Colors.lightBlueAccent,
             ),
@@ -219,7 +215,8 @@ class _MyHomePageState extends BaseState<MyHomePage> {
               child: Text("life cycle"),
               onPressed: () {
                 NavigatorHelper.go2LifeCycle(context);
-              },)
+              },
+            )
           ],
         ),
       ),
@@ -231,5 +228,3 @@ class _MyHomePageState extends BaseState<MyHomePage> {
     );
   }
 }
-
-

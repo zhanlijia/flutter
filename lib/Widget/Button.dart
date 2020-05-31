@@ -35,7 +35,7 @@ class _ButtonState extends BaseState<Button> {
                 children: <Widget>[
                   Text("FlatButton"),
                   Icon(
-                    IconFontUtil.f007,
+                    IconFontUtil.icondataF007,
                     color: Colors.yellowAccent,
                   )
                 ],
@@ -47,7 +47,7 @@ class _ButtonState extends BaseState<Button> {
             ),
             IconButton(
               icon: Icon(
-                IconFontUtil.f007,
+                IconFontUtil.icondataF007,
                 color: Colors.blueAccent,
               ),
               onPressed: () {},
@@ -55,21 +55,21 @@ class _ButtonState extends BaseState<Button> {
             RaisedButton.icon(
                 onPressed: () {},
                 icon: Icon(
-                  IconFontUtil.f007,
+                  IconFontUtil.icondataF007,
                   color: Colors.green,
                 ),
                 label: Text("RaiseButton")),
             FlatButton.icon(
                 onPressed: () {},
                 icon: Icon(
-                  IconFontUtil.f007,
+                  IconFontUtil.icondataF007,
                   color: Colors.redAccent,
                 ),
                 label: Text("FlatButton")),
             OutlineButton.icon(
                 onPressed: () {},
                 icon: Icon(
-                  IconFontUtil.f007,
+                  IconFontUtil.icondataF007,
                   color: Colors.greenAccent,
                 ),
                 label: Text("OutlineButton")),

@@ -10,14 +10,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="43c65046-0e14-4bc8-95f6-4c8e450a5e14" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/Util/IconFontUtil.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/Widget/Button.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/preset_abdomen.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/preset_bladder.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Widget/ImageVC.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/Constant/RouteConstant.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Constant/RouteConstant.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Util/IconFontUtil.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Util/IconFontUtil.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/Util/NavigatorHelper.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Util/NavigatorHelper.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Widget/Button.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Widget/Button.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/Widget/MyWidgetPage.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Widget/MyWidgetPage.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/Widget/TextAndStyle.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Widget/TextAndStyle.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +42,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1c1rAGkixesZ9KVOlrLFGlYlmfe" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -46,7 +53,7 @@
   <component name="PropertiesComponent">
     <property name="dart.analysis.tool.window.force.activate" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/images" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -54,6 +61,9 @@
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/images" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/assetss" />
@@ -80,22 +90,22 @@
       <screen x="0" y="23" width="1280" height="732" />
     </state>
     <state x="453" y="112" key="#com.intellij.ide.util.MemberChooser/0.23.1280.732@0.23.1280.732" timestamp="1590890873838" />
-    <state width="1238" height="133" key="GridCell.Tab.0.bottom" timestamp="1590919869838">
+    <state width="1238" height="175" key="GridCell.Tab.0.bottom" timestamp="1590928924502">
       <screen x="0" y="23" width="1280" height="732" />
     </state>
-    <state width="1238" height="133" key="GridCell.Tab.0.bottom/0.23.1280.732@0.23.1280.732" timestamp="1590919869838" />
-    <state width="1238" height="133" key="GridCell.Tab.0.center" timestamp="1590919869837">
+    <state width="1238" height="175" key="GridCell.Tab.0.bottom/0.23.1280.732@0.23.1280.732" timestamp="1590928924502" />
+    <state width="1238" height="175" key="GridCell.Tab.0.center" timestamp="1590928924501">
       <screen x="0" y="23" width="1280" height="732" />
     </state>
-    <state width="1238" height="133" key="GridCell.Tab.0.center/0.23.1280.732@0.23.1280.732" timestamp="1590919869837" />
-    <state width="1238" height="133" key="GridCell.Tab.0.left" timestamp="1590919869836">
+    <state width="1238" height="175" key="GridCell.Tab.0.center/0.23.1280.732@0.23.1280.732" timestamp="1590928924501" />
+    <state width="1238" height="175" key="GridCell.Tab.0.left" timestamp="1590928924501">
       <screen x="0" y="23" width="1280" height="732" />
     </state>
-    <state width="1238" height="133" key="GridCell.Tab.0.left/0.23.1280.732@0.23.1280.732" timestamp="1590919869836" />
-    <state width="1238" height="133" key="GridCell.Tab.0.right" timestamp="1590919869837">
+    <state width="1238" height="175" key="GridCell.Tab.0.left/0.23.1280.732@0.23.1280.732" timestamp="1590928924501" />
+    <state width="1238" height="175" key="GridCell.Tab.0.right" timestamp="1590928924502">
       <screen x="0" y="23" width="1280" height="732" />
     </state>
-    <state width="1238" height="133" key="GridCell.Tab.0.right/0.23.1280.732@0.23.1280.732" timestamp="1590919869837" />
+    <state width="1238" height="175" key="GridCell.Tab.0.right/0.23.1280.732@0.23.1280.732" timestamp="1590928924502" />
     <state x="141" y="28" key="SettingsEditor" timestamp="1590891027994">
       <screen x="0" y="23" width="1280" height="732" />
     </state>
@@ -111,10 +121,10 @@
     <state width="600" height="424" key="javadoc.popup" timestamp="1590905444248">
       <screen x="0" y="23" width="1280" height="732" />
     </state>
-    <state width="385" height="62" key="javadoc.popup.new" timestamp="1590928209690">
+    <state width="385" height="62" key="javadoc.popup.new" timestamp="1590932171343">
       <screen x="0" y="23" width="1280" height="732" />
     </state>
-    <state width="385" height="62" key="javadoc.popup.new/0.23.1280.732@0.23.1280.732" timestamp="1590928209690" />
+    <state width="385" height="62" key="javadoc.popup.new/0.23.1280.732@0.23.1280.732" timestamp="1590932171343" />
     <state width="600" height="424" key="javadoc.popup/0.23.1280.732@0.23.1280.732" timestamp="1590905444248" />
     <state x="305" y="174" key="run.anything.popup" timestamp="1590905963067">
       <screen x="0" y="23" width="1280" height="732" />

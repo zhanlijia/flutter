@@ -53,9 +53,11 @@ class _TextAndStyleState extends BaseState<TextAndStyle> {
                   TextSpan(
                     text: "http://www.baidu.com",
                     style: TextStyle(color: Colors.blueAccent),
-                  )
+                  ),
+                  IconFontUtil.textspanF007
                 ])),
-                Icon(IconFontUtil.f007,color: Colors.blueAccent,)
+                Icon(IconFontUtil.icondataF007,color: Colors.blueAccent,),
+                Icon(Icons.accessible,color: Colors.green,)
               ],
             ),
           ),

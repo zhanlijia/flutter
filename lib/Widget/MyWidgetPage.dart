@@ -38,6 +38,12 @@ class MyWidgetPage extends BaseStatelessWidget {
               onPressed: () {
                 NavigatorHelper.go2Button(context);
               },
+            ),
+            FlatButton(
+              child: Text("Image"),
+              onPressed: (){
+                NavigatorHelper.go2Image(context);
+              },
             )
           ],
         ),
