@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:testflutter/Constant/RouteConstant.dart';
 import 'package:testflutter/Widget/Button.dart';
+import 'package:testflutter/Widget/CheckBoxVC.dart';
 import 'package:testflutter/Widget/ImageVC.dart';
 import 'package:testflutter/Widget/LifeCycleOfWidget.dart';
 import 'package:testflutter/Util/NavigatorHelper.dart';
@@ -80,6 +81,10 @@ class MyApp extends BaseStatelessWidget {
           case RouteConstant.Image: //图片
             return MaterialPageRoute(builder: (context) {
               return ImageVC();
+            });
+          case RouteConstant.CheckBox://单选框 复选框
+            return MaterialPageRoute(builder: (context){
+              return CheckBoxVC();
             });
           default:
             return null;

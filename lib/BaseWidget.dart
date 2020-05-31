@@ -46,12 +46,12 @@ abstract class BaseState<T extends StatefulWidget> extends State<T> {
 
 abstract class BaseStatefulWidget extends StatefulWidget {
   BaseStatefulWidget({Key key}) : super(key: key){
-    print("+++ $this");
+    print("+++ $this init");
   }
 }
 
 abstract class BaseStatelessWidget extends StatelessWidget {
    BaseStatelessWidget({Key key}) : super(key: key){
-     print("+++ $this");
+     print("+++ $this init");
    }
 }

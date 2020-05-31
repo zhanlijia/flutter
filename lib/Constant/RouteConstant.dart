@@ -10,4 +10,6 @@ class RouteConstant{
   static const String Button = "Button";
 
   static const String Image = "Image";
+
+  static const String CheckBox = "CheckBox";
 }

@@ -41,10 +41,14 @@ class MyWidgetPage extends BaseStatelessWidget {
             ),
             FlatButton(
               child: Text("Image"),
-              onPressed: (){
+              onPressed: () {
                 NavigatorHelper.go2Image(context);
               },
-            )
+            ),
+            FlatButton(onPressed: (){
+              NavigatorHelper.go2CheckBox(context);
+            },
+            child: Text("单选框和复选框"),)
           ],
         ),
       ),

@@ -32,4 +32,8 @@ class NavigatorHelper {
   static Future go2Image(BuildContext context){
     return Navigator.pushNamed(context, RouteConstant.Image);
   }
+
+  static Future go2CheckBox(BuildContext context){
+    return Navigator.pushNamed(context, RouteConstant.CheckBox);
+  }
 }
