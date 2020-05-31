@@ -22,4 +22,9 @@ class NavigatorHelper {
   static Future go2TextAndStyle(BuildContext context){
     return Navigator.pushNamed(context, RouteConstant.TextAndFont);
   }
+
+  ///按钮
+  static Future go2Button(BuildContext context){
+    return Navigator.pushNamed(context, RouteConstant.Button);
+  }
 }

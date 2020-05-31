@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:testflutter/Constant/RouteConstant.dart';
+import 'package:testflutter/Widget/Button.dart';
 import 'package:testflutter/Widget/LifeCycleOfWidget.dart';
 import 'package:testflutter/Util/NavigatorHelper.dart';
 import 'package:testflutter/Widget/MyWidgetPage.dart';
@@ -69,6 +70,10 @@ class MyApp extends BaseStatelessWidget {
               return TextAndStyle();
             });
             break;
+          case RouteConstant.Button://按钮
+            return MaterialPageRoute(builder: (context){
+              return Button();
+            });
           default:
             return null;
         }

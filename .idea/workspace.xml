@@ -10,14 +10,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="43c65046-0e14-4bc8-95f6-4c8e450a5e14" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/fonts/iconfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/Widget/TextAndStyle.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Util/IconFontUtil.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Widget/Button.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/Constant/RouteConstant.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Constant/RouteConstant.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/Util/NavigatorHelper.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Util/NavigatorHelper.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/Widget/MyWidgetPage.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Widget/MyWidgetPage.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Widget/TextAndStyle.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Widget/TextAndStyle.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,10 +111,10 @@
     <state width="600" height="424" key="javadoc.popup" timestamp="1590905444248">
       <screen x="0" y="23" width="1280" height="732" />
     </state>
-    <state width="385" height="62" key="javadoc.popup.new" timestamp="1590919839487">
+    <state width="385" height="62" key="javadoc.popup.new" timestamp="1590928209690">
       <screen x="0" y="23" width="1280" height="732" />
     </state>
-    <state width="385" height="62" key="javadoc.popup.new/0.23.1280.732@0.23.1280.732" timestamp="1590919839487" />
+    <state width="385" height="62" key="javadoc.popup.new/0.23.1280.732@0.23.1280.732" timestamp="1590928209690" />
     <state width="600" height="424" key="javadoc.popup/0.23.1280.732@0.23.1280.732" timestamp="1590905444248" />
     <state x="305" y="174" key="run.anything.popup" timestamp="1590905963067">
       <screen x="0" y="23" width="1280" height="732" />

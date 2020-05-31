@@ -3,6 +3,7 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:testflutter/BaseWidget.dart';
+import 'package:testflutter/Util/IconFontUtil.dart';
 
 class TextAndStyle extends BaseStatefulWidget {
   @override
@@ -54,7 +55,7 @@ class _TextAndStyleState extends BaseState<TextAndStyle> {
                     style: TextStyle(color: Colors.blueAccent),
                   )
                 ])),
-                Icon(IconData(0xf007,fontFamily: "Medical"),color: Colors.blueAccent,)
+                Icon(IconFontUtil.f007,color: Colors.blueAccent,)
               ],
             ),
           ),
