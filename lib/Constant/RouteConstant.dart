@@ -4,4 +4,6 @@ class RouteConstant{
   static const String WidgetLifeCycle = "WidgetLifeCycle";
 
   static const String StateManager = 'StateManager';
+
+  static const String TextAndFont = "TextAndFont";
 }

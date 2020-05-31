@@ -25,7 +25,13 @@ class MyWidgetPage extends BaseStatelessWidget
               child: Text("State"),
             onPressed: (){
                 NavigatorHelper.go2StateManager(context);
-            },)
+            },),
+            FlatButton(
+              child: Text("Text and style"),
+              onPressed: (){
+                NavigatorHelper.go2TextAndStyle(context);
+              },
+            )
           ],
         ),
       )

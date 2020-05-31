@@ -1,10 +1,10 @@
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:testflutter/Constant/RouteConstant.dart';
 import 'package:testflutter/Widget/LifeCycleOfWidget.dart';
 import 'package:testflutter/Util/NavigatorHelper.dart';
 import 'package:testflutter/Widget/MyWidgetPage.dart';
+import 'package:testflutter/Widget/TextAndStyle.dart';
 import 'package:testflutter/Widget/WidgetStateManager.dart';
 
 import 'BaseWidget.dart';
@@ -42,26 +42,31 @@ class MyApp extends BaseStatelessWidget {
 //          RouteConstant.NewPage : (context){return NewPage(content: ModalRoute.of(context).settings.arguments);},
         "/": (context) {
 //          return MyHomePage(title: "Flutter Demo Home Page~~~~");
-        return MyWidgetPage();
+          return MyWidgetPage();
         }
       },
       onGenerateRoute: (routeSettigns) {
         print("---- onGenerateRoute");
         var routeName = routeSettigns.name;
         print(routeName);
-        switch (routeName){
+        switch (routeName) {
           case RouteConstant.NewPage:
             return CupertinoPageRoute(builder: (context) {
               return NewPage(content: routeSettigns.arguments);
             });
-          case RouteConstant.WidgetLifeCycle://widget生命周期
-            return MaterialPageRoute(builder: (context){
+          case RouteConstant.WidgetLifeCycle: //widget生命周期
+            return MaterialPageRoute(builder: (context) {
               return LifeCycleOfWidget(initValue: 1,);
             });
             break;
-          case RouteConstant.StateManager://widget state
-            return MaterialPageRoute(builder: (context){
+          case RouteConstant.StateManager: //widget state
+            return MaterialPageRoute(builder: (context) {
               return WidgetStateManager();
+            });
+            break;
+          case RouteConstant.TextAndFont: //文本、样式
+            return MaterialPageRoute(builder: (context) {
+              return TextAndStyle();
             });
             break;
           default:
@@ -207,7 +212,7 @@ class _MyHomePageState extends BaseState<MyHomePage> {
             ),
             FlatButton(
               child: Text("life cycle"),
-              onPressed:(){
+              onPressed: () {
                 NavigatorHelper.go2LifeCycle(context);
               },)
           ],

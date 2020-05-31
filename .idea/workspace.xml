@@ -10,8 +10,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="43c65046-0e14-4bc8-95f6-4c8e450a5e14" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/fonts/iconfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Widget/TextAndStyle.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/BaseWidget.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/BaseWidget.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Constant/RouteConstant.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Constant/RouteConstant.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Util/NavigatorHelper.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Util/NavigatorHelper.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Widget/MyWidgetPage.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Widget/MyWidgetPage.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,9 +55,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/assetss" />
+      <recent name="$PROJECT_DIR$/lib" />
+      <recent name="$PROJECT_DIR$/fonts" />
       <recent name="$PROJECT_DIR$/lib/Widget" />
-      <recent name="$PROJECT_DIR$/lib/Constant" />
-      <recent name="$PROJECT_DIR$/lib/Util" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -72,22 +80,22 @@
       <screen x="0" y="23" width="1280" height="732" />
     </state>
     <state x="453" y="112" key="#com.intellij.ide.util.MemberChooser/0.23.1280.732@0.23.1280.732" timestamp="1590890873838" />
-    <state width="1238" height="175" key="GridCell.Tab.0.bottom" timestamp="1590910383318">
+    <state width="1238" height="133" key="GridCell.Tab.0.bottom" timestamp="1590919869838">
       <screen x="0" y="23" width="1280" height="732" />
     </state>
-    <state width="1238" height="175" key="GridCell.Tab.0.bottom/0.23.1280.732@0.23.1280.732" timestamp="1590910383318" />
-    <state width="1238" height="175" key="GridCell.Tab.0.center" timestamp="1590910383317">
+    <state width="1238" height="133" key="GridCell.Tab.0.bottom/0.23.1280.732@0.23.1280.732" timestamp="1590919869838" />
+    <state width="1238" height="133" key="GridCell.Tab.0.center" timestamp="1590919869837">
       <screen x="0" y="23" width="1280" height="732" />
     </state>
-    <state width="1238" height="175" key="GridCell.Tab.0.center/0.23.1280.732@0.23.1280.732" timestamp="1590910383317" />
-    <state width="1238" height="175" key="GridCell.Tab.0.left" timestamp="1590910383317">
+    <state width="1238" height="133" key="GridCell.Tab.0.center/0.23.1280.732@0.23.1280.732" timestamp="1590919869837" />
+    <state width="1238" height="133" key="GridCell.Tab.0.left" timestamp="1590919869836">
       <screen x="0" y="23" width="1280" height="732" />
     </state>
-    <state width="1238" height="175" key="GridCell.Tab.0.left/0.23.1280.732@0.23.1280.732" timestamp="1590910383317" />
-    <state width="1238" height="175" key="GridCell.Tab.0.right" timestamp="1590910383318">
+    <state width="1238" height="133" key="GridCell.Tab.0.left/0.23.1280.732@0.23.1280.732" timestamp="1590919869836" />
+    <state width="1238" height="133" key="GridCell.Tab.0.right" timestamp="1590919869837">
       <screen x="0" y="23" width="1280" height="732" />
     </state>
-    <state width="1238" height="175" key="GridCell.Tab.0.right/0.23.1280.732@0.23.1280.732" timestamp="1590910383318" />
+    <state width="1238" height="133" key="GridCell.Tab.0.right/0.23.1280.732@0.23.1280.732" timestamp="1590919869837" />
     <state x="141" y="28" key="SettingsEditor" timestamp="1590891027994">
       <screen x="0" y="23" width="1280" height="732" />
     </state>
@@ -103,10 +111,10 @@
     <state width="600" height="424" key="javadoc.popup" timestamp="1590905444248">
       <screen x="0" y="23" width="1280" height="732" />
     </state>
-    <state width="385" height="62" key="javadoc.popup.new" timestamp="1590910630819">
+    <state width="385" height="62" key="javadoc.popup.new" timestamp="1590919839487">
       <screen x="0" y="23" width="1280" height="732" />
     </state>
-    <state width="385" height="62" key="javadoc.popup.new/0.23.1280.732@0.23.1280.732" timestamp="1590910630819" />
+    <state width="385" height="62" key="javadoc.popup.new/0.23.1280.732@0.23.1280.732" timestamp="1590919839487" />
     <state width="600" height="424" key="javadoc.popup/0.23.1280.732@0.23.1280.732" timestamp="1590905444248" />
     <state x="305" y="174" key="run.anything.popup" timestamp="1590905963067">
       <screen x="0" y="23" width="1280" height="732" />
