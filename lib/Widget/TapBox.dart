@@ -132,7 +132,7 @@ class _TapBoxMultipleStateState extends BaseState<TapBoxMultipleState> {
         height: 150,
         decoration: BoxDecoration(
             color: widget.isActive ? Colors.lightGreen : Colors.green,
-            border: isShowBorder ? Border.all(color: Colors.teal) : null),
+            border: isShowBorder ? Border.all(color: Colors.teal,width: 10) : null),
       ),
     );
   }
