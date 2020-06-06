@@ -125,8 +125,8 @@ class MyApp extends BaseStatelessWidget {
 
   void testAsync() async {
     for (var i = 0; i < 5; i++) {
-      var res = await printData(i);
-      print(res);
+      printData(i).then((value) => print(value));
+
     }
   }
 }

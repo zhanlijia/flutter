@@ -13,6 +13,14 @@ class ProgressIndicatorVC extends BaseStatefulWidget {
 class _ProgressIndicatorVCState extends BaseState<ProgressIndicatorVC>
     with SingleTickerProviderStateMixin {
   AnimationController _animationController;
+  var colors = [
+    Colors.greenAccent,
+    Colors.yellowAccent,
+    Colors.redAccent,
+    Colors.blueAccent
+  ];
+  int counter = 0;
+  MaterialAccentColor curColor;
 
   @override
   void dispose() {
@@ -30,8 +38,26 @@ class _ProgressIndicatorVCState extends BaseState<ProgressIndicatorVC>
         AnimationController(vsync: this, duration: Duration(seconds: 3));
     _animationController.forward();
     _animationController.addListener(() {
-      setState(() {});
+      setState(() {
+//        counter++;
+//        print(counter);
+//        curColor = colors[counter % colors.length];
+      });
     });
+
+    startTimer();
+  }
+
+  startTimer() async{
+    while(true){
+      await Future.delayed(Duration(seconds: 1),(){
+        setState(() {
+          counter++;
+          curColor = colors[counter % colors.length];
+        });
+
+      });
+    }
   }
 
   @override
@@ -81,9 +107,9 @@ class _ProgressIndicatorVCState extends BaseState<ProgressIndicatorVC>
                 child: CircularProgressIndicator(
                   backgroundColor: Colors.grey[200],
                   valueColor: ColorTween(
-                          begin: Colors.blueAccent, end: Colors.greenAccent)
+                          begin: curColor, end: curColor)
                       .animate(_animationController),
-                  value: _animationController.value,
+//                  value: _animationController.value,
                 ),
               )
             ],
