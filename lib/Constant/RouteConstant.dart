@@ -1,3 +1,5 @@
+import 'package:flutter/foundation.dart';
+
 class RouteConstant{
   static const String NewPage = "NewPage";
 
@@ -12,4 +14,8 @@ class RouteConstant{
   static const String Image = "Image";
 
   static const String CheckBox = "CheckBox";
+
+  static const String TextField = "TextField";
+
+  static const String Forum = "Forum";
 }

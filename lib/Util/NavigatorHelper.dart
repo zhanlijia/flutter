@@ -33,7 +33,18 @@ class NavigatorHelper {
     return Navigator.pushNamed(context, RouteConstant.Image);
   }
 
+  ///单选框和复选框
   static Future go2CheckBox(BuildContext context){
     return Navigator.pushNamed(context, RouteConstant.CheckBox);
+  }
+
+  ///输入框
+  static Future go2TextFieldVC(BuildContext context){
+    return Navigator.pushNamed(context, RouteConstant.TextField);
+  }
+
+  //表单
+  static Future go2ForumVC(BuildContext context){
+    return Navigator.pushNamed(context, RouteConstant.Forum);
   }
 }

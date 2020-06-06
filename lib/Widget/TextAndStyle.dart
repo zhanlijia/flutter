@@ -18,7 +18,6 @@ class _TextAndStyleState extends BaseState<TextAndStyle> {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return Scaffold(
         appBar: AppBar(
           title: Text("Text and style"),
@@ -26,8 +25,10 @@ class _TextAndStyleState extends BaseState<TextAndStyle> {
         body: Container(
           child: Center(
             child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
+                Text("aaaa"),
                 Text(
                   "hell world " * 6,
                   textAlign: TextAlign.left,
@@ -56,8 +57,26 @@ class _TextAndStyleState extends BaseState<TextAndStyle> {
                   ),
                   IconFontUtil.textspanF007
                 ])),
-                Icon(IconFontUtil.icondataF007,color: Colors.blueAccent,),
-                Icon(Icons.accessible,color: Colors.green,)
+                Icon(
+                  IconFontUtil.icondataF007,
+                  color: Colors.blueAccent,
+                ),
+                Icon(
+                  Icons.accessible,
+                  color: Colors.green,
+                ),
+                DefaultTextStyle(
+                  style: TextStyle(
+                    fontSize: 20,
+                    color: Colors.redAccent
+                  ),
+                  child: Column(
+                    children: <Widget>[
+                      Text("aaaa"),
+                      Text("bbbb")
+                    ],
+                  ),
+                )
               ],
             ),
           ),

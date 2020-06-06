@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:testflutter/Constant/RouteConstant.dart';
 import 'package:testflutter/Widget/Button.dart';
 import 'package:testflutter/Widget/CheckBoxVC.dart';
+import 'package:testflutter/Widget/ForumVC.dart';
+import 'package:testflutter/Widget/TextFieldVC.dart';
 import 'package:testflutter/Widget/ImageVC.dart';
 import 'package:testflutter/Widget/LifeCycleOfWidget.dart';
 import 'package:testflutter/Util/NavigatorHelper.dart';
@@ -82,9 +84,17 @@ class MyApp extends BaseStatelessWidget {
             return MaterialPageRoute(builder: (context) {
               return ImageVC();
             });
-          case RouteConstant.CheckBox://单选框 复选框
-            return MaterialPageRoute(builder: (context){
+          case RouteConstant.CheckBox: //单选框 复选框
+            return MaterialPageRoute(builder: (context) {
               return CheckBoxVC();
+            });
+          case RouteConstant.TextField: //输入框
+            return MaterialPageRoute(builder: (context) {
+              return TextFieldVC();
+            });
+          case RouteConstant.Forum://表单
+            return MaterialPageRoute(builder: (context){
+              return ForumVC();
             });
           default:
             return null;
