@@ -43,8 +43,13 @@ class NavigatorHelper {
     return Navigator.pushNamed(context, RouteConstant.TextField);
   }
 
-  //表单
+  ///表单
   static Future go2ForumVC(BuildContext context){
     return Navigator.pushNamed(context, RouteConstant.Forum);
+  }
+
+  ///进度条
+  static Future go2ProgressIndicator(BuildContext context){
+    return Navigator.pushNamed(context, RouteConstant.ProgressIndicator);
   }
 }

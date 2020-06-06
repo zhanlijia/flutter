@@ -18,4 +18,6 @@ class RouteConstant{
   static const String TextField = "TextField";
 
   static const String Forum = "Forum";
+
+  static const String ProgressIndicator = "ProgressIndicator";
 }

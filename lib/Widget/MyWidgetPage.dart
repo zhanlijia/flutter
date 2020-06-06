@@ -60,6 +60,12 @@ class MyWidgetPage extends BaseStatelessWidget {
               onPressed: (){
                 NavigatorHelper.go2ForumVC(context);
               },
+            ),
+            FlatButton(
+              child: Text("进度条"),
+              onPressed: (){
+                NavigatorHelper.go2ProgressIndicator(context);
+              },
             )
           ],
         ),

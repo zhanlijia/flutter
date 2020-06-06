@@ -4,6 +4,7 @@ import 'package:testflutter/Constant/RouteConstant.dart';
 import 'package:testflutter/Widget/Button.dart';
 import 'package:testflutter/Widget/CheckBoxVC.dart';
 import 'package:testflutter/Widget/ForumVC.dart';
+import 'package:testflutter/Widget/ProgressIndicatorVC.dart';
 import 'package:testflutter/Widget/TextFieldVC.dart';
 import 'package:testflutter/Widget/ImageVC.dart';
 import 'package:testflutter/Widget/LifeCycleOfWidget.dart';
@@ -95,6 +96,10 @@ class MyApp extends BaseStatelessWidget {
           case RouteConstant.Forum://表单
             return MaterialPageRoute(builder: (context){
               return ForumVC();
+            });
+          case RouteConstant.ProgressIndicator://进度条
+            return MaterialPageRoute(builder: (context){
+              return ProgressIndicatorVC();
             });
           default:
             return null;
