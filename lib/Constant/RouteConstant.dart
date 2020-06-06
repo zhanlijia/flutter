@@ -20,4 +20,6 @@ class RouteConstant{
   static const String Forum = "Forum";
 
   static const String ProgressIndicator = "ProgressIndicator";
+
+  static const String LinearLayout = "LinearLayout";
 }

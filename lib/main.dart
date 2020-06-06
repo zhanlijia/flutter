@@ -12,6 +12,8 @@ import 'package:testflutter/Util/NavigatorHelper.dart';
 import 'package:testflutter/Widget/MyWidgetPage.dart';
 import 'package:testflutter/Widget/TextAndStyle.dart';
 import 'package:testflutter/Widget/WidgetStateManager.dart';
+import 'package:testflutter/layout/LayoutPage.dart';
+import 'package:testflutter/layout/LinearLayoutVC.dart';
 
 import 'BaseWidget.dart';
 import 'NewPage.dart';
@@ -48,7 +50,8 @@ class MyApp extends BaseStatelessWidget {
 //          RouteConstant.NewPage : (context){return NewPage(content: ModalRoute.of(context).settings.arguments);},
         "/": (context) {
 //          return MyHomePage(title: "Flutter Demo Home Page~~~~");
-          return MyWidgetPage();
+//          return MyWidgetPage();
+          return LayoutPage();
         }
       },
       onGenerateRoute: (routeSettigns) {
@@ -93,13 +96,17 @@ class MyApp extends BaseStatelessWidget {
             return MaterialPageRoute(builder: (context) {
               return TextFieldVC();
             });
-          case RouteConstant.Forum://表单
-            return MaterialPageRoute(builder: (context){
+          case RouteConstant.Forum: //表单
+            return MaterialPageRoute(builder: (context) {
               return ForumVC();
             });
-          case RouteConstant.ProgressIndicator://进度条
-            return MaterialPageRoute(builder: (context){
+          case RouteConstant.ProgressIndicator: //进度条
+            return MaterialPageRoute(builder: (context) {
               return ProgressIndicatorVC();
+            });
+          case RouteConstant.LinearLayout://线性布局
+            return MaterialPageRoute(builder: (context){
+              return LinearLayoutVC();
             });
           default:
             return null;
@@ -126,7 +133,6 @@ class MyApp extends BaseStatelessWidget {
   void testAsync() async {
     for (var i = 0; i < 5; i++) {
       printData(i).then((value) => print(value));
-
     }
   }
 }

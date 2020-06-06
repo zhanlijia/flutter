@@ -52,4 +52,8 @@ class NavigatorHelper {
   static Future go2ProgressIndicator(BuildContext context){
     return Navigator.pushNamed(context, RouteConstant.ProgressIndicator);
   }
+  
+  static Future go2LinearLayoutVC(BuildContext context){
+    return Navigator.pushNamed(context, RouteConstant.LinearLayout);
+  }
 }
