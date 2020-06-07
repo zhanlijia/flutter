@@ -82,4 +82,9 @@ class NavigatorHelper {
   static Future go2PaddingVC(BuildContext context){
     return Navigator.pushNamed(context, RouteConstant.Padding);
   }
+
+  ///尺寸限制类容器
+  static Future go2ConstraintWidgetVC(BuildContext context){
+    return Navigator.pushNamed(context, RouteConstant.ConstraintWidget);
+  }
 }

@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:testflutter/Constant/RouteConstant.dart';
+import 'package:testflutter/ContainerWidget/ConstraintWidgetVC.dart';
 import 'package:testflutter/ContainerWidget/ContainerWidgetPage.dart';
 import 'package:testflutter/ContainerWidget/PaddingVC.dart';
 import 'package:testflutter/Widget/Button.dart';
@@ -134,6 +135,10 @@ class MyApp extends BaseStatelessWidget {
           case RouteConstant.Padding: //Padding
             return MaterialPageRoute(builder: (context) {
               return PaddingVC();
+            });
+          case RouteConstant.ConstraintWidget://尺寸限制类容器
+            return MaterialPageRoute(builder: (context){
+              return ConstraintWidgetVC();
             });
           default:
             return null;

@@ -19,6 +19,12 @@ class ContainerWidgetPage extends BaseStatelessWidget{
               onPressed: (){
                 NavigatorHelper.go2PaddingVC(context);
               },
+            ),
+            FlatButton(
+              child: Text("尺寸限制类容器"),
+              onPressed: (){
+                NavigatorHelper.go2ConstraintWidgetVC(context);
+              },
             )
           ],
         ),
