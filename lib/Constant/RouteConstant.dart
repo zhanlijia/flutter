@@ -24,4 +24,6 @@ class RouteConstant{
   static const String LinearLayout = "LinearLayout";
 
   static const String FlexLayout = "FlexLayout";
+
+  static const String WrapFlowLayout = "WrapFlowLayout";
 }

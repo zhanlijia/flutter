@@ -62,4 +62,9 @@ class NavigatorHelper {
   static Future go2FlexLayoutVC(BuildContext context){
     return Navigator.pushNamed(context, RouteConstant.FlexLayout);
   }
+
+  ///流式布局
+  static Future go2WrapFlowLayoutVC(BuildContext context){
+    return Navigator.pushNamed(context, RouteConstant.WrapFlowLayout);
+  }
 }

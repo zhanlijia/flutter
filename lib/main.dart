@@ -15,6 +15,7 @@ import 'package:testflutter/Widget/WidgetStateManager.dart';
 import 'package:testflutter/layout/FlexLayoutVC.dart';
 import 'package:testflutter/layout/LayoutPage.dart';
 import 'package:testflutter/layout/LinearLayoutVC.dart';
+import 'package:testflutter/layout/WrapFlowLayoutVC.dart';
 
 import 'BaseWidget.dart';
 import 'NewPage.dart';
@@ -112,6 +113,10 @@ class MyApp extends BaseStatelessWidget {
           case RouteConstant.FlexLayout://弹性布局
             return MaterialPageRoute(builder: (context){
               return FlexLayoutVC();
+            });
+          case RouteConstant.WrapFlowLayout://流式布局
+            return MaterialPageRoute(builder: (context){
+              return WrapFlowLayoutVC();
             });
           default:
             return null;
