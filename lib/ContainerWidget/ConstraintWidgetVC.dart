@@ -59,6 +59,20 @@ class ConstraintWidgetVC extends BaseStatelessWidget {
                     ),
                   ),
                 )),
+          ),
+          AspectRatio(//指定子控件长宽比
+            aspectRatio: 4,
+            child: redBox,
+          ),
+          Container(
+            color: Colors.blue,
+            height: 100,
+            width: 100,
+            child: FractionallySizedBox(//根据父控件宽高百分比
+              widthFactor: 3,
+              heightFactor: 0.4,
+              child: redBox,
+            ),
           )
         ],
       ),
