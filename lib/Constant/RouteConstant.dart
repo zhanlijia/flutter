@@ -30,4 +30,6 @@ class RouteConstant{
   static const String StackLayout = "StackLayout";
 
   static const String AlignLayout = "AlignLayout";
+
+  static const String Padding = "Padding";
 }

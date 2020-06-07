@@ -77,4 +77,9 @@ class NavigatorHelper {
   static Future go2AlignLayoutVC(BuildContext context){
     return Navigator.pushNamed(context, RouteConstant.AlignLayout);
   }
+
+  ///padding
+  static Future go2PaddingVC(BuildContext context){
+    return Navigator.pushNamed(context, RouteConstant.Padding);
+  }
 }

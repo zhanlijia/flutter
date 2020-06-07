@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:testflutter/Constant/RouteConstant.dart';
+import 'package:testflutter/ContainerWidget/ContainerWidgetPage.dart';
+import 'package:testflutter/ContainerWidget/PaddingVC.dart';
 import 'package:testflutter/Widget/Button.dart';
 import 'package:testflutter/Widget/CheckBoxVC.dart';
 import 'package:testflutter/Widget/ForumVC.dart';
@@ -55,7 +57,8 @@ class MyApp extends BaseStatelessWidget {
         "/": (context) {
 //          return MyHomePage(title: "Flutter Demo Home Page~~~~");
 //          return MyWidgetPage();
-          return LayoutPage();
+//          return LayoutPage();
+          return ContainerWidgetPage();
         }
       },
       onGenerateRoute: (routeSettigns) {
@@ -127,6 +130,10 @@ class MyApp extends BaseStatelessWidget {
           case RouteConstant.AlignLayout: //对齐和相对定位
             return MaterialPageRoute(builder: (context) {
               return AlignVC();
+            });
+          case RouteConstant.Padding: //Padding
+            return MaterialPageRoute(builder: (context) {
+              return PaddingVC();
             });
           default:
             return null;
