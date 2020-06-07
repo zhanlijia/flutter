@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:testflutter/Constant/RouteConstant.dart';
 import 'package:testflutter/ContainerWidget/ConstraintWidgetVC.dart';
 import 'package:testflutter/ContainerWidget/ContainerWidgetPage.dart';
+import 'package:testflutter/ContainerWidget/DecoratedBoxVC.dart';
 import 'package:testflutter/ContainerWidget/PaddingVC.dart';
 import 'package:testflutter/Widget/Button.dart';
 import 'package:testflutter/Widget/CheckBoxVC.dart';
@@ -139,6 +140,10 @@ class MyApp extends BaseStatelessWidget {
           case RouteConstant.ConstraintWidget://尺寸限制类容器
             return MaterialPageRoute(builder: (context){
               return ConstraintWidgetVC();
+            });
+          case RouteConstant.DecoratedBox://装饰容器
+            return MaterialPageRoute(builder: (context){
+              return DecoratedBoxVC();
             });
           default:
             return null;

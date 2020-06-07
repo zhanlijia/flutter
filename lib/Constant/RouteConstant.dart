@@ -34,4 +34,6 @@ class RouteConstant{
   static const String Padding = "Padding";
 
   static const String ConstraintWidget = "ConstraintWidget";
+
+  static const String DecoratedBox = "DecoratedBox";
 }

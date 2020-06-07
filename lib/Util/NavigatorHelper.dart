@@ -87,4 +87,9 @@ class NavigatorHelper {
   static Future go2ConstraintWidgetVC(BuildContext context){
     return Navigator.pushNamed(context, RouteConstant.ConstraintWidget);
   }
+
+  ///装饰容器
+  static Future go2DecoratedBoxVC(BuildContext context){
+    return Navigator.pushNamed(context, RouteConstant.DecoratedBox);
+  }
 }
