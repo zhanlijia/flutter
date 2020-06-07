@@ -22,4 +22,6 @@ class RouteConstant{
   static const String ProgressIndicator = "ProgressIndicator";
 
   static const String LinearLayout = "LinearLayout";
+
+  static const String FlexLayout = "FlexLayout";
 }

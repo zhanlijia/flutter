@@ -12,6 +12,7 @@ import 'package:testflutter/Util/NavigatorHelper.dart';
 import 'package:testflutter/Widget/MyWidgetPage.dart';
 import 'package:testflutter/Widget/TextAndStyle.dart';
 import 'package:testflutter/Widget/WidgetStateManager.dart';
+import 'package:testflutter/layout/FlexLayoutVC.dart';
 import 'package:testflutter/layout/LayoutPage.dart';
 import 'package:testflutter/layout/LinearLayoutVC.dart';
 
@@ -107,6 +108,10 @@ class MyApp extends BaseStatelessWidget {
           case RouteConstant.LinearLayout://线性布局
             return MaterialPageRoute(builder: (context){
               return LinearLayoutVC();
+            });
+          case RouteConstant.FlexLayout://弹性布局
+            return MaterialPageRoute(builder: (context){
+              return FlexLayoutVC();
             });
           default:
             return null;
