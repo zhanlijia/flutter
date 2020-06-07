@@ -38,6 +38,12 @@ class LayoutPage extends BaseStatelessWidget {
                 onPressed: () {
                   NavigatorHelper.go2StackLayoutVC(context);
                 },
+              ),
+              FlatButton(
+                child: Text("对齐和相对定位"),
+                onPressed: (){
+                    NavigatorHelper.go2AlignLayoutVC(context);
+                },
               )
             ],
           ),

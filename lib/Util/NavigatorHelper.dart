@@ -72,4 +72,9 @@ class NavigatorHelper {
   static Future go2StackLayoutVC(BuildContext context){
     return Navigator.pushNamed(context, RouteConstant.StackLayout);
   }
+
+  ///对齐和相对布局
+  static Future go2AlignLayoutVC(BuildContext context){
+    return Navigator.pushNamed(context, RouteConstant.AlignLayout);
+  }
 }

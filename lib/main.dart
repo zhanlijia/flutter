@@ -12,6 +12,7 @@ import 'package:testflutter/Util/NavigatorHelper.dart';
 import 'package:testflutter/Widget/MyWidgetPage.dart';
 import 'package:testflutter/Widget/TextAndStyle.dart';
 import 'package:testflutter/Widget/WidgetStateManager.dart';
+import 'package:testflutter/layout/AlignVC.dart';
 import 'package:testflutter/layout/FlexLayoutVC.dart';
 import 'package:testflutter/layout/LayoutPage.dart';
 import 'package:testflutter/layout/LinearLayoutVC.dart';
@@ -107,21 +108,25 @@ class MyApp extends BaseStatelessWidget {
             return MaterialPageRoute(builder: (context) {
               return ProgressIndicatorVC();
             });
-          case RouteConstant.LinearLayout://线性布局
-            return MaterialPageRoute(builder: (context){
+          case RouteConstant.LinearLayout: //线性布局
+            return MaterialPageRoute(builder: (context) {
               return LinearLayoutVC();
             });
-          case RouteConstant.FlexLayout://弹性布局
-            return MaterialPageRoute(builder: (context){
+          case RouteConstant.FlexLayout: //弹性布局
+            return MaterialPageRoute(builder: (context) {
               return FlexLayoutVC();
             });
-          case RouteConstant.WrapFlowLayout://流式布局
-            return MaterialPageRoute(builder: (context){
+          case RouteConstant.WrapFlowLayout: //流式布局
+            return MaterialPageRoute(builder: (context) {
               return WrapFlowLayoutVC();
             });
-          case RouteConstant.StackLayout://层叠布局
-            return MaterialPageRoute(builder: (context){
+          case RouteConstant.StackLayout: //层叠布局
+            return MaterialPageRoute(builder: (context) {
               return StackLayoutVC();
+            });
+          case RouteConstant.AlignLayout: //对齐和相对定位
+            return MaterialPageRoute(builder: (context) {
+              return AlignVC();
             });
           default:
             return null;
