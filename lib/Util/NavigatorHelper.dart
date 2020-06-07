@@ -67,4 +67,9 @@ class NavigatorHelper {
   static Future go2WrapFlowLayoutVC(BuildContext context){
     return Navigator.pushNamed(context, RouteConstant.WrapFlowLayout);
   }
+
+  ///层叠布局
+  static Future go2StackLayoutVC(BuildContext context){
+    return Navigator.pushNamed(context, RouteConstant.StackLayout);
+  }
 }

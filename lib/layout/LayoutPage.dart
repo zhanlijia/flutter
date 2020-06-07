@@ -23,14 +23,20 @@ class LayoutPage extends BaseStatelessWidget {
               ),
               FlatButton(
                 child: Text("弹性布局"),
-                onPressed: (){
+                onPressed: () {
                   NavigatorHelper.go2FlexLayoutVC(context);
                 },
               ),
               FlatButton(
                 child: Text("流式布局"),
-                onPressed: (){
+                onPressed: () {
                   NavigatorHelper.go2WrapFlowLayoutVC(context);
+                },
+              ),
+              FlatButton(
+                child: Text("层叠布局"),
+                onPressed: () {
+                  NavigatorHelper.go2StackLayoutVC(context);
                 },
               )
             ],
