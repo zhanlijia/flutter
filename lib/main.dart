@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:testflutter/Constant/RouteConstant.dart';
 import 'package:testflutter/ContainerWidget/ConstraintWidgetVC.dart';
+import 'package:testflutter/ContainerWidget/ContainerVC.dart';
 import 'package:testflutter/ContainerWidget/ContainerWidgetPage.dart';
 import 'package:testflutter/ContainerWidget/DecoratedBoxVC.dart';
 import 'package:testflutter/ContainerWidget/PaddingVC.dart';
@@ -149,6 +150,10 @@ class MyApp extends BaseStatelessWidget {
           case RouteConstant.Transform://变换
             return MaterialPageRoute(builder: (context){
               return TransformVC();
+            });
+          case RouteConstant.Container://容器
+            return MaterialPageRoute(builder: (context){
+              return ContainerVC();
             });
           default:
             return null;

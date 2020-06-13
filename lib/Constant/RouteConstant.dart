@@ -38,4 +38,6 @@ class RouteConstant{
   static const String DecoratedBox = "DecoratedBox";
 
   static const String Transform = "Transform";
+
+  static const String Container = "Container";
 }

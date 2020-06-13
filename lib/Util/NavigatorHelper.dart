@@ -97,4 +97,9 @@ class NavigatorHelper {
   static Future go2TransformVC(BuildContext context){
     return Navigator.pushNamed(context, RouteConstant.Transform);
   }
+
+  ///容器
+  static Future go2ContainerVC(BuildContext context){
+    return Navigator.pushNamed(context, RouteConstant.Container);
+  }
 }
