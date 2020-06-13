@@ -48,6 +48,7 @@ class _LinearLayoutVCState extends BaseState<LinearLayoutVC> {
             ],
           ),
           Expanded(//expanded才会占满剩下的控件，否则只是占用child控件大小
+
             child: Container(
               color: Colors.redAccent,
               child: Column(
