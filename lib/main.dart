@@ -5,6 +5,7 @@ import 'package:testflutter/ContainerWidget/ConstraintWidgetVC.dart';
 import 'package:testflutter/ContainerWidget/ContainerWidgetPage.dart';
 import 'package:testflutter/ContainerWidget/DecoratedBoxVC.dart';
 import 'package:testflutter/ContainerWidget/PaddingVC.dart';
+import 'package:testflutter/ContainerWidget/TransformVC.dart';
 import 'package:testflutter/Widget/Button.dart';
 import 'package:testflutter/Widget/CheckBoxVC.dart';
 import 'package:testflutter/Widget/ForumVC.dart';
@@ -144,6 +145,10 @@ class MyApp extends BaseStatelessWidget {
           case RouteConstant.DecoratedBox://装饰容器
             return MaterialPageRoute(builder: (context){
               return DecoratedBoxVC();
+            });
+          case RouteConstant.Transform://变换
+            return MaterialPageRoute(builder: (context){
+              return TransformVC();
             });
           default:
             return null;

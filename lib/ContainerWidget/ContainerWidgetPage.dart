@@ -31,6 +31,12 @@ class ContainerWidgetPage extends BaseStatelessWidget{
               onPressed: (){
                 NavigatorHelper.go2DecoratedBoxVC(context);
               },
+            ),
+            FlatButton(
+              child: Text("变换"),
+              onPressed: (){
+                NavigatorHelper.go2TransformVC(context);
+              },
             )
           ],
         ),

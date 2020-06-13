@@ -1,3 +1,5 @@
+import 'dart:html';
+
 import 'package:flutter/material.dart';
 import 'package:testflutter/Constant/RouteConstant.dart';
 
@@ -91,5 +93,10 @@ class NavigatorHelper {
   ///装饰容器
   static Future go2DecoratedBoxVC(BuildContext context){
     return Navigator.pushNamed(context, RouteConstant.DecoratedBox);
+  }
+
+  ///变换
+  static Future go2TransformVC(BuildContext context){
+    return Navigator.pushNamed(context, RouteConstant.Transform);
   }
 }
