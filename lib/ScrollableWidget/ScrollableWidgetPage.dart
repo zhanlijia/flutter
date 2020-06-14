@@ -1,0 +1,29 @@
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter/src/widgets/framework.dart';
+import 'package:testflutter/BaseWidget.dart';
+import 'package:testflutter/Util/NavigatorHelper.dart';
+
+class ScrollableWidgetPage extends BaseStatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+
+    var itemIcon = Icon(Icons.access_alarms);
+
+    // TODO: implement build
+    return Scaffold(
+      appBar: AppBar(title: Text("可滚动组件"),),
+      body: ListView(
+        children: <Widget>[
+          ListTile(
+            leading: itemIcon,
+            title: Text("SingleChildScrollerView"),
+            onTap: () {
+              NavigatorHelper.go2SingleChildScrollerView(context);
+            },
+          )
+        ],
+      ),
+    );
+  }
+}

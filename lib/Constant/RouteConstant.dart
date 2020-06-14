@@ -59,4 +59,10 @@ class RouteConstant{
   static const String BottomNavigationBarVC = "BottomNavigationBarVC";
 
   static const String Clip = "Clip";
+
+  ///可滚动组件
+
+  static const String ScrollableWidget = "ScrollableWidget";
+
+  static const String SingleChildScrollerView = "SingleChildScrollerView";
 }

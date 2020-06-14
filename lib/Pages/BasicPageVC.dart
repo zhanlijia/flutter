@@ -44,6 +44,9 @@ class BasicPageVC extends BaseStatelessWidget {
           ListTile(
             leading: itemIcon,
             title: Text("可滚动组件"),
+            onTap: (){
+              NavigatorHelper.go2ScrollableWidget(context);
+            },
           )
         ],
       ),

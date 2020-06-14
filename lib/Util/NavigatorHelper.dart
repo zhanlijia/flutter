@@ -133,4 +133,15 @@ class NavigatorHelper {
   static Future go2ClipVC(BuildContext context){
     return Navigator.pushNamed(context, RouteConstant.Clip);
   }
+
+  ///可滚动组件
+  static Future go2ScrollableWidget(BuildContext context){
+    return Navigator.pushNamed(context, RouteConstant.ScrollableWidget);
+  }
+
+  ///SingleChildScrollerView
+  static Future go2SingleChildScrollerView(BuildContext context){
+    return Navigator.pushNamed(context, RouteConstant.SingleChildScrollerView);
+  }
+
 }

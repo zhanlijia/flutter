@@ -11,6 +11,8 @@ import 'package:testflutter/ContainerWidget/BottomNavigationBarVC.dart';
 import 'package:testflutter/ContainerWidget/PageViewVC.dart';
 import 'package:testflutter/ContainerWidget/TransformVC.dart';
 import 'package:testflutter/Pages/HomePageViewVC.dart';
+import 'package:testflutter/ScrollableWidget/ScrollableWidgetPage.dart';
+import 'package:testflutter/ScrollableWidget/SingleChildScrollerViewVC.dart';
 import 'package:testflutter/Widget/Button.dart';
 import 'package:testflutter/Widget/CheckBoxVC.dart';
 import 'package:testflutter/Widget/ForumVC.dart';
@@ -130,8 +132,8 @@ class MyApp extends BaseStatelessWidget {
             return MaterialPageRoute(builder: (context) {
               return ProgressIndicatorVC();
             });
-          case RouteConstant.Layout://布局类组件
-            return MaterialPageRoute(builder: (context){
+          case RouteConstant.Layout: //布局类组件
+            return MaterialPageRoute(builder: (context) {
               return LayoutPage();
             });
           case RouteConstant.LinearLayout: //线性布局
@@ -154,8 +156,8 @@ class MyApp extends BaseStatelessWidget {
             return MaterialPageRoute(builder: (context) {
               return AlignVC();
             });
-          case RouteConstant.ContainerWidget://容器类组件
-            return MaterialPageRoute(builder: (context){
+          case RouteConstant.ContainerWidget: //容器类组件
+            return MaterialPageRoute(builder: (context) {
               return ContainerWidgetPage();
             });
           case RouteConstant.Padding: //Padding
@@ -185,6 +187,14 @@ class MyApp extends BaseStatelessWidget {
           case RouteConstant.Clip: //裁剪
             return MaterialPageRoute(builder: (context) {
               return ClipVC();
+            });
+          case RouteConstant.ScrollableWidget: //ScrollableWidget
+            return MaterialPageRoute(builder: (context) {
+              return ScrollableWidgetPage();
+            });
+          case RouteConstant.SingleChildScrollerView://SingleChildScrollerView
+            return MaterialPageRoute(builder: (context){
+              return SingleChildScrollerViewVC();
             });
           default:
             return null;
