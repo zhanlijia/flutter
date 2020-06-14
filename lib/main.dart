@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:testflutter/Constant/RouteConstant.dart';
+import 'package:testflutter/ContainerWidget/ClipVC.dart';
 import 'package:testflutter/ContainerWidget/ConstraintWidgetVC.dart';
 import 'package:testflutter/ContainerWidget/ContainerVC.dart';
 import 'package:testflutter/ContainerWidget/ContainerWidgetPage.dart';
@@ -160,7 +161,10 @@ class MyApp extends BaseStatelessWidget {
           case RouteConstant.BottomNavigationBarVC: //BottomNavigationBarVC
             return MaterialPageRoute(builder: (context) {
               return BottomNavigationBarVC();
-              return PageViewVC();
+            });
+          case RouteConstant.Clip: //裁剪
+            return MaterialPageRoute(builder: (context) {
+              return ClipVC();
             });
           default:
             return null;

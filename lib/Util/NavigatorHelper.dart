@@ -104,8 +104,13 @@ class NavigatorHelper {
     return Navigator.pushNamed(context, RouteConstant.Container);
   }
 
-  ///Scaffold
+  ///BottomNavigationBarVC
   static Future go2ScaffoldVC(BuildContext context){
     return Navigator.pushNamed(context, RouteConstant.BottomNavigationBarVC);
+  }
+
+  ///裁剪
+  static Future go2ClipVC(BuildContext context){
+    return Navigator.pushNamed(context, RouteConstant.Clip);
   }
 }

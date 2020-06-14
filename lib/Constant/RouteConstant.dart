@@ -42,4 +42,6 @@ class RouteConstant{
   static const String Container = "Container";
 
   static const String BottomNavigationBarVC = "BottomNavigationBarVC";
+
+  static const String Clip = "Clip";
 }
