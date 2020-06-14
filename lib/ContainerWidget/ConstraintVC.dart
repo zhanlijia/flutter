@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:testflutter/BaseWidget.dart';
 
-class ConstraintWidgetVC extends BaseStatelessWidget {
+class ConstraintVC extends BaseStatelessWidget {
   Widget redBox =
       DecoratedBox(decoration: BoxDecoration(color: Colors.redAccent));
 

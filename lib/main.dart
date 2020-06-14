@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:testflutter/Constant/RouteConstant.dart';
 import 'package:testflutter/ContainerWidget/ClipVC.dart';
-import 'package:testflutter/ContainerWidget/ConstraintWidgetVC.dart';
+import 'package:testflutter/ContainerWidget/ConstraintVC.dart';
 import 'package:testflutter/ContainerWidget/ContainerVC.dart';
 import 'package:testflutter/ContainerWidget/ContainerWidgetPage.dart';
 import 'package:testflutter/ContainerWidget/DecoratedBoxVC.dart';
@@ -10,6 +10,7 @@ import 'package:testflutter/ContainerWidget/PaddingVC.dart';
 import 'package:testflutter/ContainerWidget/BottomNavigationBarVC.dart';
 import 'package:testflutter/ContainerWidget/PageViewVC.dart';
 import 'package:testflutter/ContainerWidget/TransformVC.dart';
+import 'package:testflutter/Pages/HomePageViewVC.dart';
 import 'package:testflutter/Widget/Button.dart';
 import 'package:testflutter/Widget/CheckBoxVC.dart';
 import 'package:testflutter/Widget/ForumVC.dart';
@@ -65,7 +66,8 @@ class MyApp extends BaseStatelessWidget {
 //          return MyHomePage(title: "Flutter Demo Home Page~~~~");
 //          return MyWidgetPage();
 //          return LayoutPage();
-          return ContainerWidgetPage();
+//          return ContainerWidgetPage();
+          return HomePageViewVC();
         }
       },
       onGenerateRoute: (routeSettigns) {
@@ -73,9 +75,19 @@ class MyApp extends BaseStatelessWidget {
         var routeName = routeSettigns.name;
         print(routeName);
         switch (routeName) {
+          case RouteConstant.LalaZhazha:
+            return MaterialPageRoute(builder: (context) {
+              return MyHomePage(
+                title: "",
+              );
+            });
           case RouteConstant.NewPage:
             return CupertinoPageRoute(builder: (context) {
               return NewPage(content: routeSettigns.arguments);
+            });
+          case RouteConstant.WidgetPage: //基础控件
+            return MaterialPageRoute(builder: (context) {
+              return MyWidgetPage();
             });
           case RouteConstant.WidgetLifeCycle: //widget生命周期
             return MaterialPageRoute(builder: (context) {
@@ -118,6 +130,10 @@ class MyApp extends BaseStatelessWidget {
             return MaterialPageRoute(builder: (context) {
               return ProgressIndicatorVC();
             });
+          case RouteConstant.Layout://布局类组件
+            return MaterialPageRoute(builder: (context){
+              return LayoutPage();
+            });
           case RouteConstant.LinearLayout: //线性布局
             return MaterialPageRoute(builder: (context) {
               return LinearLayoutVC();
@@ -138,13 +154,17 @@ class MyApp extends BaseStatelessWidget {
             return MaterialPageRoute(builder: (context) {
               return AlignVC();
             });
+          case RouteConstant.ContainerWidget://容器类组件
+            return MaterialPageRoute(builder: (context){
+              return ContainerWidgetPage();
+            });
           case RouteConstant.Padding: //Padding
             return MaterialPageRoute(builder: (context) {
               return PaddingVC();
             });
           case RouteConstant.ConstraintWidget: //尺寸限制类容器
             return MaterialPageRoute(builder: (context) {
-              return ConstraintWidgetVC();
+              return ConstraintVC();
             });
           case RouteConstant.DecoratedBox: //装饰容器
             return MaterialPageRoute(builder: (context) {

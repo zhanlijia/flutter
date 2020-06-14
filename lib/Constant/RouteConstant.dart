@@ -1,7 +1,14 @@
 import 'package:flutter/foundation.dart';
 
 class RouteConstant{
+
+  static const String LalaZhazha = "LalaZhazha";
+
   static const String NewPage = "NewPage";
+
+  ///基础控件
+
+  static const String WidgetPage = "WidgetPage";
 
   static const String WidgetLifeCycle = "WidgetLifeCycle";
 
@@ -21,6 +28,10 @@ class RouteConstant{
 
   static const String ProgressIndicator = "ProgressIndicator";
 
+  ///布局类组件
+
+  static const String Layout = "Layout";
+
   static const String LinearLayout = "LinearLayout";
 
   static const String FlexLayout = "FlexLayout";
@@ -30,6 +41,10 @@ class RouteConstant{
   static const String StackLayout = "StackLayout";
 
   static const String AlignLayout = "AlignLayout";
+
+  ///容器类组件
+
+  static const String ContainerWidget = "ContainerWidget";
 
   static const String Padding = "Padding";
 

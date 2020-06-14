@@ -3,10 +3,20 @@ import 'package:flutter/material.dart';
 import 'package:testflutter/Constant/RouteConstant.dart';
 
 class NavigatorHelper {
+
+  static Future go2LalaZhaZha(BuildContext context){
+    return Navigator.pushNamed(context, RouteConstant.LalaZhazha);
+  }
+
   ///
   static Future go2NewPage(BuildContext context, String content) {
     return Navigator.pushNamed(context, RouteConstant.NewPage,
         arguments: content);
+  }
+
+  ///基础控件
+  static Future go2WidgetPage(BuildContext context){
+    return Navigator.pushNamed(context, RouteConstant.WidgetPage);
   }
 
   ///widget 生命周期
@@ -54,6 +64,11 @@ class NavigatorHelper {
     return Navigator.pushNamed(context, RouteConstant.ProgressIndicator);
   }
 
+  ///布局类控件
+  static Future go2LayoutPageVC(BuildContext context){
+    return Navigator.pushNamed(context, RouteConstant.Layout);
+  }
+
   ///线性布局
   static Future go2LinearLayoutVC(BuildContext context){
     return Navigator.pushNamed(context, RouteConstant.LinearLayout);
@@ -77,6 +92,11 @@ class NavigatorHelper {
   ///对齐和相对布局
   static Future go2AlignLayoutVC(BuildContext context){
     return Navigator.pushNamed(context, RouteConstant.AlignLayout);
+  }
+
+  ///容器类组件
+  static Future go2ContainerWidgetVC(BuildContext context){
+    return Navigator.pushNamed(context, RouteConstant.ContainerWidget);
   }
 
   ///padding

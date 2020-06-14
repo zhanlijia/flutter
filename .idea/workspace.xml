@@ -10,12 +10,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="43c65046-0e14-4bc8-95f6-4c8e450a5e14" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/images/avatar.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/ContainerWidget/ClipVC.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Pages/AdvancePageVC.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Pages/BasicPageVC.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Pages/DemoPageVC.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Pages/HomePageViewVC.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/Constant/RouteConstant.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Constant/RouteConstant.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/ContainerWidget/BottomNavigationBarVC.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ContainerWidget/BottomNavigationBarVC.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/ContainerWidget/ContainerWidgetPage.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ContainerWidget/ContainerWidgetPage.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ContainerWidget/ConstraintWidgetVC.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ContainerWidget/ConstraintVC.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/Util/NavigatorHelper.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Util/NavigatorHelper.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
     </list>
@@ -59,15 +60,15 @@
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/images" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lib/Pages" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/assetss" />
       <recent name="$PROJECT_DIR$/lib" />
       <recent name="$PROJECT_DIR$/fonts" />
-      <recent name="$PROJECT_DIR$/lib/Widget" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/images" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -95,10 +96,10 @@
       <screen x="0" y="23" width="1280" height="732" />
     </state>
     <state x="453" y="112" key="#com.intellij.ide.util.MemberChooser/0.23.1280.732@0.23.1280.732" timestamp="1591197498738" />
-    <state x="328" y="124" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1591544754219">
+    <state x="328" y="124" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1592123235387">
       <screen x="0" y="23" width="1280" height="732" />
     </state>
-    <state x="328" y="124" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.1280.732@0.23.1280.732" timestamp="1591544754219" />
+    <state x="328" y="124" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.1280.732@0.23.1280.732" timestamp="1592123235387" />
     <state x="383" y="233" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1592041176156">
       <screen x="0" y="23" width="1280" height="732" />
     </state>
@@ -107,22 +108,22 @@
       <screen x="0" y="23" width="1280" height="733" />
     </state>
     <state x="100" y="123" width="1080" height="532" key="DiffContextDialog/0.23.1280.733@0.23.1280.733" timestamp="1591524201717" />
-    <state width="1238" height="174" key="GridCell.Tab.0.bottom" timestamp="1592120901262">
+    <state width="1238" height="174" key="GridCell.Tab.0.bottom" timestamp="1592124543141">
       <screen x="0" y="23" width="1280" height="732" />
     </state>
-    <state width="1238" height="174" key="GridCell.Tab.0.bottom/0.23.1280.732@0.23.1280.732" timestamp="1592120901262" />
-    <state width="1238" height="174" key="GridCell.Tab.0.center" timestamp="1592120901261">
+    <state width="1238" height="174" key="GridCell.Tab.0.bottom/0.23.1280.732@0.23.1280.732" timestamp="1592124543141" />
+    <state width="1238" height="174" key="GridCell.Tab.0.center" timestamp="1592124543139">
       <screen x="0" y="23" width="1280" height="732" />
     </state>
-    <state width="1238" height="174" key="GridCell.Tab.0.center/0.23.1280.732@0.23.1280.732" timestamp="1592120901261" />
-    <state width="1238" height="174" key="GridCell.Tab.0.left" timestamp="1592120901261">
+    <state width="1238" height="174" key="GridCell.Tab.0.center/0.23.1280.732@0.23.1280.732" timestamp="1592124543139" />
+    <state width="1238" height="174" key="GridCell.Tab.0.left" timestamp="1592124543139">
       <screen x="0" y="23" width="1280" height="732" />
     </state>
-    <state width="1238" height="174" key="GridCell.Tab.0.left/0.23.1280.732@0.23.1280.732" timestamp="1592120901261" />
-    <state width="1238" height="174" key="GridCell.Tab.0.right" timestamp="1592120901262">
+    <state width="1238" height="174" key="GridCell.Tab.0.left/0.23.1280.732@0.23.1280.732" timestamp="1592124543139" />
+    <state width="1238" height="174" key="GridCell.Tab.0.right" timestamp="1592124543140">
       <screen x="0" y="23" width="1280" height="732" />
     </state>
-    <state width="1238" height="174" key="GridCell.Tab.0.right/0.23.1280.732@0.23.1280.732" timestamp="1592120901262" />
+    <state width="1238" height="174" key="GridCell.Tab.0.right/0.23.1280.732@0.23.1280.732" timestamp="1592124543140" />
     <state x="141" y="28" key="SettingsEditor" timestamp="1592100632726">
       <screen x="0" y="23" width="1280" height="732" />
     </state>
@@ -131,28 +132,28 @@
       <screen x="0" y="23" width="1280" height="732" />
     </state>
     <state x="310" y="221" key="com.intellij.ide.util.TipDialog/0.23.1280.732@0.23.1280.732" timestamp="1592100674554" />
-    <state x="292" y="146" width="695" height="486" key="find.popup" timestamp="1592057279822">
+    <state x="292" y="146" width="695" height="486" key="find.popup" timestamp="1592125190411">
       <screen x="0" y="23" width="1280" height="732" />
     </state>
-    <state x="292" y="146" width="695" height="486" key="find.popup/0.23.1280.732@0.23.1280.732" timestamp="1592057279822" />
+    <state x="292" y="146" width="695" height="486" key="find.popup/0.23.1280.732@0.23.1280.732" timestamp="1592125190411" />
     <state x="292" y="146" width="695" height="487" key="find.popup/0.23.1280.733@0.23.1280.733" timestamp="1591524272776" />
     <state width="600" height="424" key="javadoc.popup" timestamp="1590905444248">
       <screen x="0" y="23" width="1280" height="732" />
     </state>
-    <state width="385" height="62" key="javadoc.popup.new" timestamp="1592122799242">
+    <state width="385" height="62" key="javadoc.popup.new" timestamp="1592126665968">
       <screen x="0" y="23" width="1280" height="732" />
     </state>
-    <state width="385" height="62" key="javadoc.popup.new/0.23.1280.732@0.23.1280.732" timestamp="1592122799242" />
+    <state width="385" height="62" key="javadoc.popup.new/0.23.1280.732@0.23.1280.732" timestamp="1592126665968" />
     <state width="385" height="63" key="javadoc.popup.new/0.23.1280.733@0.23.1280.733" timestamp="1591545283600" />
     <state width="600" height="424" key="javadoc.popup/0.23.1280.732@0.23.1280.732" timestamp="1590905444248" />
     <state x="305" y="174" key="run.anything.popup" timestamp="1590905963067">
       <screen x="0" y="23" width="1280" height="732" />
     </state>
     <state x="305" y="174" key="run.anything.popup/0.23.1280.732@0.23.1280.732" timestamp="1590905963067" />
-    <state x="305" y="79" key="search.everywhere.popup" timestamp="1591441782635">
+    <state x="305" y="79" width="670" height="676" key="search.everywhere.popup" timestamp="1592126409821">
       <screen x="0" y="23" width="1280" height="732" />
     </state>
-    <state x="305" y="79" key="search.everywhere.popup/0.23.1280.732@0.23.1280.732" timestamp="1591441782635" />
+    <state x="305" y="79" width="670" height="676" key="search.everywhere.popup/0.23.1280.732@0.23.1280.732" timestamp="1592126409821" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
