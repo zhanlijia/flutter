@@ -44,7 +44,7 @@ class _TabViewVCState extends BaseState<TabViewVC>
             return IconButton(
               icon: Icon(Icons.dashboard),
               onPressed: () {
-                Scaffold.of(context).openDrawer();
+                Scaffold.of(context).openEndDrawer();
               },
             );
           },

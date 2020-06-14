@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:testflutter/BaseWidget.dart';
 import 'package:testflutter/ContainerWidget/ConstraintWidgetVC.dart';
+import 'package:testflutter/ContainerWidget/PageViewVC.dart';
 import 'package:testflutter/ContainerWidget/TabViewVC.dart';
 
 class BottomNavigationBarVC extends BaseStatefulWidget {
@@ -16,7 +17,7 @@ class _BottomNavigationBarVCState extends BaseState<BottomNavigationBarVC>
     with SingleTickerProviderStateMixin {
   int _curBottomNavigationBarSelectedIndex = 1;
 
-  List pages = [TabViewVC(), PageView()];
+  List pages = [TabViewVC(), PageViewVC()];
 
   @override
   void initState() {
@@ -49,55 +50,72 @@ class _BottomNavigationBarVCState extends BaseState<BottomNavigationBarVC>
           onPressed: () {},
         ),
         floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
-        bottomNavigationBar: BottomAppBar(
-          color: Colors.white,
-          shape: CircularNotchedRectangle(),
-          child: Row(
-            children: <Widget>[
-              FlatButton.icon(
-                  onPressed: () {
-                    setState(() {
-                      _curBottomNavigationBarSelectedIndex = 0;
-                    });
-                  },
-                  icon: Icon(
+        bottomNavigationBar: getBottomAppBar()
+//            getBottomNavigationBar()
+        );
+  }
+
+  getBottomAppBar() {
+    return BottomAppBar(
+      color: Colors.white,
+      shape: CircularNotchedRectangle(),
+      child: Row(
+        children: <Widget>[
+          Container(
+            alignment: Alignment.center,
+            height: 60,
+            child: FlatButton(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  Icon(
                     Icons.home,
                     color: getColor(0),
                   ),
-                  label: Text(
-                    "Home",
+                  Text(
+                    "text",
                     style: TextStyle(color: getColor(0)),
-                  )),
-              SizedBox(),
-              IconButton(
-                icon: Icon(
-                  Icons.business,
-                  color: getColor(1),
-                ),
-                onPressed: () {
-                  setState(() {
-                    _curBottomNavigationBarSelectedIndex = 1;
-                  });
-                },
-              )
-            ],
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  )
+                ],
+              ),
+              onPressed: () {
+                setState(() {
+                  _curBottomNavigationBarSelectedIndex = 0;
+                });
+              },
+            ),
           ),
-        )
-//      BottomNavigationBar(
-//      currentIndex: _curBottomNavigationBarSelectedIndex,
-//      items: [
-//        BottomNavigationBarItem(
-//            title: Text("TabView"), icon: Icon(Icons.home)),
-//        BottomNavigationBarItem(
-//            title: Text("PageView"), icon: Icon(Icons.business)),
-//      ],
-//      onTap: (int index) {
-//        setState(() {
-//          _curBottomNavigationBarSelectedIndex = index;
-//        });
-//      },
-//    ),
-        );
+          SizedBox(),
+          IconButton(
+            icon: Icon(
+              Icons.business,
+              color: getColor(1),
+            ),
+            onPressed: () {
+              setState(() {
+                _curBottomNavigationBarSelectedIndex = 1;
+              });
+            },
+          )
+        ],
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
+      ),
+    );
+  }
+
+  getBottomNavigationBar() {
+    return BottomNavigationBar(
+      currentIndex: _curBottomNavigationBarSelectedIndex,
+      items: [
+        BottomNavigationBarItem(title: Text("TabView"), icon: Icon(Icons.home)),
+        BottomNavigationBarItem(
+            title: Text("PageView"), icon: Icon(Icons.business)),
+      ],
+      onTap: (int index) {
+        setState(() {
+          _curBottomNavigationBarSelectedIndex = index;
+        });
+      },
+    );
   }
 }

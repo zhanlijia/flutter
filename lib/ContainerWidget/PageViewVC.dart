@@ -23,9 +23,9 @@ class _PageViewVCState extends BaseState<PageViewVC> {
     _pageController.addListener(() {
       print("pageView listener ");
     });
-    setState(() {
-      _pageController.jumpToPage(0);
-    });
+//    setState(() {
+//      _pageController.jumpToPage(0);
+//    });
   }
 
   @override
