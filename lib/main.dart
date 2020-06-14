@@ -6,6 +6,8 @@ import 'package:testflutter/ContainerWidget/ContainerVC.dart';
 import 'package:testflutter/ContainerWidget/ContainerWidgetPage.dart';
 import 'package:testflutter/ContainerWidget/DecoratedBoxVC.dart';
 import 'package:testflutter/ContainerWidget/PaddingVC.dart';
+import 'package:testflutter/ContainerWidget/BottomNavigationBarVC.dart';
+import 'package:testflutter/ContainerWidget/PageViewVC.dart';
 import 'package:testflutter/ContainerWidget/TransformVC.dart';
 import 'package:testflutter/Widget/Button.dart';
 import 'package:testflutter/Widget/CheckBoxVC.dart';
@@ -139,21 +141,26 @@ class MyApp extends BaseStatelessWidget {
             return MaterialPageRoute(builder: (context) {
               return PaddingVC();
             });
-          case RouteConstant.ConstraintWidget://尺寸限制类容器
-            return MaterialPageRoute(builder: (context){
+          case RouteConstant.ConstraintWidget: //尺寸限制类容器
+            return MaterialPageRoute(builder: (context) {
               return ConstraintWidgetVC();
             });
-          case RouteConstant.DecoratedBox://装饰容器
-            return MaterialPageRoute(builder: (context){
+          case RouteConstant.DecoratedBox: //装饰容器
+            return MaterialPageRoute(builder: (context) {
               return DecoratedBoxVC();
             });
-          case RouteConstant.Transform://变换
-            return MaterialPageRoute(builder: (context){
+          case RouteConstant.Transform: //变换
+            return MaterialPageRoute(builder: (context) {
               return TransformVC();
             });
-          case RouteConstant.Container://容器
-            return MaterialPageRoute(builder: (context){
+          case RouteConstant.Container: //容器
+            return MaterialPageRoute(builder: (context) {
               return ContainerVC();
+            });
+          case RouteConstant.BottomNavigationBarVC: //BottomNavigationBarVC
+            return MaterialPageRoute(builder: (context) {
+              return BottomNavigationBarVC();
+              return PageViewVC();
             });
           default:
             return null;

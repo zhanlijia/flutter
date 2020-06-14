@@ -1,3 +1,4 @@
+
 import 'package:flutter/material.dart';
 import 'package:testflutter/Constant/RouteConstant.dart';
 
@@ -101,5 +102,10 @@ class NavigatorHelper {
   ///容器
   static Future go2ContainerVC(BuildContext context){
     return Navigator.pushNamed(context, RouteConstant.Container);
+  }
+
+  ///Scaffold
+  static Future go2ScaffoldVC(BuildContext context){
+    return Navigator.pushNamed(context, RouteConstant.BottomNavigationBarVC);
   }
 }
