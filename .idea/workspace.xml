@@ -10,11 +10,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="43c65046-0e14-4bc8-95f6-4c8e450a5e14" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/ScrollableWidget/ScrollableWidgetPage.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/ScrollableWidget/SingleChildScrollerViewVC.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/ScrollableWidget/ListViewVC.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/Constant/RouteConstant.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Constant/RouteConstant.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/Pages/BasicPageVC.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Pages/BasicPageVC.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ScrollableWidget/ScrollableWidgetPage.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ScrollableWidget/ScrollableWidgetPage.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/Util/NavigatorHelper.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Util/NavigatorHelper.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
     </list>
@@ -90,10 +89,10 @@
       <screen x="0" y="23" width="1280" height="732" />
     </state>
     <state x="344" y="199" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1280.732@0.23.1280.732" timestamp="1590934244881" />
-    <state x="453" y="112" key="#com.intellij.ide.util.MemberChooser" timestamp="1591197498738">
+    <state x="453" y="112" key="#com.intellij.ide.util.MemberChooser" timestamp="1592139164258">
       <screen x="0" y="23" width="1280" height="732" />
     </state>
-    <state x="453" y="112" key="#com.intellij.ide.util.MemberChooser/0.23.1280.732@0.23.1280.732" timestamp="1591197498738" />
+    <state x="453" y="112" key="#com.intellij.ide.util.MemberChooser/0.23.1280.732@0.23.1280.732" timestamp="1592139164258" />
     <state x="328" y="124" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1592123235387">
       <screen x="0" y="23" width="1280" height="732" />
     </state>
@@ -106,22 +105,22 @@
       <screen x="0" y="23" width="1280" height="733" />
     </state>
     <state x="100" y="123" width="1080" height="532" key="DiffContextDialog/0.23.1280.733@0.23.1280.733" timestamp="1591524201717" />
-    <state width="1238" height="174" key="GridCell.Tab.0.bottom" timestamp="1592129351891">
+    <state width="1238" height="174" key="GridCell.Tab.0.bottom" timestamp="1592148684317">
       <screen x="0" y="23" width="1280" height="732" />
     </state>
-    <state width="1238" height="174" key="GridCell.Tab.0.bottom/0.23.1280.732@0.23.1280.732" timestamp="1592129351891" />
-    <state width="1238" height="174" key="GridCell.Tab.0.center" timestamp="1592129351885">
+    <state width="1238" height="174" key="GridCell.Tab.0.bottom/0.23.1280.732@0.23.1280.732" timestamp="1592148684317" />
+    <state width="1238" height="174" key="GridCell.Tab.0.center" timestamp="1592148684317">
       <screen x="0" y="23" width="1280" height="732" />
     </state>
-    <state width="1238" height="174" key="GridCell.Tab.0.center/0.23.1280.732@0.23.1280.732" timestamp="1592129351885" />
-    <state width="1238" height="174" key="GridCell.Tab.0.left" timestamp="1592129351885">
+    <state width="1238" height="174" key="GridCell.Tab.0.center/0.23.1280.732@0.23.1280.732" timestamp="1592148684317" />
+    <state width="1238" height="174" key="GridCell.Tab.0.left" timestamp="1592148684315">
       <screen x="0" y="23" width="1280" height="732" />
     </state>
-    <state width="1238" height="174" key="GridCell.Tab.0.left/0.23.1280.732@0.23.1280.732" timestamp="1592129351885" />
-    <state width="1238" height="174" key="GridCell.Tab.0.right" timestamp="1592129351886">
+    <state width="1238" height="174" key="GridCell.Tab.0.left/0.23.1280.732@0.23.1280.732" timestamp="1592148684315" />
+    <state width="1238" height="174" key="GridCell.Tab.0.right" timestamp="1592148684317">
       <screen x="0" y="23" width="1280" height="732" />
     </state>
-    <state width="1238" height="174" key="GridCell.Tab.0.right/0.23.1280.732@0.23.1280.732" timestamp="1592129351886" />
+    <state width="1238" height="174" key="GridCell.Tab.0.right/0.23.1280.732@0.23.1280.732" timestamp="1592148684317" />
     <state x="141" y="28" key="SettingsEditor" timestamp="1592100632726">
       <screen x="0" y="23" width="1280" height="732" />
     </state>
@@ -138,20 +137,20 @@
     <state width="600" height="424" key="javadoc.popup" timestamp="1590905444248">
       <screen x="0" y="23" width="1280" height="732" />
     </state>
-    <state width="385" height="62" key="javadoc.popup.new" timestamp="1592129917973">
+    <state width="385" height="62" key="javadoc.popup.new" timestamp="1592148774706">
       <screen x="0" y="23" width="1280" height="732" />
     </state>
-    <state width="385" height="62" key="javadoc.popup.new/0.23.1280.732@0.23.1280.732" timestamp="1592129917973" />
+    <state width="385" height="62" key="javadoc.popup.new/0.23.1280.732@0.23.1280.732" timestamp="1592148774706" />
     <state width="385" height="63" key="javadoc.popup.new/0.23.1280.733@0.23.1280.733" timestamp="1591545283600" />
     <state width="600" height="424" key="javadoc.popup/0.23.1280.732@0.23.1280.732" timestamp="1590905444248" />
     <state x="305" y="174" key="run.anything.popup" timestamp="1590905963067">
       <screen x="0" y="23" width="1280" height="732" />
     </state>
     <state x="305" y="174" key="run.anything.popup/0.23.1280.732@0.23.1280.732" timestamp="1590905963067" />
-    <state x="305" y="79" width="670" height="676" key="search.everywhere.popup" timestamp="1592128035723">
+    <state x="305" y="79" width="670" height="676" key="search.everywhere.popup" timestamp="1592137954797">
       <screen x="0" y="23" width="1280" height="732" />
     </state>
-    <state x="305" y="79" width="670" height="676" key="search.everywhere.popup/0.23.1280.732@0.23.1280.732" timestamp="1592128035723" />
+    <state x="305" y="79" width="670" height="676" key="search.everywhere.popup/0.23.1280.732@0.23.1280.732" timestamp="1592137954797" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

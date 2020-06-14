@@ -65,4 +65,6 @@ class RouteConstant{
   static const String ScrollableWidget = "ScrollableWidget";
 
   static const String SingleChildScrollerView = "SingleChildScrollerView";
+
+  static const String ListView = "ListView";
 }

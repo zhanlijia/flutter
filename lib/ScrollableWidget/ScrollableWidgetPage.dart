@@ -21,6 +21,12 @@ class ScrollableWidgetPage extends BaseStatelessWidget {
             onTap: () {
               NavigatorHelper.go2SingleChildScrollerView(context);
             },
+          ),
+          ListTile(
+            title: Text("ListView"),
+            onTap: (){
+              NavigatorHelper.go2ListViewVC(context);
+            },
           )
         ],
       ),

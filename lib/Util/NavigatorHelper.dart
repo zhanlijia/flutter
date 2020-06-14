@@ -144,4 +144,8 @@ class NavigatorHelper {
     return Navigator.pushNamed(context, RouteConstant.SingleChildScrollerView);
   }
 
+  ///ListView
+  static Future go2ListViewVC(BuildContext context){
+    return Navigator.pushNamed(context, RouteConstant.ListView);
+  }
 }
