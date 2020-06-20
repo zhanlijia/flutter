@@ -67,4 +67,6 @@ class RouteConstant{
   static const String SingleChildScrollerView = "SingleChildScrollerView";
 
   static const String ListView = "ListView";
+
+  static const String GridView = "GridView";
 }

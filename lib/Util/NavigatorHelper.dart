@@ -148,4 +148,9 @@ class NavigatorHelper {
   static Future go2ListViewVC(BuildContext context){
     return Navigator.pushNamed(context, RouteConstant.ListView);
   }
+
+  ///GridView
+  static Future go2GridViewVC(BuildContext context){
+    return Navigator.pushNamed(context, RouteConstant.GridView);
+  }
 }
