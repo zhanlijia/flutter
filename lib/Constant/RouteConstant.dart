@@ -73,4 +73,10 @@ class RouteConstant{
   static const String CustomScrollerView = "CustomScrollerView";
 
   static const String ScrollController = "ScrollController";
+
+  ///功能性组件
+
+  static const String FunctionWidget = "FunctionWidget";
+
+  static const String WillPopScope = "WillPopScope";
 }

@@ -10,6 +10,8 @@ import 'package:testflutter/ContainerWidget/PaddingVC.dart';
 import 'package:testflutter/ContainerWidget/BottomNavigationBarVC.dart';
 import 'package:testflutter/ContainerWidget/PageViewVC.dart';
 import 'package:testflutter/ContainerWidget/TransformVC.dart';
+import 'package:testflutter/FunctionWidget/FunctionWidgetPageVC.dart';
+import 'package:testflutter/FunctionWidget/WillPopScopeVC.dart';
 import 'package:testflutter/Pages/HomePageViewVC.dart';
 import 'package:testflutter/ScrollableWidget/CustomScrollerViewVC.dart';
 import 'package:testflutter/ScrollableWidget/GridViewVC.dart';
@@ -215,6 +217,14 @@ class MyApp extends BaseStatelessWidget {
           case RouteConstant.ScrollController: //ScrollController
             return MaterialPageRoute(builder: (context) {
               return ScrollControllerVC();
+            });
+          case RouteConstant.FunctionWidget: //功能性组件
+            return MaterialPageRoute(builder: (context) {
+              return FunctionWidgetPageVC();
+            });
+          case RouteConstant.WillPopScope: //导航返回拦截
+            return MaterialPageRoute(builder: (context) {
+              return WillPopScopeVC();
             });
           default:
             return null;

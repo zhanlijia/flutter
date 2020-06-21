@@ -47,6 +47,13 @@ class BasicPageVC extends BaseStatelessWidget {
             onTap: (){
               NavigatorHelper.go2ScrollableWidget(context);
             },
+          ),
+          ListTile(
+            leading: itemIcon,
+            title: Text("功能性组件"),
+            onTap: (){
+              NavigatorHelper.go2FunctionWidgetVC(context);
+            },
           )
         ],
       ),

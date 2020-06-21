@@ -11,7 +11,7 @@ class ScrollControllerVC extends BaseStatefulWidget {
 }
 
 class _ScrollControllerVCState extends BaseState<ScrollControllerVC> {
-  ScrollController _scrollController;
+  ScrollController _scrollController;//只能监听到offset
   bool show2TopBtn = false;
 
   String progressStr = "0";
@@ -53,7 +53,7 @@ class _ScrollControllerVCState extends BaseState<ScrollControllerVC> {
         title: Text("ScrollController"),
       ),
       body: Scrollbar(
-        child: NotificationListener<ScrollNotification>(
+        child: NotificationListener<ScrollNotification>(//能监听到viewport信息和offset
           onNotification: (ScrollNotification notification) {
             var progress = notification.metrics.pixels /
                 notification.metrics.maxScrollExtent;
@@ -65,7 +65,7 @@ class _ScrollControllerVCState extends BaseState<ScrollControllerVC> {
             //extentAfter 未滑入viewport长度
             //atEdge 是否滑到边界（头部 底部）
             print("--- extentAfter ${notification.metrics.extentAfter}");
-            return; //false 通知继续冒泡，true 通知不在冒泡
+            return; //false 通知继续冒泡，true 通知不再冒泡
           },
           child: Stack(
             alignment: Alignment.center,
