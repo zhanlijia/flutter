@@ -10,12 +10,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="43c65046-0e14-4bc8-95f6-4c8e450a5e14" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/ScrollableWidget/CustomScrollerViewVC.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/ScrollableWidget/ScrollControllerVC.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/Constant/RouteConstant.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Constant/RouteConstant.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ScrollableWidget/CustomScrollerViewVC.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ScrollableWidget/CustomScrollerViewVC.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ScrollableWidget/GridViewVC.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ScrollableWidget/GridViewVC.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/ScrollableWidget/ScrollableWidgetPage.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ScrollableWidget/ScrollableWidgetPage.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/Util/NavigatorHelper.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Util/NavigatorHelper.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/Widget/ImageVC.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Widget/ImageVC.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -106,22 +107,26 @@
       <screen x="0" y="23" width="1280" height="733" />
     </state>
     <state x="100" y="123" width="1080" height="532" key="DiffContextDialog/0.23.1280.733@0.23.1280.733" timestamp="1591524201717" />
-    <state width="1238" height="174" key="GridCell.Tab.0.bottom" timestamp="1592676224324">
+    <state width="1238" height="174" key="GridCell.Tab.0.bottom" timestamp="1592720974671">
       <screen x="0" y="23" width="1280" height="732" />
     </state>
-    <state width="1238" height="174" key="GridCell.Tab.0.bottom/0.23.1280.732@0.23.1280.732" timestamp="1592676224324" />
-    <state width="1238" height="174" key="GridCell.Tab.0.center" timestamp="1592676224324">
+    <state width="1238" height="174" key="GridCell.Tab.0.bottom/0.23.1280.732@0.23.1280.732" timestamp="1592720974671" />
+    <state width="1238" height="174" key="GridCell.Tab.0.bottom/0.23.1280.733@0.23.1280.733" timestamp="1592719401803" />
+    <state width="1238" height="174" key="GridCell.Tab.0.center" timestamp="1592720974671">
       <screen x="0" y="23" width="1280" height="732" />
     </state>
-    <state width="1238" height="174" key="GridCell.Tab.0.center/0.23.1280.732@0.23.1280.732" timestamp="1592676224324" />
-    <state width="1238" height="174" key="GridCell.Tab.0.left" timestamp="1592676224323">
+    <state width="1238" height="174" key="GridCell.Tab.0.center/0.23.1280.732@0.23.1280.732" timestamp="1592720974671" />
+    <state width="1238" height="174" key="GridCell.Tab.0.center/0.23.1280.733@0.23.1280.733" timestamp="1592719401802" />
+    <state width="1238" height="174" key="GridCell.Tab.0.left" timestamp="1592720974670">
       <screen x="0" y="23" width="1280" height="732" />
     </state>
-    <state width="1238" height="174" key="GridCell.Tab.0.left/0.23.1280.732@0.23.1280.732" timestamp="1592676224323" />
-    <state width="1238" height="174" key="GridCell.Tab.0.right" timestamp="1592676224324">
+    <state width="1238" height="174" key="GridCell.Tab.0.left/0.23.1280.732@0.23.1280.732" timestamp="1592720974670" />
+    <state width="1238" height="174" key="GridCell.Tab.0.left/0.23.1280.733@0.23.1280.733" timestamp="1592719401802" />
+    <state width="1238" height="174" key="GridCell.Tab.0.right" timestamp="1592720974671">
       <screen x="0" y="23" width="1280" height="732" />
     </state>
-    <state width="1238" height="174" key="GridCell.Tab.0.right/0.23.1280.732@0.23.1280.732" timestamp="1592676224324" />
+    <state width="1238" height="174" key="GridCell.Tab.0.right/0.23.1280.732@0.23.1280.732" timestamp="1592720974671" />
+    <state width="1238" height="174" key="GridCell.Tab.0.right/0.23.1280.733@0.23.1280.733" timestamp="1592719401802" />
     <state x="141" y="28" key="SettingsEditor" timestamp="1592100632726">
       <screen x="0" y="23" width="1280" height="732" />
     </state>
@@ -142,11 +147,11 @@
     <state width="600" height="424" key="javadoc.popup" timestamp="1590905444248">
       <screen x="0" y="23" width="1280" height="732" />
     </state>
-    <state width="385" height="63" key="javadoc.popup.new" timestamp="1592710258659">
-      <screen x="0" y="23" width="1280" height="733" />
+    <state width="385" height="62" key="javadoc.popup.new" timestamp="1592720929476">
+      <screen x="0" y="23" width="1280" height="732" />
     </state>
-    <state width="385" height="62" key="javadoc.popup.new/0.23.1280.732@0.23.1280.732" timestamp="1592702791716" />
-    <state width="385" height="63" key="javadoc.popup.new/0.23.1280.733@0.23.1280.733" timestamp="1592710258659" />
+    <state width="385" height="62" key="javadoc.popup.new/0.23.1280.732@0.23.1280.732" timestamp="1592720929476" />
+    <state width="385" height="63" key="javadoc.popup.new/0.23.1280.733@0.23.1280.733" timestamp="1592719326619" />
     <state width="600" height="424" key="javadoc.popup/0.23.1280.732@0.23.1280.732" timestamp="1590905444248" />
     <state x="305" y="174" key="run.anything.popup" timestamp="1590905963067">
       <screen x="0" y="23" width="1280" height="732" />

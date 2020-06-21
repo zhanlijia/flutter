@@ -88,6 +88,7 @@ class BaseCrossState<T extends StatefulWidget> extends BaseState
           ),
         ),
         body: TabBarView(
+          key: PageStorageKey(T),
           controller: _tabController,
           children: pages.map((e) => e.pageVC).toList(),
         ));

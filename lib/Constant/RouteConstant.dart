@@ -71,4 +71,6 @@ class RouteConstant{
   static const String GridView = "GridView";
 
   static const String CustomScrollerView = "CustomScrollerView";
+
+  static const String ScrollController = "ScrollController";
 }

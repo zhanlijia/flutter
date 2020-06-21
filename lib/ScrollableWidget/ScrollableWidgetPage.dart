@@ -43,6 +43,13 @@ class ScrollableWidgetPage extends BaseStatelessWidget {
             onTap: () {
               NavigatorHelper.go2CustomScrollerViewVC(context);
             },
+          ),
+          ListTile(
+            leading: itemIcon,
+            title: Text("ScrollController"),
+            onTap: () {
+              NavigatorHelper.go2ScrollControllerVC(context);
+            },
           )
         ],
       ),

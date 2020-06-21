@@ -14,6 +14,7 @@ import 'package:testflutter/Pages/HomePageViewVC.dart';
 import 'package:testflutter/ScrollableWidget/CustomScrollerViewVC.dart';
 import 'package:testflutter/ScrollableWidget/GridViewVC.dart';
 import 'package:testflutter/ScrollableWidget/ListViewVC.dart';
+import 'package:testflutter/ScrollableWidget/ScrollControllerVC.dart';
 import 'package:testflutter/ScrollableWidget/ScrollableWidgetPage.dart';
 import 'package:testflutter/ScrollableWidget/SingleChildScrollerViewVC.dart';
 import 'package:testflutter/Widget/Button.dart';
@@ -195,21 +196,25 @@ class MyApp extends BaseStatelessWidget {
             return MaterialPageRoute(builder: (context) {
               return ScrollableWidgetPage();
             });
-          case RouteConstant.SingleChildScrollerView://SingleChildScrollerView
-            return MaterialPageRoute(builder: (context){
+          case RouteConstant.SingleChildScrollerView: //SingleChildScrollerView
+            return MaterialPageRoute(builder: (context) {
               return SingleChildScrollerViewVC();
             });
-          case RouteConstant.ListView://ListView
-            return MaterialPageRoute(builder: (context){
+          case RouteConstant.ListView: //ListView
+            return MaterialPageRoute(builder: (context) {
               return ListViewVC();
             });
-          case RouteConstant.GridView://GridView
-            return MaterialPageRoute(builder: (context){
+          case RouteConstant.GridView: //GridView
+            return MaterialPageRoute(builder: (context) {
               return GridViewVC();
             });
-          case RouteConstant.CustomScrollerView://CustomScrollerView
-            return MaterialPageRoute(builder: (context){
+          case RouteConstant.CustomScrollerView: //CustomScrollerView
+            return MaterialPageRoute(builder: (context) {
               return CustomScrollViewVC();
+            });
+          case RouteConstant.ScrollController: //ScrollController
+            return MaterialPageRoute(builder: (context) {
+              return ScrollControllerVC();
             });
           default:
             return null;

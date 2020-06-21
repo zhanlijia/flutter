@@ -158,4 +158,9 @@ class NavigatorHelper {
   static Future go2CustomScrollerViewVC(BuildContext context){
     return Navigator.pushNamed(context, RouteConstant.CustomScrollerView);
   }
+
+  ///ScrollController
+  static Future go2ScrollControllerVC(BuildContext context){
+    return Navigator.pushNamed(context, RouteConstant.ScrollController);
+  }
 }
