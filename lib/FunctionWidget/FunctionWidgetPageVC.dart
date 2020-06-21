@@ -27,6 +27,13 @@ class FunctionWidgetPageVC extends BaseStatelessWidget {
             onTap: (){
               NavigatorHelper.go2InheritedWidgetVC(context);
             },
+          ),
+          ListTile(
+            leading: itemIcon,
+            title: Text("跨组件数据共享"),
+            onTap: (){
+              NavigatorHelper.go2ProviderVC(context);
+            },
           )
         ],
       ),

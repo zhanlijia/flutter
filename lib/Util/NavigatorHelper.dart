@@ -176,4 +176,9 @@ class NavigatorHelper {
   static Future go2InheritedWidgetVC(BuildContext context){
     return Navigator.pushNamed(context, RouteConstant.InheritedWidget);
   }
+
+  ///跨组件状态共享
+  static Future go2ProviderVC(BuildContext context){
+    return Navigator.pushNamed(context, RouteConstant.Provider);
+  }
 }

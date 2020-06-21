@@ -81,4 +81,6 @@ class RouteConstant{
   static const String WillPopScope = "WillPopScope";
 
   static const String InheritedWidget = "InheritedWidget";
+
+  static const String Provider = "Provider";
 }

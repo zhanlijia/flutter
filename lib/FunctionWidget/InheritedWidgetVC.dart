@@ -50,14 +50,16 @@ class ShareDataWidget extends InheritedWidget {
   ShareDataWidget({@required this.data, Widget child}) : super(child: child);
 
   static ShareDataWidget of(BuildContext context) {
-    return context.dependOnInheritedWidgetOfExactType<ShareDataWidget>();
-//  return context.getElementForInheritedWidgetOfExactType<ShareDataWidget>().widget;
+    return context.dependOnInheritedWidgetOfExactType<
+        ShareDataWidget>(); //注册依赖关系，当InheritedWidget变化，会更新依赖他的子孙组件
+//  return context.getElementForInheritedWidgetOfExactType<ShareDataWidget>().widget;//没有注册依赖关系
   }
 
   @override
   bool updateShouldNotify(ShareDataWidget oldWidget) {
     // TODO: implement updateShouldNotify
     return oldWidget.data != data;
+//  return true;
   }
 }
 
@@ -75,7 +77,7 @@ class _TestShareWidgetState extends BaseState<TestShareWidget> {
     // TODO: implement build
     return Builder(builder: (context) {
       return Text(ShareDataWidget.of(context).data.toString());
-    return Text("1");
+      return Text("1");
     });
   }
 }
