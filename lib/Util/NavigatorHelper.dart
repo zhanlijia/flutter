@@ -153,4 +153,9 @@ class NavigatorHelper {
   static Future go2GridViewVC(BuildContext context){
     return Navigator.pushNamed(context, RouteConstant.GridView);
   }
+
+  ///CustomScrollerView
+  static Future go2CustomScrollerViewVC(BuildContext context){
+    return Navigator.pushNamed(context, RouteConstant.CustomScrollerView);
+  }
 }

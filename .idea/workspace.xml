@@ -10,11 +10,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="43c65046-0e14-4bc8-95f6-4c8e450a5e14" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/ScrollableWidget/GridViewVC.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/ScrollableWidget/CustomScrollerViewVC.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/Constant/RouteConstant.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Constant/RouteConstant.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/ScrollableWidget/ScrollableWidgetPage.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ScrollableWidget/ScrollableWidgetPage.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/Util/NavigatorHelper.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Util/NavigatorHelper.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Widget/ImageVC.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Widget/ImageVC.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -141,11 +142,11 @@
     <state width="600" height="424" key="javadoc.popup" timestamp="1590905444248">
       <screen x="0" y="23" width="1280" height="732" />
     </state>
-    <state width="385" height="62" key="javadoc.popup.new" timestamp="1592676583475">
-      <screen x="0" y="23" width="1280" height="732" />
+    <state width="385" height="63" key="javadoc.popup.new" timestamp="1592710258659">
+      <screen x="0" y="23" width="1280" height="733" />
     </state>
-    <state width="385" height="62" key="javadoc.popup.new/0.23.1280.732@0.23.1280.732" timestamp="1592676583475" />
-    <state width="385" height="63" key="javadoc.popup.new/0.23.1280.733@0.23.1280.733" timestamp="1591545283600" />
+    <state width="385" height="62" key="javadoc.popup.new/0.23.1280.732@0.23.1280.732" timestamp="1592702791716" />
+    <state width="385" height="63" key="javadoc.popup.new/0.23.1280.733@0.23.1280.733" timestamp="1592710258659" />
     <state width="600" height="424" key="javadoc.popup/0.23.1280.732@0.23.1280.732" timestamp="1590905444248" />
     <state x="305" y="174" key="run.anything.popup" timestamp="1590905963067">
       <screen x="0" y="23" width="1280" height="732" />

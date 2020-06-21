@@ -69,4 +69,6 @@ class RouteConstant{
   static const String ListView = "ListView";
 
   static const String GridView = "GridView";
+
+  static const String CustomScrollerView = "CustomScrollerView";
 }

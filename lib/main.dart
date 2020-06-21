@@ -11,6 +11,7 @@ import 'package:testflutter/ContainerWidget/BottomNavigationBarVC.dart';
 import 'package:testflutter/ContainerWidget/PageViewVC.dart';
 import 'package:testflutter/ContainerWidget/TransformVC.dart';
 import 'package:testflutter/Pages/HomePageViewVC.dart';
+import 'package:testflutter/ScrollableWidget/CustomScrollerViewVC.dart';
 import 'package:testflutter/ScrollableWidget/GridViewVC.dart';
 import 'package:testflutter/ScrollableWidget/ListViewVC.dart';
 import 'package:testflutter/ScrollableWidget/ScrollableWidgetPage.dart';
@@ -205,6 +206,10 @@ class MyApp extends BaseStatelessWidget {
           case RouteConstant.GridView://GridView
             return MaterialPageRoute(builder: (context){
               return GridViewVC();
+            });
+          case RouteConstant.CustomScrollerView://CustomScrollerView
+            return MaterialPageRoute(builder: (context){
+              return CustomScrollViewVC();
             });
           default:
             return null;
