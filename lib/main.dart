@@ -11,6 +11,7 @@ import 'package:testflutter/ContainerWidget/BottomNavigationBarVC.dart';
 import 'package:testflutter/ContainerWidget/PageViewVC.dart';
 import 'package:testflutter/ContainerWidget/TransformVC.dart';
 import 'package:testflutter/FunctionWidget/FunctionWidgetPageVC.dart';
+import 'package:testflutter/FunctionWidget/InheritedWidgetVC.dart';
 import 'package:testflutter/FunctionWidget/WillPopScopeVC.dart';
 import 'package:testflutter/Pages/HomePageViewVC.dart';
 import 'package:testflutter/ScrollableWidget/CustomScrollerViewVC.dart';
@@ -225,6 +226,10 @@ class MyApp extends BaseStatelessWidget {
           case RouteConstant.WillPopScope: //导航返回拦截
             return MaterialPageRoute(builder: (context) {
               return WillPopScopeVC();
+            });
+          case RouteConstant.InheritedWidget://数据共享
+            return MaterialPageRoute(builder: (context){
+              return InheritedWidgetVC();
             });
           default:
             return null;

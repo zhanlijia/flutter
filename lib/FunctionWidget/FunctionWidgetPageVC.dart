@@ -20,6 +20,13 @@ class FunctionWidgetPageVC extends BaseStatelessWidget {
             onTap: () {
               NavigatorHelper.go2WillPopScopeVC(context);
             },
+          ),
+          ListTile(
+            leading: itemIcon,
+            title: Text("数据共享"),
+            onTap: (){
+              NavigatorHelper.go2InheritedWidgetVC(context);
+            },
           )
         ],
       ),

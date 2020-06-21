@@ -171,4 +171,9 @@ class NavigatorHelper {
   static Future go2WillPopScopeVC(BuildContext context) {
     return Navigator.pushNamed(context, RouteConstant.WillPopScope);
   }
+
+  ///数据共享
+  static Future go2InheritedWidgetVC(BuildContext context){
+    return Navigator.pushNamed(context, RouteConstant.InheritedWidget);
+  }
 }
