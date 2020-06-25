@@ -34,6 +34,13 @@ class FunctionWidgetPageVC extends BaseStatelessWidget {
             onTap: (){
               NavigatorHelper.go2ProviderVC(context);
             },
+          ),
+          ListTile(
+            leading: itemIcon,
+            title: Text("颜色和主题"),
+            onTap: (){
+              NavigatorHelper.go2ColorAndTheme(context);
+            },
           )
         ],
       ),

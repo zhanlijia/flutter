@@ -83,4 +83,6 @@ class RouteConstant{
   static const String InheritedWidget = "InheritedWidget";
 
   static const String Provider = "Provider";
+
+  static const String ColorAndTheme = "ColorAndTheme";
 }

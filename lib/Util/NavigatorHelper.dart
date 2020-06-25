@@ -181,4 +181,10 @@ class NavigatorHelper {
   static Future go2ProviderVC(BuildContext context){
     return Navigator.pushNamed(context, RouteConstant.Provider);
   }
+
+  ///颜色和主题
+  static Future go2ColorAndTheme(BuildContext context){
+    return Navigator.pushNamed(context, RouteConstant.ColorAndTheme);
+  }
+
 }
