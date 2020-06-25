@@ -173,18 +173,22 @@ class NavigatorHelper {
   }
 
   ///数据共享
-  static Future go2InheritedWidgetVC(BuildContext context){
+  static Future go2InheritedWidgetVC(BuildContext context) {
     return Navigator.pushNamed(context, RouteConstant.InheritedWidget);
   }
 
   ///跨组件状态共享
-  static Future go2ProviderVC(BuildContext context){
+  static Future go2ProviderVC(BuildContext context) {
     return Navigator.pushNamed(context, RouteConstant.Provider);
   }
 
   ///颜色和主题
-  static Future go2ColorAndTheme(BuildContext context){
+  static Future go2ColorAndThemeVC(BuildContext context) {
     return Navigator.pushNamed(context, RouteConstant.ColorAndTheme);
   }
 
+  ///异步UI更新
+  static Future go2AsyncUIVC(BuildContext context) {
+    return Navigator.pushNamed(context, RouteConstant.AsyncUI);
+  }
 }

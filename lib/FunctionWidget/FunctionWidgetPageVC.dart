@@ -24,22 +24,29 @@ class FunctionWidgetPageVC extends BaseStatelessWidget {
           ListTile(
             leading: itemIcon,
             title: Text("数据共享"),
-            onTap: (){
+            onTap: () {
               NavigatorHelper.go2InheritedWidgetVC(context);
             },
           ),
           ListTile(
             leading: itemIcon,
             title: Text("跨组件数据共享"),
-            onTap: (){
+            onTap: () {
               NavigatorHelper.go2ProviderVC(context);
             },
           ),
           ListTile(
             leading: itemIcon,
             title: Text("颜色和主题"),
-            onTap: (){
-              NavigatorHelper.go2ColorAndTheme(context);
+            onTap: () {
+              NavigatorHelper.go2ColorAndThemeVC(context);
+            },
+          ),
+          ListTile(
+            leading: itemIcon,
+            title: Text("异步UI更新"),
+            onTap: () {
+              NavigatorHelper.go2AsyncUIVC(context);
             },
           )
         ],

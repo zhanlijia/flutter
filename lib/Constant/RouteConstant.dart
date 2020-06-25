@@ -85,4 +85,6 @@ class RouteConstant{
   static const String Provider = "Provider";
 
   static const String ColorAndTheme = "ColorAndTheme";
+
+  static const String AsyncUI = "AsyncUI";
 }

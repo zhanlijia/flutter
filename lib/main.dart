@@ -10,6 +10,7 @@ import 'package:testflutter/ContainerWidget/PaddingVC.dart';
 import 'package:testflutter/ContainerWidget/BottomNavigationBarVC.dart';
 import 'package:testflutter/ContainerWidget/PageViewVC.dart';
 import 'package:testflutter/ContainerWidget/TransformVC.dart';
+import 'package:testflutter/FunctionWidget/AsyncUIVC.dart';
 import 'package:testflutter/FunctionWidget/ColorAndThemeVC.dart';
 import 'package:testflutter/FunctionWidget/FunctionWidgetPageVC.dart';
 import 'package:testflutter/FunctionWidget/InheritedWidgetVC.dart';
@@ -240,6 +241,10 @@ class MyApp extends BaseStatelessWidget {
           case RouteConstant.ColorAndTheme://颜色和主题
             return MaterialPageRoute(builder: (context){
               return ColorAndThemeVC();
+            });
+          case RouteConstant.AsyncUI://异步UI更新
+            return MaterialPageRoute(builder: (context){
+              return AsyncUIVC();
             });
           default:
             return null;
