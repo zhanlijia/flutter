@@ -12,6 +12,7 @@ import 'package:testflutter/ContainerWidget/PageViewVC.dart';
 import 'package:testflutter/ContainerWidget/TransformVC.dart';
 import 'package:testflutter/FunctionWidget/AsyncUIVC.dart';
 import 'package:testflutter/FunctionWidget/ColorAndThemeVC.dart';
+import 'package:testflutter/FunctionWidget/DialogVC.dart';
 import 'package:testflutter/FunctionWidget/FunctionWidgetPageVC.dart';
 import 'package:testflutter/FunctionWidget/InheritedWidgetVC.dart';
 import 'package:testflutter/FunctionWidget/ProviderVC.dart';
@@ -230,21 +231,25 @@ class MyApp extends BaseStatelessWidget {
             return MaterialPageRoute(builder: (context) {
               return WillPopScopeVC();
             });
-          case RouteConstant.InheritedWidget://数据共享
-            return MaterialPageRoute(builder: (context){
+          case RouteConstant.InheritedWidget: //数据共享
+            return MaterialPageRoute(builder: (context) {
               return InheritedWidgetVC();
             });
-          case RouteConstant.Provider://跨组件数据共享
-            return MaterialPageRoute(builder: (context){
+          case RouteConstant.Provider: //跨组件数据共享
+            return MaterialPageRoute(builder: (context) {
               return ProviderVC();
             });
-          case RouteConstant.ColorAndTheme://颜色和主题
-            return MaterialPageRoute(builder: (context){
+          case RouteConstant.ColorAndTheme: //颜色和主题
+            return MaterialPageRoute(builder: (context) {
               return ColorAndThemeVC();
             });
-          case RouteConstant.AsyncUI://异步UI更新
-            return MaterialPageRoute(builder: (context){
+          case RouteConstant.AsyncUI: //异步UI更新
+            return MaterialPageRoute(builder: (context) {
               return AsyncUIVC();
+            });
+          case RouteConstant.Dialog: //对话框
+            return MaterialPageRoute(builder: (context) {
+              return DialogVC();
             });
           default:
             return null;

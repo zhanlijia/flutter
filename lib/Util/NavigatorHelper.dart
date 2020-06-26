@@ -191,4 +191,9 @@ class NavigatorHelper {
   static Future go2AsyncUIVC(BuildContext context) {
     return Navigator.pushNamed(context, RouteConstant.AsyncUI);
   }
+
+  ///对话框
+  static Future go2DialogVC(BuildContext context) {
+    return Navigator.pushNamed(context, RouteConstant.Dialog);
+  }
 }

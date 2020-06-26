@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:testflutter/BaseWidget.dart';
+import 'package:testflutter/Util/DialogHelper.dart';
 import 'package:testflutter/Util/NavigatorHelper.dart';
 
 class FunctionWidgetPageVC extends BaseStatelessWidget {
@@ -47,6 +48,13 @@ class FunctionWidgetPageVC extends BaseStatelessWidget {
             title: Text("异步UI更新"),
             onTap: () {
               NavigatorHelper.go2AsyncUIVC(context);
+            },
+          ),
+          ListTile(
+            leading: itemIcon,
+            title: Text("对话框"),
+            onTap: () {
+              NavigatorHelper.go2DialogVC(context);
             },
           )
         ],

@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:testflutter/BaseWidget.dart';
+import 'package:testflutter/Util/DialogHelper.dart';
 import 'package:testflutter/Util/NavigatorHelper.dart';
 
 class BasicPageVC extends BaseStatelessWidget {
-
   var itemIcon = Icon(Icons.details);
 
   @override
@@ -30,28 +30,28 @@ class BasicPageVC extends BaseStatelessWidget {
           ListTile(
             leading: itemIcon,
             title: Text("布局类组件"),
-            onTap: (){
+            onTap: () {
               NavigatorHelper.go2LayoutPageVC(context);
             },
           ),
           ListTile(
             leading: itemIcon,
             title: Text("容器类组件"),
-            onTap: (){
+            onTap: () {
               NavigatorHelper.go2ContainerWidgetVC(context);
             },
           ),
           ListTile(
             leading: itemIcon,
             title: Text("可滚动组件"),
-            onTap: (){
+            onTap: () {
               NavigatorHelper.go2ScrollableWidget(context);
             },
           ),
           ListTile(
             leading: itemIcon,
             title: Text("功能性组件"),
-            onTap: (){
+            onTap: () {
               NavigatorHelper.go2FunctionWidgetVC(context);
             },
           )
