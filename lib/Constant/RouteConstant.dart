@@ -1,6 +1,6 @@
 import 'package:flutter/foundation.dart';
 
-class RouteConstant{
+class RouteConstant {
 
   static const String LalaZhazha = "LalaZhazha";
 
@@ -89,4 +89,10 @@ class RouteConstant{
   static const String AsyncUI = "AsyncUI";
 
   static const String Dialog = "Dialog";
+
+  ///事件处理与通知
+
+  static const String EventAndNotification = "EventAndNotification";
+
+  static const String TouchEvent = "TouchEvent";
 }

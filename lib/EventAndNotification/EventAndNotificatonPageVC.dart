@@ -3,19 +3,22 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'package:testflutter/BaseWidget.dart';
 import 'package:testflutter/Util/NavigatorHelper.dart';
 
-class AdvancePageVC extends BaseStatelessWidget {
+class EventAndNotificationPageVC extends BaseStatelessWidget {
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
-    var itemIcon = Icon(Icons.monetization_on);
+    var itemIcon = Icon(Icons.home);
     return Scaffold(
+      appBar: AppBar(
+        title: Text("事件处理与通知"),
+      ),
       body: ListView(
         children: <Widget>[
           ListTile(
             leading: itemIcon,
-            title: Text("事件处理与通知"),
+            title: Text("原始指针事件处理"),
             onTap: () {
-              NavigatorHelper.go2EventAndNotificationVC(context);
+              NavigatorHelper.go2TouchEventVC(context);
             },
           )
         ],

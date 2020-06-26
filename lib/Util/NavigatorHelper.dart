@@ -196,4 +196,14 @@ class NavigatorHelper {
   static Future go2DialogVC(BuildContext context) {
     return Navigator.pushNamed(context, RouteConstant.Dialog);
   }
+
+  ///事件处理和通知
+  static Future go2EventAndNotificationVC(BuildContext context) {
+    return Navigator.pushNamed(context, RouteConstant.EventAndNotification);
+  }
+
+  ///原始指针事件处理
+  static Future go2TouchEventVC(BuildContext context){
+    return Navigator.pushNamed(context, RouteConstant.TouchEvent);
+  }
 }

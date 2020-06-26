@@ -10,6 +10,8 @@ import 'package:testflutter/ContainerWidget/PaddingVC.dart';
 import 'package:testflutter/ContainerWidget/BottomNavigationBarVC.dart';
 import 'package:testflutter/ContainerWidget/PageViewVC.dart';
 import 'package:testflutter/ContainerWidget/TransformVC.dart';
+import 'package:testflutter/EventAndNotification/EventAndNotificatonPageVC.dart';
+import 'package:testflutter/EventAndNotification/TouchEventVC.dart';
 import 'package:testflutter/FunctionWidget/AsyncUIVC.dart';
 import 'package:testflutter/FunctionWidget/ColorAndThemeVC.dart';
 import 'package:testflutter/FunctionWidget/DialogVC.dart';
@@ -250,6 +252,14 @@ class MyApp extends BaseStatelessWidget {
           case RouteConstant.Dialog: //对话框
             return MaterialPageRoute(builder: (context) {
               return DialogVC();
+            });
+          case RouteConstant.EventAndNotification: //事件处理与通知
+            return MaterialPageRoute(builder: (context) {
+              return EventAndNotificationPageVC();
+            });
+          case RouteConstant.TouchEvent: //原始指针事件处理
+            return MaterialPageRoute(builder: (context) {
+              return TouchEventVC();
             });
           default:
             return null;
