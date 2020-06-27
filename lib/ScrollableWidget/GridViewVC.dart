@@ -40,21 +40,14 @@ class _GridViewVCState extends BaseState<GridViewVC> {
   }
 }
 
-class PageEntity {
-  String title;
-  Widget pageVC;
-
-  PageEntity({this.title, this.pageVC});
-}
-
 ///tab FixedCross  MaxCross 界面重用
 class BaseCrossState<T extends StatefulWidget> extends BaseState
     with SingleTickerProviderStateMixin {
   TabController _tabController;
-  List<PageEntity> pages = [
-    PageEntity(title: "Simple", pageVC: GridViewSample()),
-    PageEntity(title: "Count", pageVC: GridViewCount()),
-    PageEntity(title: "Builder", pageVC: GridViewBuilder())
+  List<PageViewEntity> pages = [
+    PageViewEntity(title: "Simple", pageVC: GridViewSample()),
+    PageViewEntity(title: "Count", pageVC: GridViewCount()),
+    PageViewEntity(title: "Builder", pageVC: GridViewBuilder())
   ];
 
   @override
@@ -105,10 +98,10 @@ class FixedCrossVC extends BaseStatefulWidget {
 }
 
 class _FixedCrossVCState extends BaseCrossState<FixedCrossVC> {
-  List<PageEntity> pages = [
-    PageEntity(title: "Simple", pageVC: GridViewSample()),
-    PageEntity(title: "Count", pageVC: GridViewCount()),
-    PageEntity(title: "Builder", pageVC: GridViewBuilder())
+  List<PageViewEntity> pages = [
+    PageViewEntity(title: "Simple", pageVC: GridViewSample()),
+    PageViewEntity(title: "Count", pageVC: GridViewCount()),
+    PageViewEntity(title: "Builder", pageVC: GridViewBuilder())
   ];
 }
 
@@ -237,9 +230,9 @@ class MaxCrossVC extends BaseStatefulWidget {
 class _MaxCrossVCState extends BaseCrossState<MaxCrossVC> {
   @override
   // TODO: implement pages
-  List<PageEntity> get pages => [
-        PageEntity(title: "Sample", pageVC: MGridViewSimple()),
-        PageEntity(title: "extent", pageVC: MGridViewExtent())
+  List<PageViewEntity> get pages => [
+        PageViewEntity(title: "Sample", pageVC: MGridViewSimple()),
+        PageViewEntity(title: "extent", pageVC: MGridViewExtent())
       ];
 }
 

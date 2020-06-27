@@ -2,21 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 
 import '../BaseWidget.dart';
-import '../BaseWidget.dart';
-import '../BaseWidget.dart';
-import '../BaseWidget.dart';
-import '../BaseWidget.dart';
-import '../BaseWidget.dart';
-import '../BaseWidget.dart';
-import '../BaseWidget.dart';
-import '../BaseWidget.dart';
-import '../BaseWidget.dart';
-import '../BaseWidget.dart';
-import '../ScrollableWidget/GridViewVC.dart';
-import '../ScrollableWidget/GridViewVC.dart';
-import '../ScrollableWidget/GridViewVC.dart';
-import '../ScrollableWidget/GridViewVC.dart';
-import '../ScrollableWidget/GridViewVC.dart';
 
 class GestureVC extends BaseStatefulWidget {
   @override
@@ -26,52 +11,13 @@ class GestureVC extends BaseStatefulWidget {
   }
 }
 
-class _GestureVCState extends BaseState<GestureVC>
-    with SingleTickerProviderStateMixin {
-  List<PageEntity> pages = [
-    PageEntity(title: "点击", pageVC: GestureClickVC()),
-    PageEntity(title: "拖动", pageVC: DragVC()),
-    PageEntity(title: "单一方向", pageVC: OrientationDragVC()),
-    PageEntity(title: "缩放", pageVC: ScaleVC())
+class _GestureVCState extends BasePageViewState<GestureVC> {
+  List<PageViewEntity> pages = [
+    PageViewEntity(title: "点击", pageVC: GestureClickVC()),
+    PageViewEntity(title: "拖动", pageVC: DragVC()),
+    PageViewEntity(title: "单一方向", pageVC: OrientationDragVC()),
+    PageViewEntity(title: "缩放", pageVC: ScaleVC())
   ];
-  TabController _tabController;
-
-  @override
-  void initState() {
-    // TODO: implement initState
-    super.initState();
-    _tabController =
-        TabController(initialIndex: 0, length: pages.length, vsync: this);
-  }
-
-  @override
-  void dispose() {
-    // TODO: implement dispose
-    super.dispose();
-    _tabController.dispose();
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    // TODO: implement build
-//    return DragVC();
-    return Scaffold(
-      appBar: AppBar(
-        title: Text("手势识别"),
-        bottom: TabBar(
-            controller: _tabController,
-            tabs: pages
-                .map((e) => Tab(
-                      text: e.title,
-                    ))
-                .toList()),
-      ),
-      body: TabBarView(
-        controller: _tabController,
-        children: pages.map((e) => e.pageVC).toList(),
-      ),
-    );
-  }
 }
 
 //点击 双击 长按
@@ -240,15 +186,14 @@ class _ScaleVCState extends BaseState<ScaleVC> {
         ),
         onScaleUpdate: (scaleUpdate) {
           setState(() {
-            width = 100 * scaleUpdate.scale;
+            width = 100 * scaleUpdate.scale.clamp(0.8, 1.5);
           });
         },
-        onDoubleTap: (){
+        onDoubleTap: () {
           setState(() {
             width = isScale ? 100 : 200;
             isScale = !isScale;
           });
-
         },
       ),
     );
