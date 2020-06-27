@@ -11,6 +11,7 @@ import 'package:testflutter/ContainerWidget/BottomNavigationBarVC.dart';
 import 'package:testflutter/ContainerWidget/PageViewVC.dart';
 import 'package:testflutter/ContainerWidget/TransformVC.dart';
 import 'package:testflutter/EventAndNotification/EventAndNotificatonPageVC.dart';
+import 'package:testflutter/EventAndNotification/GestureVC.dart';
 import 'package:testflutter/EventAndNotification/TouchEventVC.dart';
 import 'package:testflutter/FunctionWidget/AsyncUIVC.dart';
 import 'package:testflutter/FunctionWidget/ColorAndThemeVC.dart';
@@ -45,6 +46,7 @@ import 'package:testflutter/layout/StackLayoutVC.dart';
 import 'package:testflutter/layout/WrapFlowLayoutVC.dart';
 
 import 'BaseWidget.dart';
+import 'Constant/RouteConstant.dart';
 import 'NewPage.dart';
 
 void main() {
@@ -260,6 +262,10 @@ class MyApp extends BaseStatelessWidget {
           case RouteConstant.TouchEvent: //原始指针事件处理
             return MaterialPageRoute(builder: (context) {
               return TouchEventVC();
+            });
+          case RouteConstant.Gesture: //手势识别
+            return MaterialPageRoute(builder: (context) {
+              return GestureVC();
             });
           default:
             return null;

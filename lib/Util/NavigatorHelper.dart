@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:testflutter/Constant/RouteConstant.dart';
 
+import '../Constant/RouteConstant.dart';
+
 class NavigatorHelper {
   static Future go2LalaZhaZha(BuildContext context) {
     return Navigator.pushNamed(context, RouteConstant.LalaZhazha);
@@ -206,4 +208,10 @@ class NavigatorHelper {
   static Future go2TouchEventVC(BuildContext context){
     return Navigator.pushNamed(context, RouteConstant.TouchEvent);
   }
+
+  ///手势识别
+  static Future go2GestureVC(BuildContext context){
+    return Navigator.pushNamed(context, RouteConstant.Gesture);
+  }
+
 }

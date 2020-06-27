@@ -3,6 +3,8 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'package:testflutter/BaseWidget.dart';
 import 'package:testflutter/Util/NavigatorHelper.dart';
 
+import '../Util/NavigatorHelper.dart';
+
 class EventAndNotificationPageVC extends BaseStatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -19,6 +21,13 @@ class EventAndNotificationPageVC extends BaseStatelessWidget {
             title: Text("原始指针事件处理"),
             onTap: () {
               NavigatorHelper.go2TouchEventVC(context);
+            },
+          ),
+          ListTile(
+            leading: itemIcon,
+            title: Text("手势识别"),
+            onTap: (){
+              NavigatorHelper.go2GestureVC(context);
             },
           )
         ],
