@@ -84,7 +84,7 @@ class _TouchEventVCState extends BaseState<TouchEventVC> {
                     print("down1");
                   },
                   behavior:
-                      HitTestBehavior.translucent, //透传向下传递，底部和底部widget都能收到事件
+                      HitTestBehavior.translucent, //透明部分透传向下传递，底部和底部widget都能收到事件
                 )
               ],
             ),

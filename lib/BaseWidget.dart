@@ -68,6 +68,7 @@ class BasePageViewState<T extends StatefulWidget> extends BaseState<T>
     with SingleTickerProviderStateMixin {
   TabController _tabController;
   List<PageViewEntity> pages = [];
+  String title;
 
   @override
   void initState() {
@@ -89,6 +90,7 @@ class BasePageViewState<T extends StatefulWidget> extends BaseState<T>
     // TODO: implement build
     return Scaffold(
       appBar: AppBar(
+        title: Text(title),
         bottom: TabBar(
             controller: _tabController,
             tabs: pages
