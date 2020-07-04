@@ -1,3 +1,4 @@
+
 import 'package:flutter/material.dart';
 import 'package:testflutter/Constant/RouteConstant.dart';
 
@@ -205,17 +206,27 @@ class NavigatorHelper {
   }
 
   ///原始指针事件处理
-  static Future go2TouchEventVC(BuildContext context){
+  static Future go2TouchEventVC(BuildContext context) {
     return Navigator.pushNamed(context, RouteConstant.TouchEvent);
   }
 
   ///手势识别
-  static Future go2GestureVC(BuildContext context){
+  static Future go2GestureVC(BuildContext context) {
     return Navigator.pushNamed(context, RouteConstant.Gesture);
   }
 
   ///通知
-  static Future go2NotificationVC(BuildContext context){
+  static Future go2NotificationVC(BuildContext context) {
     return Navigator.pushNamed(context, RouteConstant.Notification);
+  }
+
+  ///动画
+  static Future go2AnimationPageVC(BuildContext context) {
+    return Navigator.pushNamed(context, RouteConstant.AnimationPage);
+  }
+
+  ///动画示例
+  static Future go2AnimationSampleVC(BuildContext context) {
+    return Navigator.pushNamed(context, RouteConstant.AnimationSample);
   }
 }

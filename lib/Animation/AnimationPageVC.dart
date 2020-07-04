@@ -3,26 +3,22 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'package:testflutter/BaseWidget.dart';
 import 'package:testflutter/Util/NavigatorHelper.dart';
 
-class AdvancePageVC extends BaseStatelessWidget {
+class AnimationPageVC extends BaseStatelessWidget {
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
-    var itemIcon = Icon(Icons.monetization_on);
+    var itemIcon = Icon(Icons.title);
     return Scaffold(
+      appBar: AppBar(
+        title: Text("动画"),
+      ),
       body: ListView(
         children: <Widget>[
           ListTile(
             leading: itemIcon,
-            title: Text("事件处理与通知"),
+            title: Text("动画示例"),
             onTap: () {
-              NavigatorHelper.go2EventAndNotificationVC(context);
-            },
-          ),
-          ListTile(
-            leading: itemIcon,
-            title: Text("动画"),
-            onTap: () {
-              NavigatorHelper.go2AnimationPageVC(context);
+              NavigatorHelper.go2AnimationSampleVC(context);
             },
           )
         ],

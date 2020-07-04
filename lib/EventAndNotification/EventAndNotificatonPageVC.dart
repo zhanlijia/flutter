@@ -30,6 +30,11 @@ class EventAndNotificationPageVC extends BaseStatelessWidget {
               NavigatorHelper.go2GestureVC(context);
             },
           ),
+          ListTile(leading: itemIcon,
+          title: Text("全局时间总线"),
+          onTap: (){
+
+          },),
           ListTile(
             leading: itemIcon,
             title: Text("通知"),

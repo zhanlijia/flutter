@@ -66,6 +66,7 @@ class PageViewEntity {
 
 class BasePageViewState<T extends StatefulWidget> extends BaseState<T>
     with SingleTickerProviderStateMixin {
+  //Ticker由SchedulerBinding驱动，不在当前屏幕时SchedulerBinding不刷新，Ticker不会触发（区分Timer）
   TabController _tabController;
   List<PageViewEntity> pages = [];
   String title;

@@ -1,5 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:testflutter/Animation/AnimationPageVC.dart';
+import 'package:testflutter/Animation/AnimationSampleVC.dart';
 import 'package:testflutter/Constant/RouteConstant.dart';
 import 'package:testflutter/ContainerWidget/ClipVC.dart';
 import 'package:testflutter/ContainerWidget/ConstraintVC.dart';
@@ -268,9 +270,17 @@ class MyApp extends BaseStatelessWidget {
             return MaterialPageRoute(builder: (context) {
               return GestureVC();
             });
-          case RouteConstant.Notification://通知
-            return MaterialPageRoute(builder: (context){
+          case RouteConstant.Notification: //通知
+            return MaterialPageRoute(builder: (context) {
               return NotificationVC();
+            });
+          case RouteConstant.AnimationPage: //动画
+            return MaterialPageRoute(builder: (context) {
+              return AnimationPageVC();
+            });
+          case RouteConstant.AnimationSample: //动画示例
+            return MaterialPageRoute(builder: (context) {
+              return AnimationSampleVC();
             });
           default:
             return null;

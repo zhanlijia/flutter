@@ -17,6 +17,8 @@ class _NotificationVCState extends BaseState<NotificationVC> {
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
+//    context.visitAncestorElements((element) => false);
+//    context.visitChildElements((element) { });
     return Scaffold(
       appBar: AppBar(
         title: Text("通知"),
