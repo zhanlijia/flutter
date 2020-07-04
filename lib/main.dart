@@ -12,6 +12,7 @@ import 'package:testflutter/ContainerWidget/PageViewVC.dart';
 import 'package:testflutter/ContainerWidget/TransformVC.dart';
 import 'package:testflutter/EventAndNotification/EventAndNotificatonPageVC.dart';
 import 'package:testflutter/EventAndNotification/GestureVC.dart';
+import 'package:testflutter/EventAndNotification/NotificaionVC.dart';
 import 'package:testflutter/EventAndNotification/TouchEventVC.dart';
 import 'package:testflutter/FunctionWidget/AsyncUIVC.dart';
 import 'package:testflutter/FunctionWidget/ColorAndThemeVC.dart';
@@ -266,6 +267,10 @@ class MyApp extends BaseStatelessWidget {
           case RouteConstant.Gesture: //手势识别
             return MaterialPageRoute(builder: (context) {
               return GestureVC();
+            });
+          case RouteConstant.Notification://通知
+            return MaterialPageRoute(builder: (context){
+              return NotificationVC();
             });
           default:
             return null;

@@ -26,8 +26,15 @@ class EventAndNotificationPageVC extends BaseStatelessWidget {
           ListTile(
             leading: itemIcon,
             title: Text("手势识别"),
-            onTap: (){
+            onTap: () {
               NavigatorHelper.go2GestureVC(context);
+            },
+          ),
+          ListTile(
+            leading: itemIcon,
+            title: Text("通知"),
+            onTap: () {
+              NavigatorHelper.go2NotificationVC(context);
             },
           )
         ],

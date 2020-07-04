@@ -98,4 +98,5 @@ class RouteConstant {
   
   static const String Gesture = "Gesture";
 
+  static const String Notification = "Notification";
 }

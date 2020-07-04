@@ -214,4 +214,8 @@ class NavigatorHelper {
     return Navigator.pushNamed(context, RouteConstant.Gesture);
   }
 
+  ///通知
+  static Future go2NotificationVC(BuildContext context){
+    return Navigator.pushNamed(context, RouteConstant.Notification);
+  }
 }
