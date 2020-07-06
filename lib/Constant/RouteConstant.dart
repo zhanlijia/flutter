@@ -1,7 +1,6 @@
 import 'package:flutter/foundation.dart';
 
 class RouteConstant {
-
   static const String LalaZhazha = "LalaZhazha";
 
   static const String NewPage = "NewPage";
@@ -95,7 +94,7 @@ class RouteConstant {
   static const String EventAndNotification = "EventAndNotification";
 
   static const String TouchEvent = "TouchEvent";
-  
+
   static const String Gesture = "Gesture";
 
   static const String Notification = "Notification";
@@ -107,4 +106,6 @@ class RouteConstant {
   static const String AnimationSample = "AnimationSample";
 
   static const String PageRouteAnimation = "PageRouteAnimation";
+
+  static const String HeroAnimation = "HeroAnimation";
 }

@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:testflutter/Constant/RouteConstant.dart';
 
@@ -231,7 +230,12 @@ class NavigatorHelper {
   }
 
   ///路由过渡动画
-  static Future go2PageRouteAnimationVC(BuildContext context){
+  static Future go2PageRouteAnimationVC(BuildContext context) {
     return Navigator.pushNamed(context, RouteConstant.PageRouteAnimation);
+  }
+
+  ///Hero动画
+  static Future go2HeroAnimationVC(BuildContext context) {
+    return Navigator.pushNamed(context, RouteConstant.HeroAnimation);
   }
 }

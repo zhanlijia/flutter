@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:testflutter/Animation/HeroAnimationVC.dart';
 import 'package:testflutter/Animation/PageRouteAnimationVC.dart';
 import 'package:testflutter/BaseWidget.dart';
 import 'package:testflutter/Util/NavigatorHelper.dart';
@@ -30,6 +31,45 @@ class AnimationPageVC extends BaseStatelessWidget {
 //              pushRouteWithPageRouteBuilder(context);
               pushRouteWithPageRouteSubType(context);
             },
+          ),
+          Padding(
+            padding: EdgeInsets.all(15),
+            child: Container(
+              alignment: Alignment.topCenter,
+              child: Row(
+                children: <Widget>[
+                  InkWell(//实现水波纹效果
+                    child: Hero(
+                      tag: "avatar",
+                      child: ClipOval(
+                        child: Image.asset(
+                          "./images/avatar.jpg",
+                          width: 50,
+                        ),
+                      ),
+                    ),
+                    onTap: () {
+                      Navigator.push(context, PageRouteBuilder(pageBuilder:
+                          (context, animation, secondaryAnimation) {
+                        return FadeTransition(
+                          opacity: animation,
+                          child: Scaffold(
+                            appBar: AppBar(
+                              title: Text("原图"),
+                            ),
+                            body: HeroAnimationVC(),
+                          ),
+                        );
+                      }));
+                    },
+                  ),
+                  Padding(
+                    padding: EdgeInsets.only(left: 20),
+                    child: Text("Hero动画"),
+                  ),
+                ],
+              ),
+            ),
           )
         ],
       ),
@@ -93,15 +133,16 @@ class FadeRoute extends PageRoute {
   @override
   Widget buildTransitions(BuildContext context, Animation<double> animation,
       Animation<double> secondaryAnimation, Widget child) {
-    if(isActive){
+    if (isActive) {
       return FadeTransition(
         opacity: animation,
         child: builder(context),
       );
-    }else{
-      return Padding(padding: EdgeInsets.zero,);
+    } else {
+      return Padding(
+        padding: EdgeInsets.zero,
+      );
     }
-
   }
 
   FadeRoute(
