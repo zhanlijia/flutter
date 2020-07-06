@@ -8,6 +8,7 @@
 .vagrant/
 .sconsign.dblite
 .svn/
+libraries/Dart_SDK.xml
 
 *.swp
 profile

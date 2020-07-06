@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:testflutter/Animation/PageRouteAnimationVC.dart';
 import 'package:testflutter/BaseWidget.dart';
 import 'package:testflutter/Util/NavigatorHelper.dart';
 
@@ -20,9 +21,95 @@ class AnimationPageVC extends BaseStatelessWidget {
             onTap: () {
               NavigatorHelper.go2AnimationSampleVC(context);
             },
+          ),
+          ListTile(
+            leading: itemIcon,
+            title: Text("路由过渡动画"),
+            onTap: () {
+//              NavigatorHelper.go2PageRouteAnimationVC(context);
+//              pushRouteWithPageRouteBuilder(context);
+              pushRouteWithPageRouteSubType(context);
+            },
           )
         ],
       ),
     );
   }
+
+  ///[PageRouteBuilder]
+  pushRouteWithPageRouteBuilder(BuildContext context) {
+    Navigator.push(
+        context,
+        PageRouteBuilder(
+            transitionDuration: Duration(microseconds: 500),
+            pageBuilder: (context, animation, secondaryAnimation) {
+              return FadeTransition(
+                opacity: animation,
+                child: PageRouteAnimationVC(),
+              );
+            }));
+  }
+
+  ///[PageRoute]
+  pushRouteWithPageRouteSubType(BuildContext context) {
+    Navigator.push(context, FadeRoute(builder: (context) {
+      return PageRouteAnimationVC();
+    }));
+  }
+}
+
+class FadeRoute extends PageRoute {
+  final WidgetBuilder builder;
+
+  @override
+  // TODO: implement barrierColor
+  Color barrierColor;
+
+  @override
+  // TODO: implement barrierLabel
+  String barrierLabel;
+
+  @override
+  Widget buildPage(BuildContext context, Animation<double> animation,
+      Animation<double> secondaryAnimation) {
+    // TODO: implement buildPage
+    return builder(context);
+  }
+
+  @override
+  // TODO: implement maintainState
+  bool maintainState;
+
+  @override
+  // TODO: implement transitionDuration
+  Duration transitionDuration;
+
+  @override
+  bool opaque;
+
+  @override
+  bool barrierDismissible;
+
+  @override
+  Widget buildTransitions(BuildContext context, Animation<double> animation,
+      Animation<double> secondaryAnimation, Widget child) {
+    if(isActive){
+      return FadeTransition(
+        opacity: animation,
+        child: builder(context),
+      );
+    }else{
+      return Padding(padding: EdgeInsets.zero,);
+    }
+
+  }
+
+  FadeRoute(
+      {@required this.builder,
+      this.transitionDuration = const Duration(microseconds: 300),
+      this.opaque = true,
+      this.barrierDismissible = false,
+      this.barrierColor,
+      this.barrierLabel,
+      this.maintainState = true});
 }

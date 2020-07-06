@@ -105,4 +105,6 @@ class RouteConstant {
   static const String AnimationPage = "AnimationPage";
 
   static const String AnimationSample = "AnimationSample";
+
+  static const String PageRouteAnimation = "PageRouteAnimation";
 }

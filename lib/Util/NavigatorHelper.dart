@@ -229,4 +229,9 @@ class NavigatorHelper {
   static Future go2AnimationSampleVC(BuildContext context) {
     return Navigator.pushNamed(context, RouteConstant.AnimationSample);
   }
+
+  ///路由过渡动画
+  static Future go2PageRouteAnimationVC(BuildContext context){
+    return Navigator.pushNamed(context, RouteConstant.PageRouteAnimation);
+  }
 }
