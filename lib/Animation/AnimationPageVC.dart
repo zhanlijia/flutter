@@ -77,6 +77,13 @@ class AnimationPageVC extends BaseStatelessWidget {
             onTap: (){
               NavigatorHelper.go2StaggerAnimationVC(context);
             },
+          ),
+          ListTile(
+            leading: itemIcon,
+            title: Text("动画切换组件"),
+            onTap: (){
+              NavigatorHelper.go2AnimatedSwitcherVC(context);
+            },
           )
         ],
       ),

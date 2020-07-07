@@ -110,4 +110,6 @@ class RouteConstant {
   static const String HeroAnimation = "HeroAnimation";
 
   static const String StaggerAnimation = "StaggerAnimation";
+
+  static const String AnimatedSwitcher = "AnimatedSwitcher";
 }

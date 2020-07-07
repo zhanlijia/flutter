@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:testflutter/Animation/AnimationPageVC.dart';
 import 'package:testflutter/Animation/AnimationSampleVC.dart';
+import 'package:testflutter/Animation/AnimationSwitcherVC.dart';
 import 'package:testflutter/Animation/PageRouteAnimationVC.dart';
 import 'package:testflutter/Animation/StaggerAnimationVC.dart';
 import 'package:testflutter/Constant/RouteConstant.dart';
@@ -291,6 +292,10 @@ class MyApp extends BaseStatelessWidget {
           case RouteConstant.StaggerAnimation://交织动画
             return MaterialPageRoute(builder: (context){
               return StaggerAnimationVC();
+            });
+          case RouteConstant.AnimatedSwitcher://动画切换组件
+            return MaterialPageRoute(builder: (context){
+              return AnimatedSwitcherVC();
             });
           default:
             return null;

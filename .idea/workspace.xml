@@ -10,7 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="43c65046-0e14-4bc8-95f6-4c8e450a5e14" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/Animation/StaggerAnimationVC.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Animation/AnimationSwitcherVC.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/Animation/AnimationPageVC.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Animation/AnimationPageVC.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/Constant/RouteConstant.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Constant/RouteConstant.dart" afterDir="false" />
@@ -119,28 +119,28 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="989" y="337" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1594092655007" />
-    <state width="914" height="279" key="GridCell.Tab.0.bottom" timestamp="1594100121768">
+    <state width="914" height="279" key="GridCell.Tab.0.bottom" timestamp="1594122853421">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="279" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1594100121768" />
+    <state width="914" height="279" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1594122853421" />
     <state width="1238" height="237" key="GridCell.Tab.0.bottom/0.23.1280.732@0.23.1280.732" timestamp="1593879531383" />
     <state width="1238" height="174" key="GridCell.Tab.0.bottom/0.23.1280.733@0.23.1280.733" timestamp="1592732626214" />
-    <state width="914" height="279" key="GridCell.Tab.0.center" timestamp="1594100121768">
+    <state width="914" height="279" key="GridCell.Tab.0.center" timestamp="1594122853421">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="279" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1594100121768" />
+    <state width="914" height="279" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1594122853421" />
     <state width="1238" height="237" key="GridCell.Tab.0.center/0.23.1280.732@0.23.1280.732" timestamp="1593879531382" />
     <state width="1238" height="174" key="GridCell.Tab.0.center/0.23.1280.733@0.23.1280.733" timestamp="1592732626213" />
-    <state width="914" height="279" key="GridCell.Tab.0.left" timestamp="1594100121768">
+    <state width="914" height="279" key="GridCell.Tab.0.left" timestamp="1594122853421">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="279" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1594100121768" />
+    <state width="914" height="279" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1594122853421" />
     <state width="1238" height="237" key="GridCell.Tab.0.left/0.23.1280.732@0.23.1280.732" timestamp="1593879531382" />
     <state width="1238" height="174" key="GridCell.Tab.0.left/0.23.1280.733@0.23.1280.733" timestamp="1592732626213" />
-    <state width="914" height="279" key="GridCell.Tab.0.right" timestamp="1594100121768">
+    <state width="914" height="279" key="GridCell.Tab.0.right" timestamp="1594122853421">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="279" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1594100121768" />
+    <state width="914" height="279" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1594122853421" />
     <state width="1238" height="237" key="GridCell.Tab.0.right/0.23.1280.732@0.23.1280.732" timestamp="1593879531382" />
     <state width="1238" height="174" key="GridCell.Tab.0.right/0.23.1280.733@0.23.1280.733" timestamp="1592732626213" />
     <state x="1056" y="119" key="RollbackChangesDialog" timestamp="1593834301790">
@@ -153,10 +153,10 @@
     </state>
     <state x="710" y="224" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1594035707232" />
     <state x="141" y="23" key="SettingsEditor/0.23.1280.732@0.23.1280.732" timestamp="1593854969032" />
-    <state x="465" y="281" key="com.intellij.ide.util.TipDialog" timestamp="1594089676805">
+    <state x="465" y="281" key="com.intellij.ide.util.TipDialog" timestamp="1594114163198">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="465" y="281" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594089676805" />
+    <state x="465" y="281" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594114163198" />
     <state x="310" y="221" key="com.intellij.ide.util.TipDialog/0.23.1280.732@0.23.1280.732" timestamp="1593845688561" />
     <state x="383" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1594036207777">
       <screen x="0" y="0" width="1920" height="1040" />
