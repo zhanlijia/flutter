@@ -238,4 +238,9 @@ class NavigatorHelper {
   static Future go2HeroAnimationVC(BuildContext context) {
     return Navigator.pushNamed(context, RouteConstant.HeroAnimation);
   }
+
+  ///交织动画
+  static Future go2StaggerAnimationVC(BuildContext context){
+    return Navigator.pushNamed(context, RouteConstant.StaggerAnimation);
+  }
 }

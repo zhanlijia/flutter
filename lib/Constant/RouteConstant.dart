@@ -108,4 +108,6 @@ class RouteConstant {
   static const String PageRouteAnimation = "PageRouteAnimation";
 
   static const String HeroAnimation = "HeroAnimation";
+
+  static const String StaggerAnimation = "StaggerAnimation";
 }

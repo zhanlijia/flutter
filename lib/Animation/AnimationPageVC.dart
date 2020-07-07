@@ -70,6 +70,13 @@ class AnimationPageVC extends BaseStatelessWidget {
                 ],
               ),
             ),
+          ),
+          ListTile(
+            leading: itemIcon,
+            title: Text("交织动画"),
+            onTap: (){
+              NavigatorHelper.go2StaggerAnimationVC(context);
+            },
           )
         ],
       ),

@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:testflutter/Animation/AnimationPageVC.dart';
 import 'package:testflutter/Animation/AnimationSampleVC.dart';
 import 'package:testflutter/Animation/PageRouteAnimationVC.dart';
+import 'package:testflutter/Animation/StaggerAnimationVC.dart';
 import 'package:testflutter/Constant/RouteConstant.dart';
 import 'package:testflutter/ContainerWidget/ClipVC.dart';
 import 'package:testflutter/ContainerWidget/ConstraintVC.dart';
@@ -286,6 +287,10 @@ class MyApp extends BaseStatelessWidget {
           case RouteConstant.PageRouteAnimation: //路由过渡动画
             return MaterialPageRoute(builder: (context) {
               return PageRouteAnimationVC();
+            });
+          case RouteConstant.StaggerAnimation://交织动画
+            return MaterialPageRoute(builder: (context){
+              return StaggerAnimationVC();
             });
           default:
             return null;
