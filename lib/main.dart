@@ -14,11 +14,11 @@ import 'package:testflutter/ContainerWidget/ContainerWidgetPage.dart';
 import 'package:testflutter/ContainerWidget/DecoratedBoxVC.dart';
 import 'package:testflutter/ContainerWidget/PaddingVC.dart';
 import 'package:testflutter/ContainerWidget/BottomNavigationBarVC.dart';
-import 'package:testflutter/ContainerWidget/PageViewVC.dart';
 import 'package:testflutter/ContainerWidget/TransformVC.dart';
-import 'package:testflutter/EventAndNotification/EventAndNotificatonPageVC.dart';
+import 'package:testflutter/CustomizeWidget/CustomizeWidgetPageVC.dart';
+import 'package:testflutter/EventAndNotification/EventAndNotificationPageVC.dart';
 import 'package:testflutter/EventAndNotification/GestureVC.dart';
-import 'package:testflutter/EventAndNotification/NotificaionVC.dart';
+import 'package:testflutter/EventAndNotification/NotificationVC.dart';
 import 'package:testflutter/EventAndNotification/TouchEventVC.dart';
 import 'package:testflutter/FunctionWidget/AsyncUIVC.dart';
 import 'package:testflutter/FunctionWidget/ColorAndThemeVC.dart';
@@ -54,6 +54,7 @@ import 'package:testflutter/layout/WrapFlowLayoutVC.dart';
 
 import 'BaseWidget.dart';
 import 'Constant/RouteConstant.dart';
+import 'CustomizeWidget/MakeUpWidgetVC.dart';
 import 'NewPage.dart';
 
 void main() {
@@ -290,17 +291,25 @@ class MyApp extends BaseStatelessWidget {
             return MaterialPageRoute(builder: (context) {
               return PageRouteAnimationVC();
             });
-          case RouteConstant.StaggerAnimation://交织动画
-            return MaterialPageRoute(builder: (context){
+          case RouteConstant.StaggerAnimation: //交织动画
+            return MaterialPageRoute(builder: (context) {
               return StaggerAnimationVC();
             });
-          case RouteConstant.AnimatedSwitcher://动画切换组件
-            return MaterialPageRoute(builder: (context){
+          case RouteConstant.AnimatedSwitcher: //动画切换组件
+            return MaterialPageRoute(builder: (context) {
               return AnimatedSwitcherVC();
             });
-          case RouteConstant.AnimatedTransition://动画过渡组件
-            return MaterialPageRoute(builder: (context){
+          case RouteConstant.AnimatedTransition: //动画过渡组件
+            return MaterialPageRoute(builder: (context) {
               return AnimatedTransitionVC();
+            });
+          case RouteConstant.CustomizeWidget: //自定义组件
+            return MaterialPageRoute(builder: (context) {
+              return CustomizeWidgetPageVC();
+            });
+          case RouteConstant.MakeUpWidget: //组合组件
+            return MaterialPageRoute(builder: (context) {
+              return MakeUpWidgetVC();
             });
           default:
             return null;

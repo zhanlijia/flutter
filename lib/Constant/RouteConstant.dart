@@ -114,4 +114,10 @@ class RouteConstant {
   static const String AnimatedSwitcher = "AnimatedSwitcher";
 
   static const String AnimatedTransition = "AnimatedTransition";
+
+  ///自定义组件
+
+  static const String CustomizeWidget = "CustomizeWidget";
+
+  static const String MakeUpWidget = "MakeUpWidget";
 }

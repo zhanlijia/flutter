@@ -240,17 +240,27 @@ class NavigatorHelper {
   }
 
   ///交织动画
-  static Future go2StaggerAnimationVC(BuildContext context){
+  static Future go2StaggerAnimationVC(BuildContext context) {
     return Navigator.pushNamed(context, RouteConstant.StaggerAnimation);
   }
 
   ///动画切换组件
-  static Future go2AnimatedSwitcherVC(BuildContext context){
+  static Future go2AnimatedSwitcherVC(BuildContext context) {
     return Navigator.pushNamed(context, RouteConstant.AnimatedSwitcher);
   }
 
   ///动画过渡组件
-  static Future go2AnimatedTransitionVC(BuildContext context){
+  static Future go2AnimatedTransitionVC(BuildContext context) {
     return Navigator.pushNamed(context, RouteConstant.AnimatedTransition);
+  }
+
+  ///自定义组件
+  static Future go2CustomizeWidgetVC(BuildContext context) {
+    return Navigator.pushNamed(context, RouteConstant.CustomizeWidget);
+  }
+
+  ///组合组件
+  static Future go2MakeUpWidgetVC(BuildContext context) {
+    return Navigator.pushNamed(context, RouteConstant.MakeUpWidget);
   }
 }
