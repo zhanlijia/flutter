@@ -11,13 +11,18 @@ class AnimatedTransitionVC extends BaseStatefulWidget {
 }
 
 class _AnimatedTransitionVCState extends BaseState<AnimatedTransitionVC> {
+  Color _decorationColor = Colors.blue;
+  var duration = Duration(seconds: 1);
+  double _padding = 10;
+  double _left = 0;
+  Alignment _align = Alignment.centerLeft;
+  double _height = 100;
+  Color _color = Colors.red;
+  TextStyle _style = TextStyle(color: Colors.black);
+
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
-
-    Color _decorationColor = Colors.blue;
-    var duration = Duration(seconds: 1);
-
     return Scaffold(
       appBar: AppBar(
         title: Text("动画过渡组件"),
@@ -33,7 +38,9 @@ class _AnimatedTransitionVCState extends BaseState<AnimatedTransitionVC> {
                 child: FlatButton(
                   onPressed: () {
                     setState(() {
-                      _decorationColor = Colors.red;
+                      _decorationColor = _decorationColor == Colors.blue
+                          ? Colors.red
+                          : Colors.blue;
                     });
                   },
                   child: Text(
@@ -41,6 +48,102 @@ class _AnimatedTransitionVCState extends BaseState<AnimatedTransitionVC> {
                     style: TextStyle(color: Colors.white),
                   ),
                 ),
+              ),
+              AnimatedDecoratedBox(
+                duration: duration,
+                decoration: BoxDecoration(color: _decorationColor),
+                child: FlatButton(
+                  onPressed: () {
+                    setState(() {
+                      _decorationColor = _decorationColor == Colors.blue
+                          ? Colors.red
+                          : Colors.blue;
+                    });
+                  },
+                  child: Text(
+                    "AnimatedDecoratedBox",
+                    style: TextStyle(color: Colors.white),
+                  ),
+                ),
+              ),
+              RaisedButton(
+                onPressed: () {
+                  setState(() {
+                    _padding = 20;
+                  });
+                },
+                child: AnimatedPadding(
+                  duration: duration,
+                  padding: EdgeInsets.all(_padding),
+                  child: Text("AnimatedPadding"),
+                ),
+              ),
+              SizedBox(
+                height: 50,
+                child: Stack(
+                  children: <Widget>[
+                    AnimatedPositioned(
+                      duration: duration,
+                      left: _left,
+                      child: RaisedButton(
+                        onPressed: () {
+                          setState(() {
+                            _left = 100;
+                          });
+                        },
+                        child: Text("AnimatedPositioned"),
+                      ),
+                    )
+                  ],
+                ),
+              ),
+              Container(
+                height: 100,
+                color: Colors.grey,
+                child: AnimatedAlign(
+                  duration: duration,
+                  alignment: _align,
+                  child: RaisedButton(
+                    onPressed: () {
+                      setState(() {
+                        _align = Alignment.center;
+                      });
+                    },
+                    child: Text("AnimatedAlign"),
+                  ),
+                ),
+              ),
+              AnimatedContainer(
+                duration: duration,
+                height: _height,
+                color: _color,
+                child: FlatButton(
+                  onPressed: () {
+                    setState(() {
+                      _height = 150;
+                      _color = Colors.blue;
+                    });
+                  },
+                  child: Text(
+                    "AnimatedContainer",
+                    style: TextStyle(color: Colors.white),
+                  ),
+                ),
+              ),
+              AnimatedDefaultTextStyle(
+                child: GestureDetector(
+                  child: Text('hello world'),
+                  onTap: () {
+                    setState(() {
+                      _style = TextStyle(
+                          color: Colors.blue,
+                          decorationStyle: TextDecorationStyle.solid,
+                          decorationColor: Colors.blue);
+                    });
+                  },
+                ),
+                style: _style,
+                duration: duration,
               )
             ],
           ),
@@ -144,5 +247,50 @@ class _AnimatedDecoratedBox1State extends BaseState<AnimatedDecoratedBox1>
       },
       child: widget.child,
     );
+  }
+}
+
+class AnimatedDecoratedBox extends ImplicitlyAnimatedWidget {
+  final BoxDecoration decoration;
+  final Widget child;
+
+  AnimatedDecoratedBox(
+      {Key key,
+      @required this.decoration,
+      this.child,
+      Curve curve = Curves.linear,
+      @required Duration duration})
+      : super(
+          key: key,
+          curve: curve,
+          duration: duration,
+        );
+
+  @override
+  _AnimatedDecoratedBoxState createState() {
+    // TODO: implement createState
+    return _AnimatedDecoratedBoxState();
+  }
+}
+
+class _AnimatedDecoratedBoxState
+    extends ImplicitlyAnimatedWidgetState<AnimatedDecoratedBox> {
+  DecorationTween _decoration;
+
+  @override
+  Widget build(BuildContext context) {
+    // TODO: implement build
+    return DecoratedBox(
+      decoration: _decoration.evaluate(animation),
+      child: widget.child,
+    );
+  }
+
+  @override
+  void forEachTween(context) {
+    // TODO: implement forEachTween
+    _decoration = context(_decoration, widget.decoration, (value) {
+      return DecorationTween(begin: value);
+    });
   }
 }
