@@ -248,4 +248,9 @@ class NavigatorHelper {
   static Future go2AnimatedSwitcherVC(BuildContext context){
     return Navigator.pushNamed(context, RouteConstant.AnimatedSwitcher);
   }
+
+  ///动画过渡组件
+  static Future go2AnimatedTransitionVC(BuildContext context){
+    return Navigator.pushNamed(context, RouteConstant.AnimatedTransition);
+  }
 }

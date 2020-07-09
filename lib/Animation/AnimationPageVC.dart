@@ -38,7 +38,8 @@ class AnimationPageVC extends BaseStatelessWidget {
               alignment: Alignment.topCenter,
               child: Row(
                 children: <Widget>[
-                  InkWell(//实现水波纹效果
+                  InkWell(
+                    //实现水波纹效果
                     child: Hero(
                       tag: "avatar",
                       child: ClipOval(
@@ -74,15 +75,22 @@ class AnimationPageVC extends BaseStatelessWidget {
           ListTile(
             leading: itemIcon,
             title: Text("交织动画"),
-            onTap: (){
+            onTap: () {
               NavigatorHelper.go2StaggerAnimationVC(context);
             },
           ),
           ListTile(
             leading: itemIcon,
             title: Text("动画切换组件"),
-            onTap: (){
+            onTap: () {
               NavigatorHelper.go2AnimatedSwitcherVC(context);
+            },
+          ),
+          ListTile(
+            leading: itemIcon,
+            title: Text('动画过渡组件'),
+            onTap: () {
+              NavigatorHelper.go2AnimatedTransitionVC(context);
             },
           )
         ],

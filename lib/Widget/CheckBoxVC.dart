@@ -13,6 +13,7 @@ class CheckBoxVC extends BaseStatefulWidget {
 class _CheckBoxVCState extends BaseState<CheckBoxVC> {
   bool isCheckBoxChecked = false;
   bool isSwitchChecked = false;
+  String radioSelectOption = "";
 
   void toggleCheckBoxCheck(bool checked) {
     setState(() {
@@ -23,6 +24,12 @@ class _CheckBoxVCState extends BaseState<CheckBoxVC> {
   void toggleSwitchCheck(bool checked) {
     setState(() {
       isSwitchChecked = checked;
+    });
+  }
+
+  void toggleRadioCheck(String option) {
+    setState(() {
+      radioSelectOption = option;
     });
   }
 
@@ -39,7 +46,16 @@ class _CheckBoxVCState extends BaseState<CheckBoxVC> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               Switch(value: isSwitchChecked, onChanged: toggleSwitchCheck),
-              Checkbox(value: isCheckBoxChecked, onChanged: toggleCheckBoxCheck)
+              Checkbox(
+                  value: isCheckBoxChecked, onChanged: toggleCheckBoxCheck),
+              Radio<String>(
+                  value: "option1",
+                  groupValue: radioSelectOption,
+                  onChanged: toggleRadioCheck),
+              Radio(
+                  value: "option2",
+                  groupValue: radioSelectOption,
+                  onChanged: toggleRadioCheck)
             ],
           ),
         ),

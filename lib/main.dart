@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:testflutter/Animation/AnimatedTransitionVC.dart';
 import 'package:testflutter/Animation/AnimationPageVC.dart';
 import 'package:testflutter/Animation/AnimationSampleVC.dart';
 import 'package:testflutter/Animation/AnimationSwitcherVC.dart';
@@ -296,6 +297,10 @@ class MyApp extends BaseStatelessWidget {
           case RouteConstant.AnimatedSwitcher://动画切换组件
             return MaterialPageRoute(builder: (context){
               return AnimatedSwitcherVC();
+            });
+          case RouteConstant.AnimatedTransition://动画过渡组件
+            return MaterialPageRoute(builder: (context){
+              return AnimatedTransitionVC();
             });
           default:
             return null;
