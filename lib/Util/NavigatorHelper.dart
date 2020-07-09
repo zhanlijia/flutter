@@ -268,4 +268,9 @@ class NavigatorHelper {
   static Future go2MakeUpWidgetInstanceVC(BuildContext context) {
     return Navigator.pushNamed(context, RouteConstant.MakeUpWidgetInstance);
   }
+
+  ///自绘组件
+  static Future go2CustomPaintVC(BuildContext context) {
+    return Navigator.pushNamed(context, RouteConstant.CustomPaint);
+  }
 }

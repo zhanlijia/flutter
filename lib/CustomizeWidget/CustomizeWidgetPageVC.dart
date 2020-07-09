@@ -28,6 +28,13 @@ class CustomizeWidgetPageVC extends BaseStatelessWidget {
             onTap: () {
               NavigatorHelper.go2MakeUpWidgetInstanceVC(context);
             },
+          ),
+          ListTile(
+            leading: itemIcon,
+            title: Text("自绘组件"),
+            onTap: () {
+              NavigatorHelper.go2CustomPaintVC(context);
+            },
           )
         ],
       ),

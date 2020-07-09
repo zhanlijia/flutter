@@ -15,6 +15,7 @@ import 'package:testflutter/ContainerWidget/DecoratedBoxVC.dart';
 import 'package:testflutter/ContainerWidget/PaddingVC.dart';
 import 'package:testflutter/ContainerWidget/BottomNavigationBarVC.dart';
 import 'package:testflutter/ContainerWidget/TransformVC.dart';
+import 'package:testflutter/CustomizeWidget/CustomPaintVC.dart';
 import 'package:testflutter/CustomizeWidget/CustomizeWidgetPageVC.dart';
 import 'package:testflutter/EventAndNotification/EventAndNotificationPageVC.dart';
 import 'package:testflutter/EventAndNotification/GestureVC.dart';
@@ -315,6 +316,10 @@ class MyApp extends BaseStatelessWidget {
           case RouteConstant.MakeUpWidgetInstance: //组合实例
             return MaterialPageRoute(builder: (context) {
               return MakeUpWidgetInstanceVC();
+            });
+          case RouteConstant.CustomPaint: //自绘组件
+            return MaterialPageRoute(builder: (context) {
+              return CustomPaintVC();
             });
           default:
             return null;
