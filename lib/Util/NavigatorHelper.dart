@@ -273,4 +273,9 @@ class NavigatorHelper {
   static Future go2CustomPaintVC(BuildContext context) {
     return Navigator.pushNamed(context, RouteConstant.CustomPaint);
   }
+
+  ///自绘实例
+  static Future go2CustomPaintInstanceVC(BuildContext context) {
+    return Navigator.pushNamed(context, RouteConstant.CustomPaintInstance);
+  }
 }

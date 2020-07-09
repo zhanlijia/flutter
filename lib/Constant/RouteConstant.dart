@@ -124,4 +124,6 @@ class RouteConstant {
   static const String MakeUpWidgetInstance = "MakeUpWidgetInstance";
 
   static const String CustomPaint = "CustomPaint";
+
+  static const String CustomPaintInstance = "CustomPaintInstance";
 }

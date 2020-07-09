@@ -10,7 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="43c65046-0e14-4bc8-95f6-4c8e450a5e14" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/CustomizeWidget/CustomPaintVC.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/CustomizeWidget/CustomPaintInstanceVC.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/Constant/RouteConstant.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Constant/RouteConstant.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/CustomizeWidget/CustomizeWidgetPageVC.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/CustomizeWidget/CustomizeWidgetPageVC.dart" afterDir="false" />
@@ -92,15 +92,16 @@
       <screen x="0" y="23" width="1280" height="732" />
     </state>
     <state x="344" y="199" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1280.732@0.23.1280.732" timestamp="1590934244881" />
-    <state x="768" y="218" key="#com.intellij.ide.util.MemberChooser" timestamp="1594280178002">
+    <state x="768" y="218" key="#com.intellij.ide.util.MemberChooser" timestamp="1594292982610">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="768" y="218" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1594280178002" />
+    <state x="768" y="218" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1594292982610" />
     <state x="453" y="112" key="#com.intellij.ide.util.MemberChooser/0.23.1280.732@0.23.1280.732" timestamp="1593878881899" />
     <state x="453" y="112" key="#com.intellij.ide.util.MemberChooser/0.23.1280.733@0.23.1280.733" timestamp="1592728205840" />
-    <state x="328" y="124" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1593879095556">
-      <screen x="0" y="23" width="1280" height="732" />
+    <state x="492" y="143" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1594292865913">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="492" y="143" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594292865913" />
     <state x="328" y="124" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.1280.732@0.23.1280.732" timestamp="1593879095556" />
     <state x="383" y="233" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1592041176156">
       <screen x="0" y="23" width="1280" height="732" />
@@ -119,28 +120,28 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="989" y="337" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1594260749896" />
-    <state width="914" height="275" key="GridCell.Tab.0.bottom" timestamp="1594285497016">
+    <state width="914" height="275" key="GridCell.Tab.0.bottom" timestamp="1594296496013">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="275" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1594285497016" />
+    <state width="914" height="275" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1594296496013" />
     <state width="1238" height="237" key="GridCell.Tab.0.bottom/0.23.1280.732@0.23.1280.732" timestamp="1593879531383" />
     <state width="1238" height="174" key="GridCell.Tab.0.bottom/0.23.1280.733@0.23.1280.733" timestamp="1592732626214" />
-    <state width="914" height="275" key="GridCell.Tab.0.center" timestamp="1594285497016">
+    <state width="914" height="275" key="GridCell.Tab.0.center" timestamp="1594296496013">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="275" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1594285497016" />
+    <state width="914" height="275" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1594296496013" />
     <state width="1238" height="237" key="GridCell.Tab.0.center/0.23.1280.732@0.23.1280.732" timestamp="1593879531382" />
     <state width="1238" height="174" key="GridCell.Tab.0.center/0.23.1280.733@0.23.1280.733" timestamp="1592732626213" />
-    <state width="914" height="275" key="GridCell.Tab.0.left" timestamp="1594285497015">
+    <state width="914" height="275" key="GridCell.Tab.0.left" timestamp="1594296496012">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="275" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1594285497015" />
+    <state width="914" height="275" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1594296496012" />
     <state width="1238" height="237" key="GridCell.Tab.0.left/0.23.1280.732@0.23.1280.732" timestamp="1593879531382" />
     <state width="1238" height="174" key="GridCell.Tab.0.left/0.23.1280.733@0.23.1280.733" timestamp="1592732626213" />
-    <state width="914" height="275" key="GridCell.Tab.0.right" timestamp="1594285497016">
+    <state width="914" height="275" key="GridCell.Tab.0.right" timestamp="1594296496013">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="275" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1594285497016" />
+    <state width="914" height="275" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1594296496013" />
     <state width="1238" height="237" key="GridCell.Tab.0.right/0.23.1280.732@0.23.1280.732" timestamp="1593879531382" />
     <state width="1238" height="174" key="GridCell.Tab.0.right/0.23.1280.733@0.23.1280.733" timestamp="1592732626213" />
     <state x="1056" y="119" key="RollbackChangesDialog" timestamp="1593834301790">
@@ -148,10 +149,10 @@
     </state>
     <state x="1056" y="119" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1593834301790" />
     <state x="704" y="107" key="RollbackChangesDialog/0.23.1280.732@0.23.1280.732" timestamp="1593099080643" />
-    <state x="710" y="224" key="SettingsEditor" timestamp="1594283432777">
+    <state x="710" y="224" key="SettingsEditor" timestamp="1594295346382">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="710" y="224" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1594283432777" />
+    <state x="710" y="224" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1594295346382" />
     <state x="141" y="23" key="SettingsEditor/0.23.1280.732@0.23.1280.732" timestamp="1593854969032" />
     <state x="465" y="281" key="com.intellij.ide.util.TipDialog" timestamp="1594285304785">
       <screen x="0" y="0" width="1920" height="1040" />
