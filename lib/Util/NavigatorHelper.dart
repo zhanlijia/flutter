@@ -263,4 +263,9 @@ class NavigatorHelper {
   static Future go2MakeUpWidgetVC(BuildContext context) {
     return Navigator.pushNamed(context, RouteConstant.MakeUpWidget);
   }
+
+  ///组合实例
+  static Future go2MakeUpWidgetInstanceVC(BuildContext context) {
+    return Navigator.pushNamed(context, RouteConstant.MakeUpWidgetInstance);
+  }
 }

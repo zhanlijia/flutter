@@ -54,6 +54,7 @@ import 'package:testflutter/layout/WrapFlowLayoutVC.dart';
 
 import 'BaseWidget.dart';
 import 'Constant/RouteConstant.dart';
+import 'CustomizeWidget/MakeUpWidgetInstanceVC.dart';
 import 'CustomizeWidget/MakeUpWidgetVC.dart';
 import 'NewPage.dart';
 
@@ -310,6 +311,10 @@ class MyApp extends BaseStatelessWidget {
           case RouteConstant.MakeUpWidget: //组合组件
             return MaterialPageRoute(builder: (context) {
               return MakeUpWidgetVC();
+            });
+          case RouteConstant.MakeUpWidgetInstance: //组合实例
+            return MaterialPageRoute(builder: (context) {
+              return MakeUpWidgetInstanceVC();
             });
           default:
             return null;

@@ -120,4 +120,6 @@ class RouteConstant {
   static const String CustomizeWidget = "CustomizeWidget";
 
   static const String MakeUpWidget = "MakeUpWidget";
+
+  static const String MakeUpWidgetInstance = "MakeUpWidgetInstance";
 }

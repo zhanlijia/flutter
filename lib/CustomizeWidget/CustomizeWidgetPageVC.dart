@@ -21,6 +21,13 @@ class CustomizeWidgetPageVC extends BaseStatelessWidget {
             onTap: () {
               NavigatorHelper.go2MakeUpWidgetVC(context);
             },
+          ),
+          ListTile(
+            leading: itemIcon,
+            title: Text('组合实例'),
+            onTap: () {
+              NavigatorHelper.go2MakeUpWidgetInstanceVC(context);
+            },
           )
         ],
       ),
