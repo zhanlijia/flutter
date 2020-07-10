@@ -10,20 +10,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="43c65046-0e14-4bc8-95f6-4c8e450a5e14" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/FileAndNetwork/HttpClientVC.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins-dependencies" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/Constant/RouteConstant.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Constant/RouteConstant.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/FileAndNetwork/FileAndNetworkPageVC.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/FileAndNetwork/FileAndNetworkPageVC.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/Util/NavigatorHelper.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Util/NavigatorHelper.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/FileAndNetwork/HttpClientVC.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/FileAndNetwork/HttpClientVC.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="2KH6R19129000772" />
   <component name="FavoritesManager">
     <favorites_list name="test_flutter" />
   </component>
@@ -57,7 +52,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="settings.editor.selected.configurable" value="flutter.settings" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
@@ -151,16 +146,16 @@
     </state>
     <state x="1056" y="119" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1593834301790" />
     <state x="704" y="107" key="RollbackChangesDialog/0.23.1280.732@0.23.1280.732" timestamp="1593099080643" />
-    <state x="710" y="224" key="SettingsEditor" timestamp="1594370551347">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="141" y="23" key="SettingsEditor" timestamp="1594395387948">
+      <screen x="0" y="23" width="1280" height="732" />
     </state>
     <state x="710" y="224" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1594370551347" />
-    <state x="141" y="23" key="SettingsEditor/0.23.1280.732@0.23.1280.732" timestamp="1593854969032" />
-    <state x="465" y="281" key="com.intellij.ide.util.TipDialog" timestamp="1594341376537">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="141" y="23" key="SettingsEditor/0.23.1280.732@0.23.1280.732" timestamp="1594395387948" />
+    <state x="310" y="221" key="com.intellij.ide.util.TipDialog" timestamp="1594395314112">
+      <screen x="0" y="23" width="1280" height="732" />
     </state>
     <state x="465" y="281" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594341376537" />
-    <state x="310" y="221" key="com.intellij.ide.util.TipDialog/0.23.1280.732@0.23.1280.732" timestamp="1593845688561" />
+    <state x="310" y="221" key="com.intellij.ide.util.TipDialog/0.23.1280.732@0.23.1280.732" timestamp="1594395314112" />
     <state x="383" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1594036207777">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -175,10 +170,10 @@
     <state width="600" height="424" key="javadoc.popup" timestamp="1590905444248">
       <screen x="0" y="23" width="1280" height="732" />
     </state>
-    <state width="385" height="62" key="javadoc.popup.new" timestamp="1593879339489">
+    <state width="385" height="62" key="javadoc.popup.new" timestamp="1594396504591">
       <screen x="0" y="23" width="1280" height="732" />
     </state>
-    <state width="385" height="62" key="javadoc.popup.new/0.23.1280.732@0.23.1280.732" timestamp="1593879339489" />
+    <state width="385" height="62" key="javadoc.popup.new/0.23.1280.732@0.23.1280.732" timestamp="1594396504591" />
     <state width="385" height="63" key="javadoc.popup.new/0.23.1280.733@0.23.1280.733" timestamp="1592729777174" />
     <state width="600" height="424" key="javadoc.popup/0.23.1280.732@0.23.1280.732" timestamp="1590905444248" />
     <state x="305" y="174" key="run.anything.popup" timestamp="1590905963067">
