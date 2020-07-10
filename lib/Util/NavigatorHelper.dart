@@ -278,4 +278,14 @@ class NavigatorHelper {
   static Future go2CustomPaintInstanceVC(BuildContext context) {
     return Navigator.pushNamed(context, RouteConstant.CustomPaintInstance);
   }
+
+  ///文件操作和网络请求
+  static Future go2FileAndNetworkPageVC(BuildContext context) {
+    return Navigator.pushNamed(context, RouteConstant.FileAndNetwork);
+  }
+
+  ///文件操作
+  static Future go2FileVC(BuildContext context) {
+    return Navigator.pushNamed(context, RouteConstant.File);
+  }
 }

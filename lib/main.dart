@@ -22,6 +22,8 @@ import 'package:testflutter/EventAndNotification/EventAndNotificationPageVC.dart
 import 'package:testflutter/EventAndNotification/GestureVC.dart';
 import 'package:testflutter/EventAndNotification/NotificationVC.dart';
 import 'package:testflutter/EventAndNotification/TouchEventVC.dart';
+import 'package:testflutter/FileAndNetwork/FileAndNetworkPageVC.dart';
+import 'package:testflutter/FileAndNetwork/FileVC.dart';
 import 'package:testflutter/FunctionWidget/AsyncUIVC.dart';
 import 'package:testflutter/FunctionWidget/ColorAndThemeVC.dart';
 import 'package:testflutter/FunctionWidget/DialogVC.dart';
@@ -322,9 +324,17 @@ class MyApp extends BaseStatelessWidget {
             return MaterialPageRoute(builder: (context) {
               return CustomPaintVC();
             });
-          case RouteConstant.CustomPaintInstance://自绘实例
-            return MaterialPageRoute(builder: (context){
+          case RouteConstant.CustomPaintInstance: //自绘实例
+            return MaterialPageRoute(builder: (context) {
               return CustomPaintInstanceVC();
+            });
+          case RouteConstant.FileAndNetwork: //文件操作和网络请求
+            return MaterialPageRoute(builder: (context) {
+              return FileAndNetworkPageVC();
+            });
+          case RouteConstant.File: //文件操作
+            return MaterialPageRoute(builder: (context) {
+              return FileVC();
             });
           default:
             return null;

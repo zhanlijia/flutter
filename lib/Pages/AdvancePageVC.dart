@@ -28,8 +28,15 @@ class AdvancePageVC extends BaseStatelessWidget {
           ListTile(
             leading: itemIcon,
             title: Text("自定义组件"),
-            onTap: (){
+            onTap: () {
               NavigatorHelper.go2CustomizeWidgetVC(context);
+            },
+          ),
+          ListTile(
+            leading: itemIcon,
+            title: Text("文件操作和网络请求"),
+            onTap: () {
+              NavigatorHelper.go2FileAndNetworkPageVC(context);
             },
           )
         ],

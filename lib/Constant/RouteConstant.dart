@@ -126,4 +126,10 @@ class RouteConstant {
   static const String CustomPaint = "CustomPaint";
 
   static const String CustomPaintInstance = "CustomPaintInstance";
+
+  ///文件操作与网络请求
+
+  static const String FileAndNetwork = "FileAndNetwork";
+
+  static const String File = "File";
 }
