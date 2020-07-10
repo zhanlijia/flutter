@@ -24,6 +24,7 @@ import 'package:testflutter/EventAndNotification/NotificationVC.dart';
 import 'package:testflutter/EventAndNotification/TouchEventVC.dart';
 import 'package:testflutter/FileAndNetwork/FileAndNetworkPageVC.dart';
 import 'package:testflutter/FileAndNetwork/FileVC.dart';
+import 'package:testflutter/FileAndNetwork/HttpClientVC.dart';
 import 'package:testflutter/FunctionWidget/AsyncUIVC.dart';
 import 'package:testflutter/FunctionWidget/ColorAndThemeVC.dart';
 import 'package:testflutter/FunctionWidget/DialogVC.dart';
@@ -100,9 +101,9 @@ class MyApp extends BaseStatelessWidget {
           return HomePageViewVC();
         }
       },
-      onGenerateRoute: (routeSettigns) {
+      onGenerateRoute: (routeSettings) {
         print("---- onGenerateRoute");
-        var routeName = routeSettigns.name;
+        var routeName = routeSettings.name;
         print(routeName);
         switch (routeName) {
           case RouteConstant.LalaZhazha:
@@ -113,7 +114,7 @@ class MyApp extends BaseStatelessWidget {
             });
           case RouteConstant.NewPage:
             return CupertinoPageRoute(builder: (context) {
-              return NewPage(content: routeSettigns.arguments);
+              return NewPage(content: routeSettings.arguments);
             });
           case RouteConstant.WidgetPage: //基础控件
             return MaterialPageRoute(builder: (context) {
@@ -335,6 +336,10 @@ class MyApp extends BaseStatelessWidget {
           case RouteConstant.File: //文件操作
             return MaterialPageRoute(builder: (context) {
               return FileVC();
+            });
+          case RouteConstant.HttpClient://HttpClient
+            return MaterialPageRoute(builder: (context){
+              return HttpClientVC();
             });
           default:
             return null;

@@ -132,4 +132,6 @@ class RouteConstant {
   static const String FileAndNetwork = "FileAndNetwork";
 
   static const String File = "File";
+
+  static const String HttpClient = "HttpClient";
 }

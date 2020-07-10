@@ -288,4 +288,9 @@ class NavigatorHelper {
   static Future go2FileVC(BuildContext context) {
     return Navigator.pushNamed(context, RouteConstant.File);
   }
+
+  ///HttpClient
+  static Future go2HttpClientVC(BuildContext context) {
+    return Navigator.pushNamed(context, RouteConstant.HttpClient);
+  }
 }

@@ -21,6 +21,13 @@ class FileAndNetworkPageVC extends BaseStatelessWidget {
             onTap: () {
               NavigatorHelper.go2FileVC(context);
             },
+          ),
+          ListTile(
+            leading: itemIcon,
+            title: Text("HttpClient"),
+            onTap: () {
+              NavigatorHelper.go2HttpClientVC(context);
+            },
           )
         ],
       ),
