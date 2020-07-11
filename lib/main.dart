@@ -25,6 +25,7 @@ import 'package:testflutter/EventAndNotification/TouchEventVC.dart';
 import 'package:testflutter/FileAndNetwork/FileAndNetworkPageVC.dart';
 import 'package:testflutter/FileAndNetwork/FileVC.dart';
 import 'package:testflutter/FileAndNetwork/HttpClientVC.dart';
+import 'package:testflutter/FileAndNetwork/HttpDioVC.dart';
 import 'package:testflutter/FunctionWidget/AsyncUIVC.dart';
 import 'package:testflutter/FunctionWidget/ColorAndThemeVC.dart';
 import 'package:testflutter/FunctionWidget/DialogVC.dart';
@@ -337,9 +338,13 @@ class MyApp extends BaseStatelessWidget {
             return MaterialPageRoute(builder: (context) {
               return FileVC();
             });
-          case RouteConstant.HttpClient://HttpClient
-            return MaterialPageRoute(builder: (context){
+          case RouteConstant.HttpClient: //HttpClient
+            return MaterialPageRoute(builder: (context) {
               return HttpClientVC();
+            });
+          case RouteConstant.HttpDio: //HttpDio
+            return MaterialPageRoute(builder: (context) {
+              return HttpDioVC();
             });
           default:
             return null;
@@ -449,16 +454,19 @@ class _MyHomePageState extends BaseState<MyHomePage> {
             ),
             Text(
               '$_counter',
-              style: Theme.of(context).textTheme.headline4,
+              style: Theme
+                  .of(context)
+                  .textTheme
+                  .headline4,
             ),
             Text("res $_backRes"),
             FlatButton(
               child: Text("open new page"),
               onPressed: () {
                 NavigatorHelper.go2NewPage(context, "another pass value").then(
-                    (value) {
-                  _refreshBackRes("value");
-                }, onError: (e) {});
+                        (value) {
+                      _refreshBackRes("value");
+                    }, onError: (e) {});
 
 //                  Navigator.push(context, MaterialPageRoute(builder: (context){
 //                      return NewPage(content: "test flutter");

@@ -1,3 +1,5 @@
+import 'dart:html';
+
 import 'package:flutter/material.dart';
 import 'package:testflutter/Constant/RouteConstant.dart';
 
@@ -292,5 +294,10 @@ class NavigatorHelper {
   ///HttpClient
   static Future go2HttpClientVC(BuildContext context) {
     return Navigator.pushNamed(context, RouteConstant.HttpClient);
+  }
+
+  ///HttpDio
+  static Future go2HttpDioVC(BuildContext context) {
+    return Navigator.pushNamed(context, RouteConstant.HttpDio);
   }
 }

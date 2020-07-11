@@ -134,4 +134,6 @@ class RouteConstant {
   static const String File = "File";
 
   static const String HttpClient = "HttpClient";
+
+  static const String HttpDio = "HttpDio";
 }

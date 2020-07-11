@@ -28,6 +28,13 @@ class FileAndNetworkPageVC extends BaseStatelessWidget {
             onTap: () {
               NavigatorHelper.go2HttpClientVC(context);
             },
+          ),
+          ListTile(
+            leading: itemIcon,
+            title: Text("HttpDio"),
+            onTap: () {
+              NavigatorHelper.go2HttpDioVC(context);
+            },
           )
         ],
       ),

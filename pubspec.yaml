@@ -33,7 +33,7 @@ dependencies:
 
   path_provider: ^0.4.1
 
-
+  dio: ^3.0.9
 
 dev_dependencies:
   flutter_test:
@@ -55,7 +55,7 @@ flutter:
         - asset: fonts/iconfont.ttf
 
   assets:
-     - images/
+    - images/
 
 
 
