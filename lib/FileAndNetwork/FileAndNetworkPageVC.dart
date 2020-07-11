@@ -35,6 +35,13 @@ class FileAndNetworkPageVC extends BaseStatelessWidget {
             onTap: () {
               NavigatorHelper.go2HttpDioVC(context);
             },
+          ),
+          ListTile(
+            leading: itemIcon,
+            title: Text("Http分块下载"),
+            onTap: () {
+              NavigatorHelper.go2HttpDioDownloadRange(context);
+            },
           )
         ],
       ),

@@ -136,4 +136,6 @@ class RouteConstant {
   static const String HttpClient = "HttpClient";
 
   static const String HttpDio = "HttpDio";
+
+  static const String HttpDioDownloadRange = "HttpDioDownloadRange";
 }

@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:testflutter/Constant/RouteConstant.dart';
 
@@ -298,5 +297,10 @@ class NavigatorHelper {
   ///HttpDio
   static Future go2HttpDioVC(BuildContext context) {
     return Navigator.pushNamed(context, RouteConstant.HttpDio);
+  }
+
+  ///Http分块下载
+  static Future go2HttpDioDownloadRange(BuildContext context) {
+    return Navigator.pushNamed(context, RouteConstant.HttpDioDownloadRange);
   }
 }
