@@ -1,0 +1,6 @@
+{
+  "@JsonKey(ignore: true) dynamic":"md",
+  "@JsonKey(name: '+1') int": "loved",
+  "name":"wendux",
+  "age":20
+}
