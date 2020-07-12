@@ -27,6 +27,7 @@ import 'package:testflutter/FileAndNetwork/FileVC.dart';
 import 'package:testflutter/FileAndNetwork/HttpClientVC.dart';
 import 'package:testflutter/FileAndNetwork/HttpDioDownloadRangeVC.dart';
 import 'package:testflutter/FileAndNetwork/HttpDioVC.dart';
+import 'package:testflutter/FileAndNetwork/WebSocketVC.dart';
 import 'package:testflutter/FunctionWidget/AsyncUIVC.dart';
 import 'package:testflutter/FunctionWidget/ColorAndThemeVC.dart';
 import 'package:testflutter/FunctionWidget/DialogVC.dart';
@@ -350,6 +351,10 @@ class MyApp extends BaseStatelessWidget {
           case RouteConstant.HttpDioDownloadRange: //Http分块下载
             return MaterialPageRoute(builder: (context) {
               return HttpDioDownloadRangeVC();
+            });
+          case RouteConstant.WebSocket://WebSocket
+            return MaterialPageRoute(builder: (context){
+              return WebSocketVC();
             });
           default:
             return null;

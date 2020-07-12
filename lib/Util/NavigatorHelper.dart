@@ -303,4 +303,9 @@ class NavigatorHelper {
   static Future go2HttpDioDownloadRange(BuildContext context) {
     return Navigator.pushNamed(context, RouteConstant.HttpDioDownloadRange);
   }
+
+  ///WebSocket
+  static Future go2WebSocketVC(BuildContext context){
+    return Navigator.pushNamed(context, RouteConstant.WebSocket);
+  }
 }

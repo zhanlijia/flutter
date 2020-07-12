@@ -205,6 +205,13 @@ packages:
       url: "https://pub.flutter-io.cn"
     source: hosted
     version: "2.0.8"
+  websocket:
+    dependency: "direct main"
+    description:
+      name: websocket
+      url: "https://pub.flutter-io.cn"
+    source: hosted
+    version: "0.0.5"
   xml:
     dependency: transitive
     description:
