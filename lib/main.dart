@@ -27,6 +27,7 @@ import 'package:testflutter/FileAndNetwork/FileVC.dart';
 import 'package:testflutter/FileAndNetwork/HttpClientVC.dart';
 import 'package:testflutter/FileAndNetwork/HttpDioDownloadRangeVC.dart';
 import 'package:testflutter/FileAndNetwork/HttpDioVC.dart';
+import 'package:testflutter/FileAndNetwork/SocketVC.dart';
 import 'package:testflutter/FileAndNetwork/WebSocketVC.dart';
 import 'package:testflutter/FunctionWidget/AsyncUIVC.dart';
 import 'package:testflutter/FunctionWidget/ColorAndThemeVC.dart';
@@ -355,6 +356,10 @@ class MyApp extends BaseStatelessWidget {
           case RouteConstant.WebSocket://WebSocket
             return MaterialPageRoute(builder: (context){
               return WebSocketVC();
+            });
+          case RouteConstant.Socket://Socket
+            return MaterialPageRoute(builder: (context){
+              return SocketVC();
             });
           default:
             return null;

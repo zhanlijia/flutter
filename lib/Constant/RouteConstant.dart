@@ -140,4 +140,6 @@ class RouteConstant {
   static const String HttpDioDownloadRange = "HttpDioDownloadRange";
 
   static const String WebSocket = "WebSocket";
+
+  static const String Socket = "Socket";
 }

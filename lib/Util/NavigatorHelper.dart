@@ -1,3 +1,4 @@
+
 import 'package:flutter/material.dart';
 import 'package:testflutter/Constant/RouteConstant.dart';
 
@@ -305,7 +306,12 @@ class NavigatorHelper {
   }
 
   ///WebSocket
-  static Future go2WebSocketVC(BuildContext context){
+  static Future go2WebSocketVC(BuildContext context) {
     return Navigator.pushNamed(context, RouteConstant.WebSocket);
+  }
+
+  ///Socket
+  static Future go2SocketVC(BuildContext context) {
+    return Navigator.pushNamed(context, RouteConstant.Socket);
   }
 }

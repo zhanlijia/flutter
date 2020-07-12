@@ -49,6 +49,13 @@ class FileAndNetworkPageVC extends BaseStatelessWidget {
             onTap: () {
               NavigatorHelper.go2WebSocketVC(context);
             },
+          ),
+          ListTile(
+            leading: itemIcon,
+            title: Text("Socket"),
+            onTap: () {
+              NavigatorHelper.go2SocketVC(context);
+            },
           )
         ],
       ),
