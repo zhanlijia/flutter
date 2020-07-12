@@ -314,4 +314,9 @@ class NavigatorHelper {
   static Future go2SocketVC(BuildContext context) {
     return Navigator.pushNamed(context, RouteConstant.Socket);
   }
+
+  ///Json Model
+  static Future go2JsonAndModelVC(BuildContext context){
+    return Navigator.pushNamed(context, RouteConstant.JsonAndModel);
+  }
 }

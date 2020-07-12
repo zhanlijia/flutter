@@ -142,4 +142,6 @@ class RouteConstant {
   static const String WebSocket = "WebSocket";
 
   static const String Socket = "Socket";
+
+  static const String JsonAndModel = "JsonAndModel";
 }
