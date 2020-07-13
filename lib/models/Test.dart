@@ -1,5 +1,5 @@
 import 'package:json_annotation/json_annotation.dart';
-import "user.dart";
+import 'package:testflutter/FileAndNetwork/User.dart';
 part 'Test.g.dart';
 
 @JsonSerializable()

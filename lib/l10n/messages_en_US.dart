@@ -19,11 +19,11 @@ typedef String MessageIfAbsent(String messageStr, List<dynamic> args);
 class MessageLookup extends MessageLookupByLibrary {
   String get localeName => 'en_US';
 
-  static m0(howMany) => "${Intl.plural(howMany, zero: '没有未读邮件', one: '有 ${howMany} 封未读邮件', other: '有 ${howMany} 封未读邮件')}";
+  static m0(howMany) => "${Intl.plural(howMany, zero: '沒有未讀郵件', one: '有 ${howMany} 封未讀郵件', other: '有 ${howMany} 封未讀郵件')}";
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static _notInlinedMessages(_) => <String, Function> {
     "remainingEmailsMessage" : m0,
-    "title" : MessageLookupByLibrary.simpleMessage("test 应用")
+    "title" : MessageLookupByLibrary.simpleMessage("test 應用")
   };
 }

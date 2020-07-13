@@ -396,7 +396,9 @@ class MyApp extends BaseStatelessWidget {
         LocalizationsTestDelegate(),
         IntlLocalizationsDelegate()
       ],
-
+//      onGenerateTitle: (context){
+//        return IntlLocalizations.of(context).title;
+//      },
 //      home: MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }
