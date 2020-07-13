@@ -144,4 +144,10 @@ class RouteConstant {
   static const String Socket = "Socket";
 
   static const String JsonAndModel = "JsonAndModel";
+
+  ///国家化
+
+  static const String LocalizationPage = "LocalizationPage";
+
+  static const String LocalizationDelegate = "LocalizationDelegate";
 }

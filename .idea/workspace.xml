@@ -10,20 +10,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="43c65046-0e14-4bc8-95f6-4c8e450a5e14" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/jsons/Another.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jsons/Test.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/FileAndNetwork/AnotherTest.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/FileAndNetwork/AnotherTest.g.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/FileAndNetwork/User.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/FileAndNetwork/User.g.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/models/Another.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/models/Another.g.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/models/Test.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/models/Test.g.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/models/index.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Localizations/LocalizationDelegateVC.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Localizations/LocalizationsPageVC.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins-dependencies" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/FileAndNetwork/JsonAndModelVC.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/FileAndNetwork/JsonAndModelVC.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Constant/RouteConstant.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Constant/RouteConstant.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Pages/AdvancePageVC.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Pages/AdvancePageVC.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Util/NavigatorHelper.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Util/NavigatorHelper.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
@@ -32,6 +27,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="2KH6R19129000772" />
   <component name="FavoritesManager">
     <favorites_list name="test_flutter" />
   </component>
@@ -65,7 +61,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="dart.settings" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
@@ -102,10 +98,10 @@
     </state>
     <state x="516" y="250" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1594363026004" />
     <state x="344" y="199" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1280.732@0.23.1280.732" timestamp="1590934244881" />
-    <state x="453" y="112" key="#com.intellij.ide.util.MemberChooser" timestamp="1594567699036">
-      <screen x="0" y="23" width="1280" height="732" />
+    <state x="768" y="218" key="#com.intellij.ide.util.MemberChooser" timestamp="1594611471029">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="768" y="218" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1594292982610" />
+    <state x="768" y="218" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1594611471029" />
     <state x="453" y="112" key="#com.intellij.ide.util.MemberChooser/0.23.1280.732@0.23.1280.732" timestamp="1594567699036" />
     <state x="453" y="112" key="#com.intellij.ide.util.MemberChooser/0.23.1280.733@0.23.1280.733" timestamp="1592728205840" />
     <state x="492" y="143" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1594292865913">
@@ -130,28 +126,28 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="989" y="337" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1594260749896" />
-    <state width="1238" height="200" key="GridCell.Tab.0.bottom" timestamp="1594570506074">
-      <screen x="0" y="23" width="1280" height="732" />
+    <state width="914" height="277" key="GridCell.Tab.0.bottom" timestamp="1594612802860">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="277" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1594457812421" />
+    <state width="914" height="277" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1594612802860" />
     <state width="1238" height="200" key="GridCell.Tab.0.bottom/0.23.1280.732@0.23.1280.732" timestamp="1594570506074" />
     <state width="1238" height="174" key="GridCell.Tab.0.bottom/0.23.1280.733@0.23.1280.733" timestamp="1592732626214" />
-    <state width="1238" height="200" key="GridCell.Tab.0.center" timestamp="1594570506073">
-      <screen x="0" y="23" width="1280" height="732" />
+    <state width="914" height="277" key="GridCell.Tab.0.center" timestamp="1594612802860">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="277" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1594457812421" />
+    <state width="914" height="277" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1594612802860" />
     <state width="1238" height="200" key="GridCell.Tab.0.center/0.23.1280.732@0.23.1280.732" timestamp="1594570506073" />
     <state width="1238" height="174" key="GridCell.Tab.0.center/0.23.1280.733@0.23.1280.733" timestamp="1592732626213" />
-    <state width="1238" height="200" key="GridCell.Tab.0.left" timestamp="1594570506072">
-      <screen x="0" y="23" width="1280" height="732" />
+    <state width="914" height="277" key="GridCell.Tab.0.left" timestamp="1594612802860">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="277" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1594457812421" />
+    <state width="914" height="277" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1594612802860" />
     <state width="1238" height="200" key="GridCell.Tab.0.left/0.23.1280.732@0.23.1280.732" timestamp="1594570506072" />
     <state width="1238" height="174" key="GridCell.Tab.0.left/0.23.1280.733@0.23.1280.733" timestamp="1592732626213" />
-    <state width="1238" height="200" key="GridCell.Tab.0.right" timestamp="1594570506073">
-      <screen x="0" y="23" width="1280" height="732" />
+    <state width="914" height="277" key="GridCell.Tab.0.right" timestamp="1594612802860">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="277" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1594457812421" />
+    <state width="914" height="277" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1594612802860" />
     <state width="1238" height="200" key="GridCell.Tab.0.right/0.23.1280.732@0.23.1280.732" timestamp="1594570506073" />
     <state width="1238" height="174" key="GridCell.Tab.0.right/0.23.1280.733@0.23.1280.733" timestamp="1592732626213" />
     <state x="1056" y="119" key="RollbackChangesDialog" timestamp="1593834301790">
@@ -159,15 +155,15 @@
     </state>
     <state x="1056" y="119" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1593834301790" />
     <state x="704" y="107" key="RollbackChangesDialog/0.23.1280.732@0.23.1280.732" timestamp="1593099080643" />
-    <state x="141" y="23" key="SettingsEditor" timestamp="1594569387778">
-      <screen x="0" y="23" width="1280" height="732" />
+    <state x="710" y="224" key="SettingsEditor" timestamp="1594610384000">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="710" y="224" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1594370551347" />
+    <state x="710" y="224" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1594610384000" />
     <state x="141" y="23" key="SettingsEditor/0.23.1280.732@0.23.1280.732" timestamp="1594569387778" />
-    <state x="310" y="221" key="com.intellij.ide.util.TipDialog" timestamp="1594482208918">
-      <screen x="0" y="23" width="1280" height="732" />
+    <state x="465" y="281" key="com.intellij.ide.util.TipDialog" timestamp="1594610559093">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="465" y="281" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594341376537" />
+    <state x="465" y="281" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594610559093" />
     <state x="310" y="221" key="com.intellij.ide.util.TipDialog/0.23.1280.732@0.23.1280.732" timestamp="1594482208918" />
     <state x="255" y="23" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1594526483200">
       <screen x="0" y="23" width="1280" height="732" />

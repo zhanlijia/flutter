@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:testflutter/Constant/RouteConstant.dart';
 
@@ -316,7 +315,17 @@ class NavigatorHelper {
   }
 
   ///Json Model
-  static Future go2JsonAndModelVC(BuildContext context){
+  static Future go2JsonAndModelVC(BuildContext context) {
     return Navigator.pushNamed(context, RouteConstant.JsonAndModel);
+  }
+
+  ///国际化
+  static Future go2LocalizationsPageVC(BuildContext context) {
+    return Navigator.pushNamed(context, RouteConstant.LocalizationPage);
+  }
+
+  ///LocalizationDelegate
+  static Future go2LocalizationsDelegateVC(BuildContext context) {
+    return Navigator.pushNamed(context, RouteConstant.LocalizationDelegate);
   }
 }

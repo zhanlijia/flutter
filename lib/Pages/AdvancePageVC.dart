@@ -38,6 +38,13 @@ class AdvancePageVC extends BaseStatelessWidget {
             onTap: () {
               NavigatorHelper.go2FileAndNetworkPageVC(context);
             },
+          ),
+          ListTile(
+            leading: itemIcon,
+            title: Text("国际化"),
+            onTap: (){
+              NavigatorHelper.go2LocalizationsPageVC(context);
+            },
           )
         ],
       ),

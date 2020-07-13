@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:testflutter/Animation/AnimatedTransitionVC.dart';
 import 'package:testflutter/Animation/AnimationPageVC.dart';
 import 'package:testflutter/Animation/AnimationSampleVC.dart';
@@ -37,6 +38,8 @@ import 'package:testflutter/FunctionWidget/FunctionWidgetPageVC.dart';
 import 'package:testflutter/FunctionWidget/InheritedWidgetVC.dart';
 import 'package:testflutter/FunctionWidget/ProviderVC.dart';
 import 'package:testflutter/FunctionWidget/WillPopScopeVC.dart';
+import 'package:testflutter/Localizations/LocalizationsPageVC.dart';
+import 'package:testflutter/Localizations/LocalizationDelegateVC.dart';
 import 'package:testflutter/Pages/HomePageViewVC.dart';
 import 'package:testflutter/ScrollableWidget/CustomScrollerViewVC.dart';
 import 'package:testflutter/ScrollableWidget/GridViewVC.dart';
@@ -354,17 +357,25 @@ class MyApp extends BaseStatelessWidget {
             return MaterialPageRoute(builder: (context) {
               return HttpDioDownloadRangeVC();
             });
-          case RouteConstant.WebSocket://WebSocket
-            return MaterialPageRoute(builder: (context){
+          case RouteConstant.WebSocket: //WebSocket
+            return MaterialPageRoute(builder: (context) {
               return WebSocketVC();
             });
-          case RouteConstant.Socket://Socket
-            return MaterialPageRoute(builder: (context){
+          case RouteConstant.Socket: //Socket
+            return MaterialPageRoute(builder: (context) {
               return SocketVC();
             });
-          case RouteConstant.JsonAndModel://Json  Model
-            return MaterialPageRoute(builder: (context){
+          case RouteConstant.JsonAndModel: //Json  Model
+            return MaterialPageRoute(builder: (context) {
               return JsonAndModelVC();
+            });
+          case RouteConstant.LocalizationPage: //国际化
+            return MaterialPageRoute(builder: (context) {
+              return LocalizationsPageVC();
+            });
+          case RouteConstant.LocalizationDelegate: //Localizations
+            return MaterialPageRoute(builder: (context) {
+              return LocalizationsDelegateVC();
             });
           default:
             return null;
@@ -373,6 +384,11 @@ class MyApp extends BaseStatelessWidget {
         return null;
       },
       navigatorObservers: [],
+      localizationsDelegates: [
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+        LocalizationsTestDelegate()
+      ],
 
 //      home: MyHomePage(title: 'Flutter Demo Home Page'),
     );
