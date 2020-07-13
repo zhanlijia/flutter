@@ -328,4 +328,9 @@ class NavigatorHelper {
   static Future go2LocalizationsDelegateVC(BuildContext context) {
     return Navigator.pushNamed(context, RouteConstant.LocalizationDelegate);
   }
+
+  ///Intl
+  static Future go2IntlVC(BuildContext context){
+    return Navigator.pushNamed(context, RouteConstant.IntlVC);
+  }
 }

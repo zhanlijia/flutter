@@ -29,6 +29,13 @@ class _LocalizationsPageVCState extends BaseState<LocalizationsPageVC> {
             onTap: () {
               NavigatorHelper.go2LocalizationsDelegateVC(context);
             },
+          ),
+          ListTile(
+            leading: itemIcon,
+            title: Text("Intl"),
+            onTap: () {
+              NavigatorHelper.go2IntlVC(context);
+            },
           )
         ],
       ),

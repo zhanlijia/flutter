@@ -150,4 +150,6 @@ class RouteConstant {
   static const String LocalizationPage = "LocalizationPage";
 
   static const String LocalizationDelegate = "LocalizationDelegate";
+
+  static const String IntlVC = "IntlVC";
 }

@@ -38,6 +38,7 @@ import 'package:testflutter/FunctionWidget/FunctionWidgetPageVC.dart';
 import 'package:testflutter/FunctionWidget/InheritedWidgetVC.dart';
 import 'package:testflutter/FunctionWidget/ProviderVC.dart';
 import 'package:testflutter/FunctionWidget/WillPopScopeVC.dart';
+import 'package:testflutter/Localizations/IntlVC.dart';
 import 'package:testflutter/Localizations/LocalizationsPageVC.dart';
 import 'package:testflutter/Localizations/LocalizationDelegateVC.dart';
 import 'package:testflutter/Pages/HomePageViewVC.dart';
@@ -58,6 +59,7 @@ import 'package:testflutter/Util/NavigatorHelper.dart';
 import 'package:testflutter/Widget/MyWidgetPage.dart';
 import 'package:testflutter/Widget/TextAndStyle.dart';
 import 'package:testflutter/Widget/WidgetStateManager.dart';
+import 'package:testflutter/l10n/IntlHelper.dart';
 import 'package:testflutter/layout/AlignVC.dart';
 import 'package:testflutter/layout/FlexLayoutVC.dart';
 import 'package:testflutter/layout/LayoutPage.dart';
@@ -377,6 +379,10 @@ class MyApp extends BaseStatelessWidget {
             return MaterialPageRoute(builder: (context) {
               return LocalizationsDelegateVC();
             });
+          case RouteConstant.IntlVC: //Intl
+            return MaterialPageRoute(builder: (context) {
+              return IntlVC();
+            });
           default:
             return null;
         }
@@ -387,7 +393,8 @@ class MyApp extends BaseStatelessWidget {
       localizationsDelegates: [
         GlobalMaterialLocalizations.delegate,
         GlobalWidgetsLocalizations.delegate,
-        LocalizationsTestDelegate()
+        LocalizationsTestDelegate(),
+        IntlLocalizationsDelegate()
       ],
 
 //      home: MyHomePage(title: 'Flutter Demo Home Page'),

@@ -20,7 +20,17 @@ class _LocalizationsDelegateVCState extends BaseState<LocalizationsDelegateVC> {
         title: Text("LocalizationsDelegate"),
       ),
       body: Center(
-        child: Text(LocalizationsTest.of(context).text),
+        child: Column(
+          children: <Widget>[
+            Text(LocalizationsTest.of(context).text),
+            RaisedButton(
+              child: Text("change local"),
+              onPressed: (){
+
+              },
+            )
+          ],
+        ),
       ),
     );
   }
@@ -48,11 +58,12 @@ class LocalizationsTestDelegate
   bool isSupported(Locale locale) {
     // TODO: implement isSupported
     print("~~~ $locale");
-    return ['en', 'zh','en_US'].contains(locale.languageCode);
+    return ['en', 'zh', 'en_US'].contains(locale.languageCode);
   }
 
   @override
   Future<LocalizationsTest> load(Locale locale) {
+    //Locale改变时都会再调用load方法重新加载新的local，无论shouldReload返回true还是false
     // TODO: implement load
     print('~~~ $locale');
     return SynchronousFuture<LocalizationsTest>(
@@ -62,6 +73,6 @@ class LocalizationsTestDelegate
   @override
   bool shouldReload(LocalizationsDelegate<LocalizationsTest> old) {
     // TODO: implement shouldReload
-    return false;
+    return false; //只应该在local切换时加载一次，不需要每次在Localizations重新build事都加载
   }
 }

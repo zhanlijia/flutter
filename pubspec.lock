@@ -248,12 +248,19 @@ packages:
     source: hosted
     version: "2.1.12"
   intl:
-    dependency: transitive
+    dependency: "direct main"
     description:
       name: intl
       url: "https://pub.flutter-io.cn"
     source: hosted
     version: "0.16.1"
+  intl_translation:
+    dependency: "direct dev"
+    description:
+      name: intl_translation
+      url: "https://pub.flutter-io.cn"
+    source: hosted
+    version: "0.17.9"
   io:
     dependency: transitive
     description:

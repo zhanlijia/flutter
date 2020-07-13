@@ -1,0 +1,25 @@
+{
+  "@@last_modified": "2020-07-13T15:23:28.425821",
+  "title": "test app",
+  "@title": {
+    "description": "msg for demo",
+    "type": "text",
+    "placeholders": {}
+  },
+  "Increment": "Increment",
+  "@Increment": {
+    "description": "test Increment",
+    "type": "text",
+    "placeholders": {}
+  },
+  "remainingEmailsMessage": "{howMany,plural, =0{There are no emails left}=1{There is {howMany} email left}other{There are {howMany} emails left}}",
+  "@remainingEmailsMessage": {
+    "description": "How many emails remain after archiving",
+    "type": "text",
+    "placeholders": {
+      "howMany": {
+        "example": 42
+      }
+    }
+  }
+}
