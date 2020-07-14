@@ -3,7 +3,7 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'package:testflutter/BaseWidget.dart';
 import 'package:testflutter/Util/NavigatorHelper.dart';
 
-class DemoPageVC extends BaseStatelessWidget {
+class OthersPageVC extends BaseStatelessWidget {
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
@@ -12,9 +12,16 @@ class DemoPageVC extends BaseStatelessWidget {
       children: <Widget>[
         ListTile(
           leading: itemIcon,
-          title: Text("拖动排序"),
+          title: Text("拖动排序,滑动删除"),
           onTap: () {
-            NavigatorHelper.go2DragListViewVC(context);
+            NavigatorHelper.go2SortAndDelListViewVC(context);
+          },
+        ),
+        ListTile(
+          leading: itemIcon,
+          title: Text("Draggable"),
+          onTap: () {
+            NavigatorHelper.go2DraggableVC(context);
           },
         )
       ],

@@ -3,7 +3,7 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'package:testflutter/BaseWidget.dart';
 import 'package:testflutter/Pages/AdvancePageVC.dart';
 import 'package:testflutter/Pages/BasicPageVC.dart';
-import 'package:testflutter/Pages/DemoPageVC.dart';
+import 'package:testflutter/Pages/OthersPageVC.dart';
 
 class HomePageViewVC extends BaseStatefulWidget {
   @override
@@ -16,7 +16,7 @@ class HomePageViewVC extends BaseStatefulWidget {
 class _HomePageViewVC extends BaseState<HomePageViewVC> {
   int _curBottomBarSelectedIndex = 1;
 
-  var contentPages = [BasicPageVC(), AdvancePageVC(), DemoPageVC()];
+  var contentPages = [BasicPageVC(), AdvancePageVC(), OthersPageVC()];
 
   @override
   Widget build(BuildContext context) {

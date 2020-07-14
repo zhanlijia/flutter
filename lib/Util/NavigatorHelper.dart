@@ -334,8 +334,13 @@ class NavigatorHelper {
     return Navigator.pushNamed(context, RouteConstant.IntlVC);
   }
 
-  ///ListView拖动排序
-  static Future go2DragListViewVC(BuildContext context) {
-    return Navigator.pushNamed(context, RouteConstant.DragListView);
+  ///ListView拖动排序，滑动删除
+  static Future go2SortAndDelListViewVC(BuildContext context) {
+    return Navigator.pushNamed(context, RouteConstant.SortAndDeleteListView);
+  }
+
+  ///Draggable
+  static Future go2DraggableVC(BuildContext context) {
+    return Navigator.pushNamed(context, RouteConstant.Draggable);
   }
 }

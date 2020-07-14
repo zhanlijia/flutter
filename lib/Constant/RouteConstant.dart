@@ -154,5 +154,8 @@ class RouteConstant {
   static const String IntlVC = "IntlVC";
 
   ///其他
-  static const String DragListView = "DragLiveView";
+
+  static const String SortAndDeleteListView = "DragLiveView";
+
+  static const String Draggable = "Draggable";
 }

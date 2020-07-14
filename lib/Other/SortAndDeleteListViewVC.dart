@@ -2,15 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:testflutter/BaseWidget.dart';
 
-class DragListViewVC extends BaseStatefulWidget {
+class SortAndDeleteListViewVC extends BaseStatefulWidget {
   @override
-  _DragListViewVCState createState() {
+  _SortAndDeleteListViewVCState createState() {
     // TODO: implement createState
-    return _DragListViewVCState();
+    return _SortAndDeleteListViewVCState();
   }
 }
 
-class _DragListViewVCState extends BaseState<DragListViewVC> {
+class _SortAndDeleteListViewVCState extends BaseState<SortAndDeleteListViewVC> {
   var data = List(10).asMap().keys.map((e) => "item $e").toList();
 
   @override
@@ -18,7 +18,7 @@ class _DragListViewVCState extends BaseState<DragListViewVC> {
     // TODO: implement build
     return Scaffold(
       appBar: AppBar(
-        title: Text("拖动排序"),
+        title: Text("拖动排序,滑动删除"),
       ),
       body: ReorderableListView(
         children: data

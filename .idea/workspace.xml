@@ -10,14 +10,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="43c65046-0e14-4bc8-95f6-4c8e450a5e14" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/Other/DragListViewVC.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins-dependencies" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Other/DraggableVC.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/Constant/RouteConstant.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Constant/RouteConstant.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/Pages/DemoPageVC.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Pages/DemoPageVC.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Other/DragListViewVC.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Other/SortAndDeleteListViewVC.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Pages/DemoPageVC.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Pages/OthersPageVC.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/Pages/HomePageViewVC.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Pages/HomePageViewVC.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/Util/NavigatorHelper.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Util/NavigatorHelper.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/l10n/IntlHelper.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/l10n/IntlHelper.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -155,10 +154,10 @@
     </state>
     <state x="1056" y="119" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1593834301790" />
     <state x="704" y="107" key="RollbackChangesDialog/0.23.1280.732@0.23.1280.732" timestamp="1593099080643" />
-    <state x="710" y="224" key="SettingsEditor" timestamp="1594712368983">
+    <state x="710" y="224" key="SettingsEditor" timestamp="1594715706040">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="710" y="224" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1594712368983" />
+    <state x="710" y="224" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1594715706040" />
     <state x="141" y="23" key="SettingsEditor/0.23.1280.732@0.23.1280.732" timestamp="1594569387778" />
     <state x="465" y="281" key="com.intellij.ide.util.TipDialog" timestamp="1594610559093">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -170,10 +169,10 @@
     </state>
     <state x="383" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1594036207777" />
     <state x="255" y="23" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.23.1280.732@0.23.1280.732" timestamp="1594526483200" />
-    <state x="438" y="175" width="1043" height="691" key="find.popup" timestamp="1594713687057">
+    <state x="438" y="175" width="1043" height="691" key="find.popup" timestamp="1594715693164">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="438" y="175" width="1043" height="691" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1594713687057" />
+    <state x="438" y="175" width="1043" height="691" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1594715693164" />
     <state x="292" y="146" width="695" height="486" key="find.popup/0.23.1280.732@0.23.1280.732" timestamp="1594553795674" />
     <state x="292" y="146" width="695" height="487" key="find.popup/0.23.1280.733@0.23.1280.733" timestamp="1591524272776" />
     <state width="600" height="424" key="javadoc.popup" timestamp="1590905444248">
