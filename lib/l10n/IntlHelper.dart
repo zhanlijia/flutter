@@ -60,6 +60,6 @@ class IntlLocalizationsDelegate
   @override
   bool shouldReload(LocalizationsDelegate<IntlLocalizations> old) {
     // TODO: implement shouldReload
-    throw false;
+    return false;
   }
 }

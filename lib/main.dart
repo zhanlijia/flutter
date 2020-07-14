@@ -41,6 +41,7 @@ import 'package:testflutter/FunctionWidget/WillPopScopeVC.dart';
 import 'package:testflutter/Localizations/IntlVC.dart';
 import 'package:testflutter/Localizations/LocalizationsPageVC.dart';
 import 'package:testflutter/Localizations/LocalizationDelegateVC.dart';
+import 'package:testflutter/Other/DragListViewVC.dart';
 import 'package:testflutter/Pages/HomePageViewVC.dart';
 import 'package:testflutter/ScrollableWidget/CustomScrollerViewVC.dart';
 import 'package:testflutter/ScrollableWidget/GridViewVC.dart';
@@ -382,6 +383,10 @@ class MyApp extends BaseStatelessWidget {
           case RouteConstant.IntlVC: //Intl
             return MaterialPageRoute(builder: (context) {
               return IntlVC();
+            });
+          case RouteConstant.DragListView: //拖动排序
+            return MaterialPageRoute(builder: (context) {
+              return DragListViewVC();
             });
           default:
             return null;

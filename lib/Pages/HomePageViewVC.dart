@@ -31,7 +31,7 @@ class _HomePageViewVC extends BaseState<HomePageViewVC> {
         items: [
           BottomNavigationBarItem(icon: Icon(Icons.school), title: Text('入门')),
           BottomNavigationBarItem(icon: Icon(Icons.person), title: Text('进阶')),
-          BottomNavigationBarItem(icon: Icon(Icons.business), title: Text("实战"))
+          BottomNavigationBarItem(icon: Icon(Icons.business), title: Text("其他"))
         ],
         onTap: (int index) {
           setState(() {

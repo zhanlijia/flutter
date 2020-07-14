@@ -330,7 +330,12 @@ class NavigatorHelper {
   }
 
   ///Intl
-  static Future go2IntlVC(BuildContext context){
+  static Future go2IntlVC(BuildContext context) {
     return Navigator.pushNamed(context, RouteConstant.IntlVC);
+  }
+
+  ///ListView拖动排序
+  static Future go2DragListViewVC(BuildContext context) {
+    return Navigator.pushNamed(context, RouteConstant.DragListView);
   }
 }

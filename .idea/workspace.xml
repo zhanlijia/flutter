@@ -10,9 +10,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="43c65046-0e14-4bc8-95f6-4c8e450a5e14" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/lib/Other/DragListViewVC.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins-dependencies" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/Localizations/IntlVC.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Localizations/IntlVC.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Constant/RouteConstant.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Constant/RouteConstant.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Pages/DemoPageVC.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Pages/DemoPageVC.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Pages/HomePageViewVC.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Pages/HomePageViewVC.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Util/NavigatorHelper.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Util/NavigatorHelper.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/l10n/IntlHelper.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/l10n/IntlHelper.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,20 +59,21 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="dart.settings" />
+    <property name="settings.editor.selected.configurable" value="flutter.settings" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\flutter_demo\l10n-arb" />
-      <recent name="$PROJECT_DIR$/images" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\flutter_demo\lib\l10n" />
       <recent name="$PROJECT_DIR$/lib" />
       <recent name="$PROJECT_DIR$/lib/Pages" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/assetss" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\flutter_demo\lib" />
+      <recent name="E:\flutter_demo\l10n-arb" />
+      <recent name="$PROJECT_DIR$/images" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -119,28 +126,28 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="989" y="337" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1594260749896" />
-    <state width="1877" height="277" key="GridCell.Tab.0.bottom" timestamp="1594631816103">
+    <state width="1877" height="277" key="GridCell.Tab.0.bottom" timestamp="1594714019140">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="277" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1594631816103" />
+    <state width="1877" height="277" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1594714019140" />
     <state width="1238" height="200" key="GridCell.Tab.0.bottom/0.23.1280.732@0.23.1280.732" timestamp="1594570506074" />
     <state width="1238" height="174" key="GridCell.Tab.0.bottom/0.23.1280.733@0.23.1280.733" timestamp="1592732626214" />
-    <state width="1877" height="277" key="GridCell.Tab.0.center" timestamp="1594631816102">
+    <state width="1877" height="277" key="GridCell.Tab.0.center" timestamp="1594714019140">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="277" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1594631816102" />
+    <state width="1877" height="277" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1594714019140" />
     <state width="1238" height="200" key="GridCell.Tab.0.center/0.23.1280.732@0.23.1280.732" timestamp="1594570506073" />
     <state width="1238" height="174" key="GridCell.Tab.0.center/0.23.1280.733@0.23.1280.733" timestamp="1592732626213" />
-    <state width="1877" height="277" key="GridCell.Tab.0.left" timestamp="1594631816102">
+    <state width="1877" height="277" key="GridCell.Tab.0.left" timestamp="1594714019140">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="277" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1594631816102" />
+    <state width="1877" height="277" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1594714019140" />
     <state width="1238" height="200" key="GridCell.Tab.0.left/0.23.1280.732@0.23.1280.732" timestamp="1594570506072" />
     <state width="1238" height="174" key="GridCell.Tab.0.left/0.23.1280.733@0.23.1280.733" timestamp="1592732626213" />
-    <state width="1877" height="277" key="GridCell.Tab.0.right" timestamp="1594631816103">
+    <state width="1877" height="277" key="GridCell.Tab.0.right" timestamp="1594714019140">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="277" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1594631816103" />
+    <state width="1877" height="277" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1594714019140" />
     <state width="1238" height="200" key="GridCell.Tab.0.right/0.23.1280.732@0.23.1280.732" timestamp="1594570506073" />
     <state width="1238" height="174" key="GridCell.Tab.0.right/0.23.1280.733@0.23.1280.733" timestamp="1592732626213" />
     <state x="1056" y="119" key="RollbackChangesDialog" timestamp="1593834301790">
@@ -148,10 +155,10 @@
     </state>
     <state x="1056" y="119" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1593834301790" />
     <state x="704" y="107" key="RollbackChangesDialog/0.23.1280.732@0.23.1280.732" timestamp="1593099080643" />
-    <state x="710" y="224" key="SettingsEditor" timestamp="1594620824577">
+    <state x="710" y="224" key="SettingsEditor" timestamp="1594712368983">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="710" y="224" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1594620824577" />
+    <state x="710" y="224" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1594712368983" />
     <state x="141" y="23" key="SettingsEditor/0.23.1280.732@0.23.1280.732" timestamp="1594569387778" />
     <state x="465" y="281" key="com.intellij.ide.util.TipDialog" timestamp="1594610559093">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -163,10 +170,10 @@
     </state>
     <state x="383" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1594036207777" />
     <state x="255" y="23" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.23.1280.732@0.23.1280.732" timestamp="1594526483200" />
-    <state x="292" y="146" width="695" height="486" key="find.popup" timestamp="1594553795674">
-      <screen x="0" y="23" width="1280" height="732" />
+    <state x="438" y="175" width="1043" height="691" key="find.popup" timestamp="1594713687057">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="438" y="175" width="1043" height="691" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1594447246893" />
+    <state x="438" y="175" width="1043" height="691" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1594713687057" />
     <state x="292" y="146" width="695" height="486" key="find.popup/0.23.1280.732@0.23.1280.732" timestamp="1594553795674" />
     <state x="292" y="146" width="695" height="487" key="find.popup/0.23.1280.733@0.23.1280.733" timestamp="1591524272776" />
     <state width="600" height="424" key="javadoc.popup" timestamp="1590905444248">
