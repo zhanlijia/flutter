@@ -10,14 +10,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="43c65046-0e14-4bc8-95f6-4c8e450a5e14" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/Other/DraggableVC.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins-dependencies" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/Constant/RouteConstant.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Constant/RouteConstant.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/Other/DragListViewVC.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Other/SortAndDeleteListViewVC.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/Pages/DemoPageVC.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Pages/OthersPageVC.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Other/DraggableVC.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Other/DraggableVC.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/Pages/HomePageViewVC.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Pages/HomePageViewVC.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/Util/NavigatorHelper.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Util/NavigatorHelper.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +49,7 @@
     <property name="adb_path" value="F:\Android\sdk\platform-tools\adb.exe" />
     <property name="dart.analysis.tool.window.force.activate" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/l10n-arb" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/WFlutterDemo-master/WFlutterDemo-master/wx_demo_project" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -103,10 +99,10 @@
     <state x="768" y="218" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1594611471029" />
     <state x="453" y="112" key="#com.intellij.ide.util.MemberChooser/0.23.1280.732@0.23.1280.732" timestamp="1594567699036" />
     <state x="453" y="112" key="#com.intellij.ide.util.MemberChooser/0.23.1280.733@0.23.1280.733" timestamp="1592728205840" />
-    <state x="492" y="143" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1594292865913">
+    <state x="492" y="143" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1594784797995">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="492" y="143" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594292865913" />
+    <state x="492" y="143" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594784797995" />
     <state x="328" y="124" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.1280.732@0.23.1280.732" timestamp="1593879095556" />
     <state x="383" y="233" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1592041176156">
       <screen x="0" y="23" width="1280" height="732" />
@@ -121,32 +117,32 @@
     </state>
     <state x="100" y="123" key="DiffContextDialog/0.23.1280.732@0.23.1280.732" timestamp="1593099149444" />
     <state x="100" y="123" width="1080" height="532" key="DiffContextDialog/0.23.1280.733@0.23.1280.733" timestamp="1591524201717" />
-    <state x="989" y="337" key="FileChooserDialogImpl" timestamp="1594260749896">
+    <state x="989" y="337" key="FileChooserDialogImpl" timestamp="1594723101522">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="989" y="337" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1594260749896" />
-    <state width="1877" height="277" key="GridCell.Tab.0.bottom" timestamp="1594714019140">
+    <state x="989" y="337" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1594723101522" />
+    <state width="914" height="591" key="GridCell.Tab.0.bottom" timestamp="1594797867846">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="277" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1594714019140" />
+    <state width="914" height="591" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1594797867846" />
     <state width="1238" height="200" key="GridCell.Tab.0.bottom/0.23.1280.732@0.23.1280.732" timestamp="1594570506074" />
     <state width="1238" height="174" key="GridCell.Tab.0.bottom/0.23.1280.733@0.23.1280.733" timestamp="1592732626214" />
-    <state width="1877" height="277" key="GridCell.Tab.0.center" timestamp="1594714019140">
+    <state width="914" height="591" key="GridCell.Tab.0.center" timestamp="1594797867846">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="277" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1594714019140" />
+    <state width="914" height="591" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1594797867846" />
     <state width="1238" height="200" key="GridCell.Tab.0.center/0.23.1280.732@0.23.1280.732" timestamp="1594570506073" />
     <state width="1238" height="174" key="GridCell.Tab.0.center/0.23.1280.733@0.23.1280.733" timestamp="1592732626213" />
-    <state width="1877" height="277" key="GridCell.Tab.0.left" timestamp="1594714019140">
+    <state width="914" height="591" key="GridCell.Tab.0.left" timestamp="1594797867846">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="277" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1594714019140" />
+    <state width="914" height="591" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1594797867846" />
     <state width="1238" height="200" key="GridCell.Tab.0.left/0.23.1280.732@0.23.1280.732" timestamp="1594570506072" />
     <state width="1238" height="174" key="GridCell.Tab.0.left/0.23.1280.733@0.23.1280.733" timestamp="1592732626213" />
-    <state width="1877" height="277" key="GridCell.Tab.0.right" timestamp="1594714019140">
+    <state width="914" height="591" key="GridCell.Tab.0.right" timestamp="1594797867846">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="277" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1594714019140" />
+    <state width="914" height="591" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1594797867846" />
     <state width="1238" height="200" key="GridCell.Tab.0.right/0.23.1280.732@0.23.1280.732" timestamp="1594570506073" />
     <state width="1238" height="174" key="GridCell.Tab.0.right/0.23.1280.733@0.23.1280.733" timestamp="1592732626213" />
     <state x="1056" y="119" key="RollbackChangesDialog" timestamp="1593834301790">
@@ -154,25 +150,25 @@
     </state>
     <state x="1056" y="119" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1593834301790" />
     <state x="704" y="107" key="RollbackChangesDialog/0.23.1280.732@0.23.1280.732" timestamp="1593099080643" />
-    <state x="710" y="224" key="SettingsEditor" timestamp="1594715706040">
+    <state x="710" y="224" key="SettingsEditor" timestamp="1594721026851">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="710" y="224" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1594715706040" />
+    <state x="710" y="224" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1594721026851" />
     <state x="141" y="23" key="SettingsEditor/0.23.1280.732@0.23.1280.732" timestamp="1594569387778" />
-    <state x="465" y="281" key="com.intellij.ide.util.TipDialog" timestamp="1594610559093">
+    <state x="465" y="281" key="com.intellij.ide.util.TipDialog" timestamp="1594773175647">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="465" y="281" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594610559093" />
+    <state x="465" y="281" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594773175647" />
     <state x="310" y="221" key="com.intellij.ide.util.TipDialog/0.23.1280.732@0.23.1280.732" timestamp="1594482208918" />
-    <state x="255" y="23" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1594526483200">
-      <screen x="0" y="23" width="1280" height="732" />
-    </state>
-    <state x="383" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1594036207777" />
-    <state x="255" y="23" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.23.1280.732@0.23.1280.732" timestamp="1594526483200" />
-    <state x="438" y="175" width="1043" height="691" key="find.popup" timestamp="1594715693164">
+    <state x="383" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1594795888380">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="438" y="175" width="1043" height="691" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1594715693164" />
+    <state x="383" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1594795888380" />
+    <state x="255" y="23" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.23.1280.732@0.23.1280.732" timestamp="1594526483200" />
+    <state x="438" y="175" width="1043" height="691" key="find.popup" timestamp="1594797398560">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="438" y="175" width="1043" height="691" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1594797398560" />
     <state x="292" y="146" width="695" height="486" key="find.popup/0.23.1280.732@0.23.1280.732" timestamp="1594553795674" />
     <state x="292" y="146" width="695" height="487" key="find.popup/0.23.1280.733@0.23.1280.733" timestamp="1591524272776" />
     <state width="600" height="424" key="javadoc.popup" timestamp="1590905444248">

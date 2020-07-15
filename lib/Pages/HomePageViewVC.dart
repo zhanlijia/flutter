@@ -14,7 +14,7 @@ class HomePageViewVC extends BaseStatefulWidget {
 }
 
 class _HomePageViewVC extends BaseState<HomePageViewVC> {
-  int _curBottomBarSelectedIndex = 1;
+  int _curBottomBarSelectedIndex = 2;
 
   var contentPages = [BasicPageVC(), AdvancePageVC(), OthersPageVC()];
 
