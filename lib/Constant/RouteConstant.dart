@@ -158,4 +158,6 @@ class RouteConstant {
   static const String SortAndDeleteListView = "DragLiveView";
 
   static const String Draggable = "Draggable";
+
+  static const String DataPicker = "DataPicker";
 }

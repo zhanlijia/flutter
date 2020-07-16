@@ -41,6 +41,7 @@ import 'package:testflutter/FunctionWidget/WillPopScopeVC.dart';
 import 'package:testflutter/Localizations/IntlVC.dart';
 import 'package:testflutter/Localizations/LocalizationsPageVC.dart';
 import 'package:testflutter/Localizations/LocalizationDelegateVC.dart';
+import 'package:testflutter/Other/DataPickerVC.dart';
 import 'package:testflutter/Other/SortAndDeleteListViewVC.dart';
 import 'package:testflutter/Other/DraggableVC.dart';
 import 'package:testflutter/Pages/HomePageViewVC.dart';
@@ -392,6 +393,10 @@ class MyApp extends BaseStatelessWidget {
           case RouteConstant.Draggable: //Draggable
             return MaterialPageRoute(builder: (context) {
               return DraggableVC();
+            });
+          case RouteConstant.DataPicker: //DataPicker
+            return MaterialPageRoute(builder: (context) {
+              return DataPickerVC();
             });
           default:
             return null;

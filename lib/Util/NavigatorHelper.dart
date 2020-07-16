@@ -343,4 +343,9 @@ class NavigatorHelper {
   static Future go2DraggableVC(BuildContext context) {
     return Navigator.pushNamed(context, RouteConstant.Draggable);
   }
+
+  ///DataPicker
+  static Future go2DataPickerVC(BuildContext context) {
+    return Navigator.pushNamed(context, RouteConstant.DataPicker);
+  }
 }

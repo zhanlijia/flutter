@@ -23,6 +23,13 @@ class OthersPageVC extends BaseStatelessWidget {
           onTap: () {
             NavigatorHelper.go2DraggableVC(context);
           },
+        ),
+        ListTile(
+          leading: itemIcon,
+          title: Text("DataPicker"),
+          onTap: () {
+            NavigatorHelper.go2DataPickerVC(context);
+          },
         )
       ],
     );
