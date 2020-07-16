@@ -11,11 +11,35 @@ class DraggableVC extends BaseStatefulWidget {
   }
 }
 
+class ParaEntity {
+  String name;
+  bool canEdit;
+
+  void Function() actionClick;
+
+  ParaEntity({this.name, this.canEdit = true, this.actionClick});
+
+  @override
+  String toString() {
+    return 'ParaEntity{name: $name, canEdit: $canEdit, actionClick: $actionClick}';
+  }
+
+  @override
+  bool operator ==(Object other) =>
+      identical(this, other) ||
+      other is ParaEntity &&
+          runtimeType == other.runtimeType &&
+          name == other.name;
+
+  @override
+  int get hashCode => name.hashCode;
+}
+
 class _DraggableVC extends BaseState<DraggableVC> {
-  List<String> allData;
-  List<String> pickUpData;
-  List<String> remainData;
-  List<String> leastData;
+  List<ParaEntity> allData;
+  List<ParaEntity> pickUpData;
+  List<ParaEntity> remainData;
+  List<ParaEntity> leastData;
 
   double itemWidth = 0;
   double itemHeight = 0;
@@ -25,37 +49,37 @@ class _DraggableVC extends BaseState<DraggableVC> {
     // TODO: implement initState
     super.initState();
     allData = List.unmodifiable([
-      "B",
-      "C",
-      "M",
-      "PW",
-      "PD",
-      "注释",
-      "存图",
-      "存电影",
-      "体标",
-      "距离",
-      "面积",
-      "2B",
-      "中位线",
-      "穿刺引导线",
-      "高级参数",
+      ParaEntity(name: "B", canEdit: false),
+      ParaEntity(name: "C"),
+      ParaEntity(name: "M"),
+      ParaEntity(name: "PW"),
+      ParaEntity(name: "PD"),
+      ParaEntity(name: "注释"),
+      ParaEntity(name: "存图"),
+      ParaEntity(name: "存电影"),
+      ParaEntity(name: "体标"),
+      ParaEntity(name: "距离"),
+      ParaEntity(name: "面积"),
+      ParaEntity(name: "2B"),
+      ParaEntity(name: "中位线"),
+      ParaEntity(name: "穿刺引导线"),
+      ParaEntity(name: "高级参数", canEdit: false),
     ]);
     leastData = List.unmodifiable([
-      "B",
-      "高级参数",
-      "注释",
+      ParaEntity(name: "B", canEdit: false),
+      ParaEntity(name: "高级参数", canEdit: false),
+      ParaEntity(name: "注释", canEdit: false),
     ]);
 
     setUpData(pickUpItems: leastData);
   }
 
-  setUpData({List<String> pickUpItems}) {
+  setUpData({List<ParaEntity> pickUpItems}) {
     setUpPickUpData(pickUpItems);
     setUpRemainData();
   }
 
-  setUpPickUpData(List<String> items) {
+  setUpPickUpData(List<ParaEntity> items) {
     pickUpData = [];
     items.forEach((element) {
       pickUpData.add(element);
@@ -95,7 +119,7 @@ class _DraggableVC extends BaseState<DraggableVC> {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.start,
             children: <Widget>[
-              DragTarget<String>(
+              DragTarget<ParaEntity>(
                 builder: (context, acceptedList, rejectedList) {
                   return Container(
                     alignment: Alignment.centerRight,
@@ -105,7 +129,9 @@ class _DraggableVC extends BaseState<DraggableVC> {
                   );
                 },
                 onAccept: (data) {
-                  pickUpData.add(data);
+                  if (!pickUpData.contains(data)) {
+                    pickUpData.add(data);
+                  }
                   setUpRemainData();
                   setState(() {});
                 },
@@ -141,21 +167,24 @@ class _DraggableVC extends BaseState<DraggableVC> {
                                 child: UnconstrainedBox(
                                   child: Container(
                                     alignment: Alignment.center,
-                                    width: 100,
+                                    width: 400,
                                     height: screenHeight - 100,
                                     child: StatefulBuilder(
                                       builder: (context, innerSetState) {
-                                        return Padding(
+                                        return Container(
                                           padding: EdgeInsets.all(16),
                                           child: ReorderableListView(
-                                            children: pickUpData
-                                                .map((e) => Dismissible(
-                                                      key: ValueKey(
-                                                          "Dismissible $pickUpData $e"),
+                                            children: pickUpData.map((e) {
+                                              var key = ValueKey(
+                                                  "Dismissible $pickUpData $e");
+                                              return e.canEdit
+                                                  ? Dismissible(
+                                                      key: key,
                                                       child: Container(
                                                         width: double.infinity,
-                                                        child: _getListItem(e),
-                                                      ) ,
+                                                        child: _getListItem(
+                                                            entity: e),
+                                                      ),
                                                       onDismissed: (_) {
                                                         pickUpData.remove(e);
                                                         setUpData(
@@ -164,8 +193,15 @@ class _DraggableVC extends BaseState<DraggableVC> {
                                                         innerSetState(() {});
                                                         setState(() {});
                                                       },
-                                                    ))
-                                                .toList(),
+                                                    )
+                                                  : Container(
+                                                      width: double.infinity,
+                                                      key: key,
+                                                      child: _getListItem(
+                                                        entity: e,
+                                                      ),
+                                                    );
+                                            }).toList(),
                                             onReorder: (oldIndex, newIndex) {
                                               if (oldIndex < newIndex) {
                                                 newIndex -= 1;
@@ -192,7 +228,7 @@ class _DraggableVC extends BaseState<DraggableVC> {
                   ],
                 ),
               ),
-              DragTarget<String>(
+              DragTarget<ParaEntity>(
                 builder: (context, acceptedList, rejectedList) {
                   return Container(
                     alignment: Alignment.centerLeft,
@@ -213,7 +249,7 @@ class _DraggableVC extends BaseState<DraggableVC> {
         ));
   }
 
-  Widget _generateGridView(List<String> items) {
+  Widget _generateGridView(List<ParaEntity> items) {
     return GridView.builder(
         shrinkWrap: true,
         itemCount: items.length,
@@ -224,24 +260,29 @@ class _DraggableVC extends BaseState<DraggableVC> {
             mainAxisSpacing: 10,
             crossAxisSpacing: 10),
         itemBuilder: (context, index) {
-          return Draggable<String>(
-            feedback: _getListItem(items[index]),
-            child: _getListItem(items[index]),
-            onDragCompleted: () {
+          var entity = items[index];
+
+          return entity.canEdit
+              ? Draggable<ParaEntity>(
+                  feedback: _getListItem(entity: entity),
+                  child: _getListItem(entity: entity),
+                  onDragCompleted: () {
 //              items.removeAt(index);
 //              setState(() {});
-            },
-            data: items[index],
-            childWhenDragging: Container(
-              foregroundDecoration: BoxDecoration(color: Colors.white30),
-              child: _getListItem(items[index]),
-            ),
-          );
+                  },
+                  data: entity,
+                  childWhenDragging: Container(
+                    foregroundDecoration: BoxDecoration(color: Colors.white30),
+                    child: _getListItem(entity: entity),
+                  ),
+                )
+              : _getListItem(entity: entity);
         });
   }
 
-  Widget _getListItem(String e) {
+  Widget _getListItem({Key key, ParaEntity entity}) {
     return Padding(
+      key: key,
       padding: EdgeInsets.only(bottom: 10),
       child: Material(
         child: Container(
@@ -250,7 +291,7 @@ class _DraggableVC extends BaseState<DraggableVC> {
           color: Colors.blueAccent,
           alignment: Alignment.center,
           child: Text(
-            e,
+            entity.name,
             style: TextStyle(color: Colors.white, fontSize: 20),
           ),
         ),

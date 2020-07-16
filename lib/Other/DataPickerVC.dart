@@ -86,7 +86,7 @@ class _DataPickerVCState extends BaseState<DataPickerVC> {
                   ),
                   Expanded(
                     child: CupertinoPicker(
-                      magnification: 1.5,
+                      magnification: 3,
                       itemExtent: 50,
                       children: probeList.map((e) {
                         return Row(

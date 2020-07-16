@@ -10,14 +10,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="43c65046-0e14-4bc8-95f6-4c8e450a5e14" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/Other/DataPickerVC.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins-dependencies" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/android/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/Constant/RouteConstant.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Constant/RouteConstant.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/Pages/OthersPageVC.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Pages/OthersPageVC.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/Util/NavigatorHelper.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Util/NavigatorHelper.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Other/DataPickerVC.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Other/DataPickerVC.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Other/DraggableVC.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Other/DraggableVC.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,10 +93,10 @@
     </state>
     <state x="516" y="250" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1594623817470" />
     <state x="344" y="199" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1280.732@0.23.1280.732" timestamp="1590934244881" />
-    <state x="768" y="218" key="#com.intellij.ide.util.MemberChooser" timestamp="1594896341635">
+    <state x="768" y="218" key="#com.intellij.ide.util.MemberChooser" timestamp="1594898017743">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="768" y="218" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1594896341635" />
+    <state x="768" y="218" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1594898017743" />
     <state x="453" y="112" key="#com.intellij.ide.util.MemberChooser/0.23.1280.732@0.23.1280.732" timestamp="1594567699036" />
     <state x="453" y="112" key="#com.intellij.ide.util.MemberChooser/0.23.1280.733@0.23.1280.733" timestamp="1592728205840" />
     <state x="492" y="143" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1594784797995">
@@ -121,32 +117,32 @@
     </state>
     <state x="100" y="123" key="DiffContextDialog/0.23.1280.732@0.23.1280.732" timestamp="1593099149444" />
     <state x="100" y="123" width="1080" height="532" key="DiffContextDialog/0.23.1280.733@0.23.1280.733" timestamp="1591524201717" />
-    <state x="989" y="337" key="FileChooserDialogImpl" timestamp="1594799786426">
+    <state x="989" y="337" key="FileChooserDialogImpl" timestamp="1594897772580">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="989" y="337" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1594799786426" />
-    <state width="1877" height="422" key="GridCell.Tab.0.bottom" timestamp="1594896838883">
+    <state x="989" y="337" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1594897772580" />
+    <state width="1877" height="422" key="GridCell.Tab.0.bottom" timestamp="1594899395015">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="422" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1594896838883" />
+    <state width="1877" height="422" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1594899395015" />
     <state width="1238" height="200" key="GridCell.Tab.0.bottom/0.23.1280.732@0.23.1280.732" timestamp="1594570506074" />
     <state width="1238" height="174" key="GridCell.Tab.0.bottom/0.23.1280.733@0.23.1280.733" timestamp="1592732626214" />
-    <state width="1877" height="422" key="GridCell.Tab.0.center" timestamp="1594896838883">
+    <state width="1877" height="422" key="GridCell.Tab.0.center" timestamp="1594899395015">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="422" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1594896838883" />
+    <state width="1877" height="422" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1594899395015" />
     <state width="1238" height="200" key="GridCell.Tab.0.center/0.23.1280.732@0.23.1280.732" timestamp="1594570506073" />
     <state width="1238" height="174" key="GridCell.Tab.0.center/0.23.1280.733@0.23.1280.733" timestamp="1592732626213" />
-    <state width="1877" height="422" key="GridCell.Tab.0.left" timestamp="1594896838883">
+    <state width="1877" height="422" key="GridCell.Tab.0.left" timestamp="1594899395015">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="422" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1594896838883" />
+    <state width="1877" height="422" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1594899395015" />
     <state width="1238" height="200" key="GridCell.Tab.0.left/0.23.1280.732@0.23.1280.732" timestamp="1594570506072" />
     <state width="1238" height="174" key="GridCell.Tab.0.left/0.23.1280.733@0.23.1280.733" timestamp="1592732626213" />
-    <state width="1877" height="422" key="GridCell.Tab.0.right" timestamp="1594896838883">
+    <state width="1877" height="422" key="GridCell.Tab.0.right" timestamp="1594899395015">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="422" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1594896838883" />
+    <state width="1877" height="422" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1594899395015" />
     <state width="1238" height="200" key="GridCell.Tab.0.right/0.23.1280.732@0.23.1280.732" timestamp="1594570506073" />
     <state width="1238" height="174" key="GridCell.Tab.0.right/0.23.1280.733@0.23.1280.733" timestamp="1592732626213" />
     <state x="1056" y="119" key="RollbackChangesDialog" timestamp="1593834301790">
