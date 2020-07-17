@@ -10,10 +10,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="43c65046-0e14-4bc8-95f6-4c8e450a5e14" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/lib/models/UserExtension.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins-dependencies" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/Other/DataPickerVC.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Other/DataPickerVC.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/Other/DraggableVC.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Other/DraggableVC.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/FileAndNetwork/AnotherTest.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/FileAndNetwork/AnotherTest.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/FileAndNetwork/AnotherTest.g.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/FileAndNetwork/AnotherTest.g.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/FileAndNetwork/User.g.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/FileAndNetwork/User.g.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/models/Another.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/models/Another.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/models/Another.g.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/models/Another.g.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/models/Test.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/models/Test.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/models/Test.g.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/models/Test.g.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/models/index.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/models/index.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +38,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Dart File" />
+        <option value="Singleton" />
       </list>
     </option>
   </component>
@@ -50,7 +61,7 @@
     <property name="dart.analysis.tool.window.force.activate" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
     <property name="last_opened_file_path" value="F:/siui_probe/200714/lelsdk/usflutter" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Facets" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
@@ -58,17 +69,17 @@
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\flutter_demo\lib" />
+      <recent name="E:\flutter_demo\l10n-arb" />
+      <recent name="$PROJECT_DIR$/images" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\flutter_demo\lib\l10n" />
       <recent name="$PROJECT_DIR$/lib" />
       <recent name="$PROJECT_DIR$/lib/Pages" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/assetss" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\flutter_demo\lib" />
-      <recent name="E:\flutter_demo\l10n-arb" />
-      <recent name="$PROJECT_DIR$/images" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -99,6 +110,10 @@
     <state x="768" y="218" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1594898017743" />
     <state x="453" y="112" key="#com.intellij.ide.util.MemberChooser/0.23.1280.732@0.23.1280.732" timestamp="1594567699036" />
     <state x="453" y="112" key="#com.intellij.ide.util.MemberChooser/0.23.1280.733@0.23.1280.733" timestamp="1592728205840" />
+    <state x="806" y="409" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1594952862426">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="806" y="409" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594952862426" />
     <state x="492" y="143" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1594784797995">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -121,28 +136,28 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="989" y="337" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1594897772580" />
-    <state width="1877" height="422" key="GridCell.Tab.0.bottom" timestamp="1594899395015">
+    <state width="1877" height="422" key="GridCell.Tab.0.bottom" timestamp="1594964923418">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="422" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1594899395015" />
+    <state width="1877" height="422" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1594964923418" />
     <state width="1238" height="200" key="GridCell.Tab.0.bottom/0.23.1280.732@0.23.1280.732" timestamp="1594570506074" />
     <state width="1238" height="174" key="GridCell.Tab.0.bottom/0.23.1280.733@0.23.1280.733" timestamp="1592732626214" />
-    <state width="1877" height="422" key="GridCell.Tab.0.center" timestamp="1594899395015">
+    <state width="1877" height="422" key="GridCell.Tab.0.center" timestamp="1594964923418">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="422" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1594899395015" />
+    <state width="1877" height="422" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1594964923418" />
     <state width="1238" height="200" key="GridCell.Tab.0.center/0.23.1280.732@0.23.1280.732" timestamp="1594570506073" />
     <state width="1238" height="174" key="GridCell.Tab.0.center/0.23.1280.733@0.23.1280.733" timestamp="1592732626213" />
-    <state width="1877" height="422" key="GridCell.Tab.0.left" timestamp="1594899395015">
+    <state width="1877" height="422" key="GridCell.Tab.0.left" timestamp="1594964923417">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="422" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1594899395015" />
+    <state width="1877" height="422" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1594964923417" />
     <state width="1238" height="200" key="GridCell.Tab.0.left/0.23.1280.732@0.23.1280.732" timestamp="1594570506072" />
     <state width="1238" height="174" key="GridCell.Tab.0.left/0.23.1280.733@0.23.1280.733" timestamp="1592732626213" />
-    <state width="1877" height="422" key="GridCell.Tab.0.right" timestamp="1594899395015">
+    <state width="1877" height="422" key="GridCell.Tab.0.right" timestamp="1594964923418">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="422" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1594899395015" />
+    <state width="1877" height="422" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1594964923418" />
     <state width="1238" height="200" key="GridCell.Tab.0.right/0.23.1280.732@0.23.1280.732" timestamp="1594570506073" />
     <state width="1238" height="174" key="GridCell.Tab.0.right/0.23.1280.733@0.23.1280.733" timestamp="1592732626213" />
     <state x="1056" y="119" key="RollbackChangesDialog" timestamp="1593834301790">
@@ -150,25 +165,25 @@
     </state>
     <state x="1056" y="119" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1593834301790" />
     <state x="704" y="107" key="RollbackChangesDialog/0.23.1280.732@0.23.1280.732" timestamp="1593099080643" />
-    <state x="710" y="224" key="SettingsEditor" timestamp="1594889436698">
+    <state x="710" y="189" key="SettingsEditor" timestamp="1594959821351">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="710" y="224" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1594889436698" />
+    <state x="710" y="189" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1594959821351" />
     <state x="141" y="23" key="SettingsEditor/0.23.1280.732@0.23.1280.732" timestamp="1594569387778" />
-    <state x="465" y="281" key="com.intellij.ide.util.TipDialog" timestamp="1594773175647">
+    <state x="465" y="281" key="com.intellij.ide.util.TipDialog" timestamp="1594958316390">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="465" y="281" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594773175647" />
+    <state x="465" y="281" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594958316390" />
     <state x="310" y="221" key="com.intellij.ide.util.TipDialog/0.23.1280.732@0.23.1280.732" timestamp="1594482208918" />
     <state x="383" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1594795888380">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="383" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1594795888380" />
     <state x="255" y="23" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.23.1280.732@0.23.1280.732" timestamp="1594526483200" />
-    <state x="438" y="175" width="1043" height="691" key="find.popup" timestamp="1594891370844">
+    <state x="438" y="175" width="1043" height="691" key="find.popup" timestamp="1594952925680">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="438" y="175" width="1043" height="691" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1594891370844" />
+    <state x="438" y="175" width="1043" height="691" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1594952925680" />
     <state x="292" y="146" width="695" height="486" key="find.popup/0.23.1280.732@0.23.1280.732" timestamp="1594553795674" />
     <state x="292" y="146" width="695" height="487" key="find.popup/0.23.1280.733@0.23.1280.733" timestamp="1591524272776" />
     <state width="600" height="424" key="javadoc.popup" timestamp="1590905444248">

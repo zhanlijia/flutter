@@ -8,6 +8,8 @@ class AnotherTest {
 
   AnotherTest(this.properties1);
 
-  factory AnotherTest.fromJson(Map<String,dynamic> json) => _$AnotherTestFromJson(json);
-  Map<String,dynamic> toJson() => _$AnotherTestToJson(this);
+  factory AnotherTest.fromJson(Map<String, dynamic> json) =>
+      _$AnotherTestFromJson(json);
+
+  Map<String, dynamic> toJson() => _$AnotherTestToJson(this);
 }
