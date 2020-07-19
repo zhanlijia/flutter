@@ -10,16 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="43c65046-0e14-4bc8-95f6-4c8e450a5e14" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/Util/ImageHelper.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/Widget/ImageWithPlaceholderVC.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins-dependencies" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Podfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Podfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/Constant/RouteConstant.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Constant/RouteConstant.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/Util/NavigatorHelper.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Util/NavigatorHelper.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/Widget/MyWidgetPage.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Widget/MyWidgetPage.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
@@ -133,30 +125,30 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="989" y="337" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1594897772580" />
-    <state width="1238" height="203" key="GridCell.Tab.0.bottom" timestamp="1595174393021">
+    <state width="1238" height="203" key="GridCell.Tab.0.bottom" timestamp="1595174762796">
       <screen x="0" y="23" width="1280" height="733" />
     </state>
     <state width="1877" height="422" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1594964923418" />
     <state width="1238" height="200" key="GridCell.Tab.0.bottom/0.23.1280.732@0.23.1280.732" timestamp="1594570506074" />
-    <state width="1238" height="203" key="GridCell.Tab.0.bottom/0.23.1280.733@0.23.1280.733" timestamp="1595174393021" />
-    <state width="1238" height="203" key="GridCell.Tab.0.center" timestamp="1595174393020">
+    <state width="1238" height="203" key="GridCell.Tab.0.bottom/0.23.1280.733@0.23.1280.733" timestamp="1595174762796" />
+    <state width="1238" height="203" key="GridCell.Tab.0.center" timestamp="1595174762795">
       <screen x="0" y="23" width="1280" height="733" />
     </state>
     <state width="1877" height="422" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1594964923418" />
     <state width="1238" height="200" key="GridCell.Tab.0.center/0.23.1280.732@0.23.1280.732" timestamp="1594570506073" />
-    <state width="1238" height="203" key="GridCell.Tab.0.center/0.23.1280.733@0.23.1280.733" timestamp="1595174393020" />
-    <state width="1238" height="203" key="GridCell.Tab.0.left" timestamp="1595174393020">
+    <state width="1238" height="203" key="GridCell.Tab.0.center/0.23.1280.733@0.23.1280.733" timestamp="1595174762795" />
+    <state width="1238" height="203" key="GridCell.Tab.0.left" timestamp="1595174762794">
       <screen x="0" y="23" width="1280" height="733" />
     </state>
     <state width="1877" height="422" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1594964923417" />
     <state width="1238" height="200" key="GridCell.Tab.0.left/0.23.1280.732@0.23.1280.732" timestamp="1594570506072" />
-    <state width="1238" height="203" key="GridCell.Tab.0.left/0.23.1280.733@0.23.1280.733" timestamp="1595174393020" />
-    <state width="1238" height="203" key="GridCell.Tab.0.right" timestamp="1595174393021">
+    <state width="1238" height="203" key="GridCell.Tab.0.left/0.23.1280.733@0.23.1280.733" timestamp="1595174762794" />
+    <state width="1238" height="203" key="GridCell.Tab.0.right" timestamp="1595174762796">
       <screen x="0" y="23" width="1280" height="733" />
     </state>
     <state width="1877" height="422" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1594964923418" />
     <state width="1238" height="200" key="GridCell.Tab.0.right/0.23.1280.732@0.23.1280.732" timestamp="1594570506073" />
-    <state width="1238" height="203" key="GridCell.Tab.0.right/0.23.1280.733@0.23.1280.733" timestamp="1595174393021" />
+    <state width="1238" height="203" key="GridCell.Tab.0.right/0.23.1280.733@0.23.1280.733" timestamp="1595174762796" />
     <state x="1056" y="119" key="RollbackChangesDialog" timestamp="1593834301790">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -186,11 +178,11 @@
     <state width="600" height="424" key="javadoc.popup" timestamp="1590905444248">
       <screen x="0" y="23" width="1280" height="732" />
     </state>
-    <state width="385" height="63" key="javadoc.popup.new" timestamp="1595174440381">
+    <state width="385" height="63" key="javadoc.popup.new" timestamp="1595174660909">
       <screen x="0" y="23" width="1280" height="733" />
     </state>
     <state width="385" height="62" key="javadoc.popup.new/0.23.1280.732@0.23.1280.732" timestamp="1595157321003" />
-    <state width="385" height="63" key="javadoc.popup.new/0.23.1280.733@0.23.1280.733" timestamp="1595174440381" />
+    <state width="385" height="63" key="javadoc.popup.new/0.23.1280.733@0.23.1280.733" timestamp="1595174660909" />
     <state width="600" height="424" key="javadoc.popup/0.23.1280.732@0.23.1280.732" timestamp="1590905444248" />
     <state x="305" y="174" key="run.anything.popup" timestamp="1590905963067">
       <screen x="0" y="23" width="1280" height="732" />
