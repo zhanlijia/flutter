@@ -54,6 +54,7 @@ import 'package:testflutter/ScrollableWidget/SingleChildScrollerViewVC.dart';
 import 'package:testflutter/Widget/Button.dart';
 import 'package:testflutter/Widget/CheckBoxVC.dart';
 import 'package:testflutter/Widget/ForumVC.dart';
+import 'package:testflutter/Widget/ImageWithPlaceholderVC.dart';
 import 'package:testflutter/Widget/ProgressIndicatorVC.dart';
 import 'package:testflutter/Widget/TextFieldVC.dart';
 import 'package:testflutter/Widget/ImageVC.dart';
@@ -157,6 +158,10 @@ class MyApp extends BaseStatelessWidget {
           case RouteConstant.Image: //图片
             return MaterialPageRoute(builder: (context) {
               return ImageVC();
+            });
+          case RouteConstant.ImageWithPlaceholder://网络加载图片
+            return MaterialPageRoute(builder: (context){
+              return ImageWithPlaceholderVC();
             });
           case RouteConstant.CheckBox: //单选框 复选框
             return MaterialPageRoute(builder: (context) {
@@ -416,6 +421,8 @@ class MyApp extends BaseStatelessWidget {
 //      },
 //      home: MyHomePage(title: 'Flutter Demo Home Page'),
     );
+
+
   }
 
   Future<String> a() async {

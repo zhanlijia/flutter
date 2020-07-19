@@ -19,6 +19,8 @@ class RouteConstant {
 
   static const String Image = "Image";
 
+  static const String ImageWithPlaceholder = "ImageWithPlaceholder";
+
   static const String CheckBox = "CheckBox";
 
   static const String TextField = "TextField";

@@ -44,6 +44,11 @@ class NavigatorHelper {
     return Navigator.pushNamed(context, RouteConstant.Image);
   }
 
+  ///网络加载图片
+  static Future go2ImageWithPlaceholderVC(BuildContext context) {
+    return Navigator.pushNamed(context, RouteConstant.ImageWithPlaceholder);
+  }
+
   ///单选框和复选框
   static Future go2CheckBox(BuildContext context) {
     return Navigator.pushNamed(context, RouteConstant.CheckBox);
