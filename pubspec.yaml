@@ -90,7 +90,20 @@ flutter:
   assets:
     - images/
     - htmls/
-    - htmls/src
+    - htmls/src/
+    - htmls/src/css/
+    - htmls/src/css/customized/
+    - htmls/src/css/images/
+    - htmls/src/fonts/
+    - htmls/src/images/
+    - htmls/src/img/
+    - htmls/src/js/
+    - htmls/src/js/customized/
+    - htmls/src/layer/
+    - htmls/src/layer/mobile/
+    - htmls/src/layer/mobile/need/
+    - htmls/src/layer/theme/
+    - htmls/src/layer/theme/default/
 
 
 

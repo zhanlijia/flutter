@@ -565,11 +565,11 @@ function checkSystem() {
 function toFlutter(obj) {
     var json = JSON.stringify(obj);
     var sys = checkSystem();
-    // if (sys === 'ios') {
-    //     controll.otherJsMethodCall(json);
-    // } else {
-    //     otherJsMethodCall(json);
-    // }
+//     if (sys === 'ios') {
+//         controll.otherJsMethodCall(json);
+//     } else {
+         otherJsMethodCall(json);
+//     }
 }
 
 function get_local_storage(itemname) {

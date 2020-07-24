@@ -23,12 +23,34 @@ class _WebViewVCState extends BaseState<WebViewVC>{
         title: Text('webview_flutter_plus Example'),
       ),
       body: WebViewPlus(
+        javascriptChannels: <JavascriptChannel>[///JS和Flutter通信的Channel；
+          _alertJavascriptChannel(context),
+        ].toSet(),
         javascriptMode: JavascriptMode.unrestricted,
         onWebViewCreated: (controller) {
+          _controller = controller;
           controller.loadUrl('htmls/newcase.html');
+          var data = """
+          {
+	"command":"getExamList",		
+	"data":{	
+	}
+}
+
+          """;
+          controller.evaluateJavascript("flutter_recv($data)");
         },
       ),
     );
   }
 
+  ///js与flutter交互
+  JavascriptChannel _alertJavascriptChannel(BuildContext context) {
+    return JavascriptChannel(
+        name: 'otherJsMethodCall',//invoke要和网页协商一致
+        onMessageReceived: (JavascriptMessage message) {
+          print("~`````~"+message.message);
+
+        });
+  }
 }
