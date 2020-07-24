@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Review</title>
+
+    <link rel="stylesheet" href="src/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="src/css/customized/modify-bootstrap.css" />
+    <link rel="stylesheet" href="src/css/customized/style.css" />
+    <link rel="stylesheet" href="src/css/customized/review.css" />
+
+</head>
+
+<body>
+    <div id="review">
+
+        <header class="container-fluid">
+            <div class="title">Review
+                <span id="patientid" class="patient-id">{{patientinfo.patientid}}</span>
+                <span id="patientname" class="patient-name">{{patientinfo.name}}</span>
+            </div>
+        </header>
+        <section class="section container-fluid">
+            <div class="row">
+                <div class="col-sm-8 clear-padding-right">
+                    <div class="box">
+
+                        <div id="div-showImg" class="row">
+
+                            <div class="img-list1" id="warp">
+                                <div v-if="curImgIndex!=-1" class="imgWarp"
+                                    v-bind:data-type="fileinfo[curImgIndex].type"
+                                    v-bind:data-path="fileinfo[curImgIndex].serverPath"
+                                    v-bind:data-previewpath="fileinfo[curImgIndex].previewPath">
+                                    <span class="picseq_l">{{ fileinfo[curImgIndex].uiIndex }}</span>
+                                    <img v-show="fileinfo[curImgIndex].type==0" class="left_file center-block map"
+                                        v-bind:src="fileinfo[curImgIndex].previewPath">
+                                    <video v-show="fileinfo[curImgIndex].type==1" loop="loop"
+                                        controlsList='nofullscreen nodownload noremote footbar' class="left_file"
+                                        autoplay controls src="" style="display:none">
+                                    </video>
+                                    <div class="pageBtn-warp">
+                                        <button class="pre" v-on:click="pre()"></button>
+                                        <button class="next" v-on:click="next()"></button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="box">
+
+                        <div v-show="cur_display_format==0" class="lalla">
+                            <div class="img-list2" id="smallfile-div">
+                                <div>
+                                    <div v-for="(item, index) in fileinfo" class="col-sm-12 cell-warp"
+                                        v-bind:data-type="item.type" v-bind:data-path="item.serverPath"
+                                        v-bind:data-previewpath="item.previewPath">
+                                        <span class="picseq_r">{{ item.uiIndex }}</span>
+                                        <img class="smallfile-img" v-bind:src="item.previewPath"
+                                            v-bind:class="{ 'map-active':curImgIndex==index}">
+                                        <div v-if="item.type==1" src="./src/img/play.png" class="playvideo_btn"> </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="input-group switch-btn-group">
+                                <div class="switch-btn switch-btn-l switch-btn-l-active active"></div>
+                                <div class="switch-btn switch-btn-m"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 底部按钮组 -->
+            <div class="box">
+                <div class="row">
+
+
+                    <div class="col-sm-offset-6 col-sm-2">
+                        <button class="btn" id="deleteImage"
+                            :disabled="mulitySelectedImg.length > 0 && cur_display_format==0 ? false : true">Delete
+                            Image</button>
+                    </div>
+                    <div class="col-sm-2">
+                        <button class="btn" data-toggle="modal" data-target="#patientinfo">Patient Info</button>
+                    </div>
+                    <div class="col-sm-2">
+                        <button class="btn" id="back">Back</button>
+                    </div>
+                </div>
+            </div>
+            <!-- 病人信息 -->
+            <div class="modal fade" id="patientinfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="modal-close-icon" data-dismiss="modal" aria-hidden="true">
+                                <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                            </button>
+                            <h4 class="modal-title lang_patientInformation" id="myModalLabel">Patient Information</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class="box div-patientInfo">
+                                <div class="div-basicInfo">
+                                    <h5 class="specify-patient-info lang_basicPatientInfo">
+                                        Basic Patient Info:
+                                    </h5>
+                                    <div class="col-sm-6 clear-padding">
+                                        <span class="key">ID:</span>
+                                        <span class="value" id="pid">{{ patientinfo.patientid }}</span>
+                                    </div>
+                                    <div class="col-sm-6 clear-padding">
+                                        <span class="key">AccessNum:</span>
+                                        <span class="value" id="asn">{{ patientinfo.accessno }}</span>
+                                    </div>
+                                    <div class="col-sm-6 clear-padding">
+                                        <span class="key">Gender:</span>
+                                        <span class="value" id="gender">{{ patientinfo.gender}}</span>
+                                    </div>
+                                    <div class="col-sm-6 clear-padding">
+                                        <span class="key">DOB:</span>
+                                        <span class="value" id="DOB">{{ patientinfo.bod}}</span>
+                                    </div>
+                                    <div class="col-sm-6 clear-padding">
+                                        <span class="key">Last Name:</span>
+                                        <span class="value" id="lastname">{{ patientinfo.lastname}}</span>
+                                    </div>
+                                    <div class="col-sm-6 clear-padding">
+                                        <span class="key">Age:</span>
+                                        <span class="value" id="age">{{ patientinfo.age}}</span>
+                                    </div>
+                                    <div class="col-sm-6 clear-padding">
+                                        <span class="key">First Name:</span>
+                                        <span class="value" id="firstname">{{ patientinfo.firstname}}</span>
+                                    </div>
+                                    <div class="col-sm-6 clear-padding">
+                                        <span class="key">Height:</span>
+                                        <span class="value" id="height">{{patientinfo.height}}</span>
+                                    </div>
+                                    <div class="col-sm-6 clear-padding">
+                                        <span class="key">Middle Name:</span>
+                                        <span class="value" id="middlename">{{patientinfo.mi}}</span>
+                                    </div>
+                                    <div class="col-sm-6 clear-padding">
+                                        <span class="key">Weight:</span>
+                                        <span class="value" id="weight">{{patientinfo.weight}}</span>
+                                    </div>
+                                    <div class="col-sm-6 clear-padding">
+                                        <span class="key">Operator:</span>
+                                        <span class="value" id="operator">{{patientinfo.operator}}</span>
+                                    </div>
+                                    <div class="col-sm-6" style="text-align: left;">
+                                        <span class="key">Exam Type:</span>
+                                        <span class="value" id="exampleType">{{patientinfo.examtype}}</span>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-12">
+                                    <button type="button" class="btn lang_close" data-dismiss="modal">Close</button>
+                                </div>
+
+
+
+                            </div>
+
+                        </div><!-- /.modal-content -->
+                    </div><!-- /.modal -->
+                </div>
+            </div>
+
+        </section>
+    </div>
+</body>
+<script src="src/js/jquery-3.2.1.min.js" charset="UTF-8"></script>
+<script src="src/js/vue.min.js" charset="UTF-8"></script>
+<script src="src/js/bootstrap.min.js" charset="UTF-8"></script>
+<script src="src/layer/layer.js" charset="UTF-8"></script>
+<script src="src/js/customized/commonUtil.js" charset="UTF-8"></script>
+<script src="src/js/customized/review.js" charset="UTF-8"></script>
+
+
+</html>

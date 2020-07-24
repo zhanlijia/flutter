@@ -1,0 +1,212 @@
+.reportDescription {
+    display: inline-block;
+    float: left;
+}
+
+.reportValue {
+    display: inline-block;
+    float: right;
+}
+
+.video-js {
+    width: 100%;
+    height: auto;
+}
+
+.left_file {
+    /* border: 1px solid #ffffff; */
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.map_s {
+    width: auto;
+    height: 250px;
+    margin: 0 auto;
+    margin-top: 5px;
+}
+.img-list2{
+    height: 600px;
+}
+
+.img-list2 .smallfile-img {
+    width: 100%;
+    height: auto;
+    border: 1px solid rgb(110, 110, 110);
+    cursor: pointer;
+}
+
+.img-list2 .map-active {
+    border: 1px solid #008cd6;
+}
+
+
+
+#div-showImg .map-active {
+    border: 1px solid #008cd6;
+}
+
+.picseq_l {
+    position: absolute;
+    font-size: 18px;
+    left: 2%;
+    top: 4%;
+    display: inline-block;
+    color: #ffffff
+}
+
+.picseq_r {
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    display: inline-block;
+    color: #ffffff
+}
+
+
+
+.glyphicon {
+    font-weight: 600
+}
+
+
+
+@keyframes fadeio {
+
+    /*设置内容由显示变为隐藏*/
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeio {
+
+    /*设置内容由显示变为隐藏*/
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeio {
+
+    /*设置内容由显示变为隐藏*/
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeio {
+
+    /*设置内容由显示变为隐藏*/
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+.modal-body {
+    padding: 20px
+}
+
+.modal-dialog {
+    width: 750px;
+}
+
+.modal-body span {
+    display: inline-block;
+    margin: 10px 5px;
+}
+
+.key {
+    width: 100px;
+    text-align: right;
+    padding-right: 10px;
+    white-space: nowrap;
+}
+
+.value {
+    width: 150px;
+    text-align: left;
+}
+
+.imgWarp {
+    margin: 2px;
+    height: 99%;
+    position: relative;
+    /* margin:5px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000000;
+    border: 1px solid rgb(110, 110, 110);
+    cursor: pointer;
+}
+
+#smallfile-div .cell-warp {
+    position: relative;
+    padding: 2px;
+}
+
+.modal-backdrop:nth-child(even) {
+    z-index: 1040;
+}
+
+.warpdiv {
+    height: 750px;
+}
+
+.bigimg {
+    max-height: 750px;
+}
+
+.bigvideo {
+    max-height: 750px;
+}
+
+#userselection-warp {
+    overflow-y: hidden;
+}
+
+#loding-warp{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 999;
+    overflow: hidden;
+}
+
+#warp{
+    z-index: 99;
+}
+
+
+.img-list1 {
+    height: 650px;
+    overflow-x: hidden;
+  }
+
+  #div-showImg{
+    position: relative;
+    margin: 0;
+  }
+
+  .edit-map-btn{
+      float: right;
+  }

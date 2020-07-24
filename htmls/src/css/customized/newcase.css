@@ -1,0 +1,65 @@
+.content {
+	overflow: auto;
+	position: relative;
+	background: #333;
+	width: 100%;
+	/* max-width: 97%; */
+	height: 300px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.content table {
+	width: 100% !important;
+	border-collapse: collapse;
+	border-top: 1px dashed #666;
+	border-left: 1px dashed #666;
+	border-right: 1px dashed #666;
+	background: rgba(0, 0, 0, 0.1);
+}
+
+#data-table.content {
+	overflow: hidden;
+	width: 640px;
+	max-width: 80%;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+	/* jquery ui resizable bug: http://bugs.jqueryui.com/ticket/8932 */
+}
+
+#data-table {
+	margin: 0;
+}
+
+.mCSB_container_wrapper {
+	margin-right: 15px;
+	margin-bottom: 15px;
+}
+
+.div-patient-filter .btn {
+	height: 34px;
+}
+
+.div-patient-filter {
+	line-height: 34px;
+}
+
+#modal-worklist-filter .modal-content {
+	width: 450px;
+}
+
+#modal-worklist-filter .modal-content .btn {
+	height: 34px;
+}
+
+#worklist-table,#data-table {
+	table-layout: fixed;
+}
+
+#worklist-table td,#data-table td {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}

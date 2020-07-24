@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>触摸滑屏</title>
+  <style>
+    html,body,h2 {
+      margin: 0;
+      padding: 0;
+    }
+    html,body,#wraper,#content {
+      width: 100%;
+      height: 100%;
+    }
+    #wraper {
+      overflow: hidden;
+    }
+    #content {
+      transition: all 1s linear;
+    }
+    .page {
+      width: 100%;
+      height: 0;
+      overflow: hidden;
+      transition: all 1s linear;
+      color: #ff0
+    }
+    #page1 {
+      height: 100%;
+      background: #f00
+    }
+    #page2 {
+      background: #0f0
+    }
+    #page3 {
+      background: #00f
+    }
+    /* img {
+        width: auto;
+        height: auto;
+    } */
+  </style>
+</head>
+<body>
+  <div id="wraper">
+    <div id="content">
+      <div class="page" id="page1">
+        page1
+         <img data-index="1" src="D:/TempTransFile/csh/195/1594276794464.jpg" alt="" />
+        </div>
+      <div class="page" id="page2">
+          <img data-index="2" src="D:/TempTransFile/csh/195/1594276794553.jpg" alt="" />
+          page2
+      </div>
+      <div class="page" id="page3">
+         <img data-index="3" src="D:/TempTransFile/csh/195/1594276794646.jpg" alt="" />
+         page3
+        <button class="back">back</button>
+      </div>
+    </div>
+  </div>
+  <script src="src/js/jquery-3.2.1.min.js" charset="UTF-8"></script>
+  <script>
+    var page1 = document.getElementById('page1'),        //滑动item
+        page2 = document.getElementById('page2'),
+        page3 = document.getElementById('page3'),
+        wraper = document.getElementById('wraper'),
+        content = document.getElementById('content');    //滑动容器
+    var itemHeight = wraper.offsetHeight;                //滑动item高度         
+    var index = 0;                                       //滑动计数
+    var moveY,                                           //滑动距离
+        endY,                                            //滑动停止的Y坐标
+        startY;                                          //滑动开始的Y坐标
+    // content.style.height = (itemHeight * 3) + 'px'
+    // 触摸开始
+    function boxTouchStart(e) {
+      var touch = e.touches[0];
+      startY = touch.pageY;
+    }
+   
+    // 触摸移动
+    function boxTouchMove(e) {
+      var touch = e.touches[0];
+      moveY = touch.pageY - startY;
+      index = Number(e.target.id.split('page')[1])
+
+        //下一页
+      if(moveY < 0) {        
+        if(index == 3) {
+          return false;
+        }
+        $('#page'+index).css('height', '0px')   
+        $('#page'+(index+1)).css('height', itemHeight+'px')
+      }
+    }
+
+    $('.back').click(function() {
+        $('#page3').css('height', '0px')
+        $('#page1').css('height', itemHeight+'px')
+    })
+    content.addEventListener('touchstart', boxTouchStart, false )
+    content.addEventListener('touchmove', boxTouchMove, false)
+    
+  </script>
+</body>
+</html>

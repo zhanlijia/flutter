@@ -1,0 +1,42 @@
+.alert-container {
+  width: 300px !important; 
+   /* 这里！！！好不过所有的宽都是这个，包括那个图标加文字的，所以不建议超出300-270px */
+  border: 1px solid #1b1b1b;
+  border-radius: 0;
+}
+
+.alert-container-black {
+  background: #434343;
+}
+
+/* 标题 */
+.alert-title {
+  text-align: left;
+  padding-left: 20px;
+  background: #313131;
+  color: #cccccc;
+}
+
+/* 内容 */
+.alert-content {
+  background: #434343;
+  color: #cccccc;
+}
+
+/* 按钮 */
+.alert-btn-box {
+  border-top: 1px solid #1b1b1b;
+  background: #434343;
+}
+
+.alert-btn-p {
+  background: #313131;
+  color: #cccccc;
+  border-right: 1px solid #1b1b1b;
+  margin:0;
+}
+
+.alert-btn-p:hover {
+  background: #008cd6;
+  color: #ffffff;
+}

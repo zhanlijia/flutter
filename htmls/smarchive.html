@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Smarchive</title>
+
+    <link rel="stylesheet" href="src/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="src/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="src/css/customized/modify-datepicker.css" />
+    <link rel="stylesheet" href="src/css/customized/modify-bootstrap.css" />
+    <link rel="stylesheet" href="src/css/customized/style.css" />
+    <link rel="stylesheet" href="src/css/customized/smarchive.css" />
+    <style>
+        .wrapper {
+            overflow-y: auto;
+            overflow-x: hidden;
+            position: relative;
+            height: 594px;
+        }
+
+        #table_wrapper .mCSB_container {
+            padding-right: 15px;
+            padding-bottom: 15px;
+        }
+
+        #table_wrapper .mCSB_container_wrapper {
+            margin-right: 15px;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="container-fluid">
+        <div class="title">Smarchive</div>
+    </header>
+    <section id="smarchive" class="section container-fluid">
+        <div class="row">
+            <div class="box">
+                <div class="row" id="smarchive-top">
+                    <div class="col-sm-4">
+                        <input type="text" class="form-control" id="reportSearch"
+                            v-bind:placeholder="tips.smarchive_placeholder_search">
+                    </div>
+
+
+                </div>
+
+                <div class="row">
+
+                    <div class="col-sm-12">
+                        <div class="wrapper " id="table_wrapper">
+                            <table style="width:100%" class="display nowrap table table-bordered table-striped"
+                                id="data-table">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" id="cb_curpage">
+                                                    <span>{{tips.selected}}</span>
+                                                </label>
+                                            </div>
+                                        </th>
+                                        <th id="PatientID" class="th_sortable">{{tips.patientID}}</th>
+                                        <th id="Name" class="th_sortable">{{tips.patientName}}</th>
+                                        <th id="CreateDate" class="th_sortable">{{tips.examDate}}</th>
+                                        <th id="ExamType" class="th_sortable">{{tips.examType}}</th>
+                                        <th id="toServer">{{tips.toServer}}</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="smallMap" id="data-tbody">
+                                    <tr v-for="(item, index) in patientInfo" v-bind:data-id="item.casemedicalid"
+                                        v-bind:data-status="item.status" v-on:click="selectedPatient=item">
+                                        <td>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input
+                                                        :class="selectedPatients.indexOf(item.casemedicalid)!=-1?'checked':''"
+                                                        style="z-index:990" v-bind:value="item.casemedicalid"
+                                                        type="checkbox" class="cb_patient" v-model="selectedPatients">
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td class="enable-enter-review">{{item.patientid}}</td>
+                                        <td class="enable-enter-review">{{item.name}}</td>
+                                        <td class="enable-enter-review">{{item.createdate}}</td>
+                                        <td class="enable-enter-review">{{item.examtype}}</td>
+                                        <td class="enable-enter-review">toserver</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="box" style="margin-top:20px">
+                <div class="row">
+
+                    <div class="col-sm-offset-6 col-sm-2">
+                        <button class="btn" id="creatNewExam"
+                            :disabled="selectedPatient.status == 0 ? true : false">{{tips.creatNewExam}}</button>
+                    </div>
+                    <div class="col-sm-2">
+                        <button class="btn" id="deleteExam"
+                            :disabled="selectedPatient.status != 0 ? false : true">{{tips.deleteExam}}</button>
+                    </div>
+                    <div class="col-sm-2">
+                        <button class="btn back">{{tips.back}}</button>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+
+
+        <!-- 导出模态框（Modal） -->
+        <div class="modal fade" id="" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="modal-close-icon" data-dismiss="modal" aria-hidden="true">
+                            <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                        </button>
+                        <h4 class="modal-title" id="modal-title-transfer">Patient Data Transfer</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="box">
+                            <div class="row" style="margin-top: 0;">
+                                <div class="col-sm-3 target">
+                                    <div class="target-title">
+                                        Destination
+                                    </div>
+                                    <div class="row active-target" data-type="0">
+                                        <div class="col-sm-1">
+                                            <input type="checkbox" id="cb-Network">
+                                        </div>
+                                        <div class="col-sm-10 driveItem">
+                                            Network
+                                        </div>
+                                    </div>
+                                    <div class="row" data-type="1">
+                                        <div class="col-sm-1">
+                                            <input type="checkbox" id="cb-Printer">
+                                        </div>
+                                        <div class="col-sm-10 driveItem">
+                                            Printer
+                                        </div>
+                                    </div>
+                                    <div class="row" data-type="2">
+                                        <div class="col-sm-1">
+                                            <input type="checkbox" id="cb-CD">
+                                        </div>
+                                        <div class="col-sm-10 driveItem">
+                                            CD/DVD Room
+                                        </div>
+                                    </div>
+                                    <div class="row" data-type="3">
+                                        <div class="col-sm-1">
+                                            <input type="checkbox" id="cb-DICOMServer">
+                                        </div>
+                                        <div class="col-sm-10 driveItem">
+                                            DICOM Storage Server
+                                        </div>
+                                    </div>
+                                    <div class="row" data-type="4">
+                                        <div class="col-sm-1">
+                                            <input type="checkbox" id="cb-DICOMPrinter">
+                                        </div>
+                                        <div class="col-sm-10 driveItem">
+                                            DICOM Printer
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-sm-9 selection">
+                                    <div class="target-title">
+                                        Selection
+                                    </div>
+
+                                    <div class="row div-driveContent">
+                                        <div class="driveContent" id="network">
+                                        </div>
+                                        <div class="driveContent" id="printer" style="display: none;">
+                                        </div>
+                                        <div class="driveContent" id="CD">
+                                            <div class="row">
+                                                <div class="input-group sides-padding">
+                                                    <span class="input-group-addon">CD/DVD Room</span>
+                                                    <select class="form-control" id="sl-CD">
+                                                        <option value="0"> Data XXX</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <span>Data Info</span>
+                                                    <span id="fileCount">30 Files</span>
+                                                    <span>/</span>
+                                                    <span id="storageCount">235.1Mb</span>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <span>CD/DVD Info</span>
+                                                    <span>4.9Gb/4.9Gb</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="driveContent" id="dic-tree" style="display: none;">
+                                        </div>
+                                    </div>
+
+                                    <div class="btn-warp">
+                                        <div class="row clear-margin btns" id="btn-format">
+                                            <div class="col-sm-3">
+                                                <button class="btn" style="height: 42px;">format</button>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <button class="btn" id="btn-refreshDisk"
+                                                    style="height: 42px;">Refresh</button>
+                                            </div>
+                                        </div>
+
+                                        <div class="row clear-margin btns" id="btn-print">
+                                            <div class="col-sm-4 clear-padding" id="btn-LayoutPreview"
+                                                data-toggle="modal" data-target="#Layout">
+                                                <button class="btn" id="btn-printLayoyt"
+                                                    style="height:42px">Layout&Preview</button>
+                                            </div>
+                                            <div class="col-sm-4 clear-padding">
+                                                <div class="input-group sides-padding">
+                                                    <span class="input-group-addon">Copy</span>
+                                                    <select class="form-control" id="copyCount">
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="4">4</option>
+                                                        <option value="5">5</option>
+                                                    </select>
+                                                </div>
+
+                                            </div>
+                                            <div class="col-sm-4 clear-padding" id="btn-PeripheralSetup">
+                                                <button class="btn" style="height:42px">to Peripheral Setup</button>
+                                            </div>
+                                        </div>
+
+                                        <div class="row clear-margin btns" id="btn-CD">
+                                            <div class="col-sm-offset-4 col-sm-4 clear-padding-right">
+                                                <button class="btn" style="height:42px">Format CD/DVD</button>
+                                            </div>
+                                            <div class="col-sm-4 clear-padding-right">
+                                                <button class="btn" style="height:42px">to Peripheral Setup</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box" id="bottom" style=" height: 368px;">
+                            <div class="row" style="margin-top: 0;background: #313131;">
+                                <div class="col-sm-12 other-title">
+                                    Output Format
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-2">Image :</div>
+                                <div class="col-sm-2"><input name="image" type="radio" value="0" checked>Original</div>
+                                <div class="col-sm-2"><input name="image" type="radio" value="1">BMP</div>
+                                <div class="col-sm-2"><input name="image" type="radio" value="2">JPG</div>
+                                <div class="col-sm-2"><input name="image" type="radio" value="3">DCM</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-2">Cineloop :</div>
+                                <div class="col-sm-2"><input name="cineloop" type="radio" value="0" checked>Original
+                                </div>
+                                <div class="col-sm-2"><input name="cineloop" type="radio" value="1">AVI</div>
+                                <div class="col-sm-2"><input name="cineloop" type="radio" value="2">WMV</div>
+                                <div class="col-sm-2"><input name="cineloop" type="radio" value="3">MP4</div>
+                                <div class="col-sm-2"><input name="cineloop" type="radio" value="4">DCM</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-2">Image Size :</div>
+                                <div class="col-sm-2"><input name="imageSize" type="radio" value="0" checked>Image Area
+                                </div>
+                                <div class="col-sm-2"><input name="imageSize" type="radio" value="1">Image+Patient Info
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-2">Quality :</div>
+                                <div class="col-sm-2"><input name="quality" type="radio" value="100" checked>High</div>
+                                <div class="col-sm-2"><input name="quality" type="radio" value="70">General</div>
+                                <div class="col-sm-2"><input name="quality" type="radio" value="50">Low</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-2">Report :</div>
+                                <div class="col-sm-2"><input name="report" type="radio" value="0" checked>PDF</div>
+                                <div class="col-sm-2"><input name="report" type="radio" value="1">DOC</div>
+                                <div class="col-sm-2"><input name="report" type="radio" value="2">HTML</div>
+                                <div class="col-sm-2"><input name="report" type="radio" value="3">DICOM SR</div>
+                            </div>
+                            <div class="row" style=" margin-top: 0;background: #313131;">
+                                <div class="col-sm-12 other-title">
+                                    Other Operation
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <input name="operation" type="radio" value="0" checked>Keep Files After
+                                    Transfer
+
+                                </div>
+                                <div class="col-sm-3">
+                                    <input name="operation" type="radio" value="1">Delete Files After
+                                    Transfer
+                                </div>
+                                <div class="col-sm-offset-2 col-sm-4">
+                                    <input type="checkbox" name="desensitization">Desensitization
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box" id="tempStorageTransferBottom" style=" height: 368px; display: none;">
+                            <div class="row" style=" margin-top: 0;background: #313131;">
+                                <div class="col-sm-12 other-title">
+                                    Other Operation
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6"><input name="tempStorageOperation" type="radio" value="0"
+                                        checked>Keep
+                                    Files After
+                                    Transfer</div>
+                                <div class="col-sm-6"><input name="tempStorageOperation" type="radio" value="1">Delete
+                                    Files
+                                    After
+                                    Transfer</div>
+                            </div>
+                        </div>
+
+                        <div class="box" id="bottom-Printer" style=" display: none;height: 368px;">
+                            <div class="row" style="margin-top:0; background: #313131;">
+                                <div class="col-sm-12 other-title">
+                                    Other Operation
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6"><input name="printer-operation" type="checkbox"
+                                        id="cb-Desensitization">Output
+                                    Image Including Patient
+                                    Info</div>
+                            </div>
+
+                        </div>
+                        <div class="box">
+                            <div class="row">
+                                <div class="col-sm-offset-8 col-sm-2">
+                                    <button class="btn" id="btn-send">Send</button>
+                                    <button class="btn" id="tempStorage-btn-send" style="display: none;">Send</button>
+                                    <button class="btn" id="btn-import" style="display: none;">Import</button>
+                                </div>
+
+                                <div class="col-sm-2">
+                                    <button class="btn" id="btn-cancel">Cancel</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div><!-- /.modal-content -->
+                </div><!-- /.modal -->
+            </div>
+        </div>
+
+    </section>
+
+</body>
+<script src="src/js/jquery-3.2.1.min.js" charset="UTF-8"></script>
+<script src="src/js/bootstrap.min.js" charset="UTF-8"></script>
+<script src="src/js/jquery.dataTables.min.js" charset="UTF-8"></script>
+<script src="src/js/vue.min.js" charset="UTF-8"></script>
+<script src="src/layer/layer.js" charset="UTF-8"></script>
+<script src="src/js/customized/commonUtil.js" charset="UTF-8"></script>
+<script src="src/js/customized/smarchive.js" charset="UTF-8"></script>
+
+
+</html>

@@ -1,0 +1,58 @@
+/* 整体 */
+.layui-layer {
+  border-radius: 0;
+}
+
+.layui-layer-dialog {
+  min-width: 320px;
+  max-width: 640px;
+}
+
+/* 标题 */
+.layui-layer-title {
+  background: #313131;
+  color: #cccccc;
+  border-bottom: none;
+}
+
+/* 内容 */
+.layui-layer-dialog .layui-layer-content {
+  background: #434343;
+  color: #cccccc;
+}
+
+/* 按钮 */
+.layui-layer-btn {
+  background: #434343;
+}
+
+.layui-layer-btn a {
+  min-width: 64px;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  border: 1px solid #313131;
+  border-radius: 0;
+  background-color: #313131;
+  color: #cccccc;
+}
+
+.layui-layer-btn a:hover {
+  border: 1px solid #008cd6;
+}
+
+.layui-layer-btn a:active {
+  background: #008cd6;
+  border: 1px solid #008cd6;
+  opacity: 1;
+}
+
+/* 特殊按钮 */
+.layui-layer-btn .layui-layer-btn0 {
+  /* background: #008cd6;
+  border: 1px solid #008cd6; */
+}
+
+.layui-layer-btn .layui-layer-btn0:active {
+  opacity: 0.8;
+}

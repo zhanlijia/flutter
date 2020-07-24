@@ -1,0 +1,291 @@
+table.dataTable {
+    border: 0;
+    padding: 0;
+}
+
+.table .th_sortable {
+    text-align: center;
+    cursor: pointer;
+}
+
+.reportDescription {
+    display: inline-block;
+    float: left;
+}
+
+.reportValue {
+    display: inline-block;
+    float: right;
+}
+
+.picwarp {
+    width: 100%;
+    height: 250px;
+    border: 1px solid rgb(169, 169, 169);
+    margin: 5px auto;
+}
+
+.smallMap {
+    height: 500px;
+    width: 100%;
+    overflow-y: scroll;
+}
+
+.picseq {
+    font-weight: 500;
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    display: inline-block;
+    color: white;
+}
+
+.modal-body {
+    padding: 20px
+}
+
+
+
+.activeMap {
+    border: 1px solid #008cd6;
+}
+
+.normalMap {
+    border: 1px solid rgb(110, 110, 110);
+}
+
+.playvideo_btn {
+    cursor: default;
+    z-index: 100;
+}
+
+.img2 {
+    z-index: 999;
+    cursor: pointer;
+    margin:0;
+}
+
+#changeSize_S {
+    background: url(../img/S.png);
+}
+
+/* 打印排版模态框 */
+#Layout.modal-dialog {
+    width: 95%
+}
+
+#Layout .modal-content {
+    width: 91%;
+}
+
+#Layout .row {
+    text-align: left;
+}
+
+#Layout .map {
+    width: 100%;
+    height: 176.2px;
+    /* padding: 2px; */
+    border: 1px solid #434343;
+}
+
+#Layout .active-map {
+    border: 1px solid #008cd6;
+}
+
+#Layout .layout-warp .col-lg-6 {
+    padding: 5px;
+}
+
+#Layout .layout-warp .col-lg-4 {
+    padding: 5px;
+}
+
+#Layout .layout-warp .col-lg-3 {
+    padding: 5px;
+}
+
+#Layout .layout-warp .print-map {
+    max-width: 100%;
+    max-height: 100%;
+    z-index: 99;
+    width: 100%;
+    height: 100%;
+    /* vertical-align: middle; */
+}
+
+#Layout .storagedImage-box .col-lg-6 {
+    padding: 1px;
+}
+
+#Layout .print-map-warp {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: #434343;
+    width: 100%;
+}
+
+#Layout .layout-warp .col-lg-12 {
+    padding: 10px
+}
+
+#Layout .modal-dialog {
+    width: 1480px;
+}
+
+#Layout .storagedImage-box {
+    background: #313131;
+    height: 712.8px;
+    overflow: hidden;
+}
+
+#Layout .insertPage-box {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background: #313131;
+    height: 712.8px;
+    width: 504px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+#Layout .page-num {
+    margin-top: 200px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+
+
+#Layout .bigscreen_btn {
+    bottom: 10%;
+    width: 10%;
+    height: 14%;
+}
+
+#Layout .warpdiv {
+    height: 712.8px;
+    margin-left: 15px;
+}
+
+#Layout .pageBtn-warp {
+    bottom: 20px;
+}
+
+#transfer .input-group-addon,
+#transfer .form-control {
+    height: 42px;
+}
+
+#CD .input-group-addon,
+#CD .form-control {
+    background: #434343;
+}
+
+#bottom,
+#bottom-Printer {
+    border-top: 0;
+    border-bottom: 0;
+}
+
+#bottom .col-lg-2,
+#bottom .col-lg-6,
+#bottom-Printer .col-lg-6 {
+    display: inline-flex;
+    padding-left: 0;
+}
+
+#bottom .row .col-lg-2:first-child,
+#bottom .row .col-lg-6:first-child,
+#bottom-Printer .row .col-lg-6:first-child {
+    padding-left: 15px;
+}
+
+#bottom input,
+#bottom-Printer input {
+    margin-right: 4px;
+}
+
+#div-tempStorage {
+    height: 594px;
+    width: 100%;
+    overflow-y: scroll;
+}
+
+.tempStorage-fileWarp {
+    padding: 5px;
+    width: 100%;
+    height: 168px;
+    position: relative;
+}
+
+.tempStorage-fileName {
+    height: 30px;
+    line-height: 30px;
+}
+
+.tempStorage-fileWarp img {
+    width: 100%;
+    height: 100%;
+}
+
+.tempStorage-fileWarp input {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    width: 15px;
+    height: 15px;
+}
+
+.tempStorage-fileWarp .playvideo_btn {
+    left: 10px;
+    bottom: 15px;
+    width: 9%;
+    height: 12%;
+}
+
+#th_curpage {
+    cursor: pointer;
+}
+
+.warp{
+    padding:2px;
+}
+
+/* 
+#PatientID {
+    width: 196px;
+}
+#Name {
+    width: 200px;
+}
+#CreateDate {
+    width: 164px;
+}
+#ExamType {
+    width: 98px;
+}
+#imgCount {
+    width: 103px;
+}
+#Gender {
+    width: 63px;
+}
+#Age {
+    width: 59px;
+}
+#Status {
+    width: 60px;
+}
+#toServer {
+    width: 101px;
+} */
+
+.checkbox, .checkbox label{
+    width: 100%;
+    height: 21px;
+    line-height: 21px;
+    text-align: center;
+}

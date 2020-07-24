@@ -1,0 +1,16 @@
+.table{
+    border: 1px solid #000000;
+}
+.warpdiv{
+    margin-left: 15px;
+    height: 835px;
+}
+.innerdiv{
+    position: relative;
+}
+.bigimg {
+    max-height: 835px;
+}
+.bigvideo {
+    max-height: 835px;
+}

@@ -22,23 +22,37 @@ class IntlLocalizations {
   }
 
   String get title {
-    return Intl.message("test app", name: 'title', desc: "msg for demo");
+    return Intl.message("应用标题", name: 'title', desc: "msg for demo");
   }
 
-  String get Increment {
-    return Intl.message("Increment", name: 'Increment', desc: "test Increment");
-  }
+  greetingMessage(name) => Intl.message(
+      'Hello $name!',
+      name: 'greetingMessage',
+      args: [name],
+      desc: 'Greet the user as they first open the application',
+      examples: const {'name': 'Emily'});
 
-  String remainingEmailsMessage(int howMany) {
-    return Intl.plural(howMany,
-        zero: 'There are no emails left',
-        one: 'There is $howMany email left',
-        other: 'There are $howMany emails left',
-        name: 'remainingEmailsMessage',
-        args: [howMany],
-        desc: 'How many emails remain after archiving',
-        examples: const {'howMany': 42, 'userName': 'Fred'});
-  }
+  remainingEmailsMessage(int howMany, String userName) =>
+      Intl.plural(
+          howMany,
+          zero: 'There are no emails left for $userName.',
+          one: 'There is $howMany email left for $userName.',
+          other: 'There are $howMany emails left for $userName.',
+          name: 'remainingEmailsMessage',
+          args: [howMany, userName],
+          desc: 'How many emails remain after archiving.',
+          examples: const {'howMany': 42, 'userName': 'Fred'});
+
+  notOnlineMessage(String userName, String userGender) =>
+      Intl.gender(
+          userGender,
+          male: '$userName is unavailable because he is not online.',
+          female: '$userName is unavailable because she is not online.',
+          other: '$userName is unavailable because they are not online',
+          name: 'notOnlineMessage',
+          args: [userName, userGender],
+          desc: 'The user is not available to hangout.',
+          examples: const {'userGender': 'male', 'userName': 'Fred'});
 }
 
 class IntlLocalizationsDelegate

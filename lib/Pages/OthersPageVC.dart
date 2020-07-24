@@ -30,6 +30,13 @@ class OthersPageVC extends BaseStatelessWidget {
           onTap: () {
             NavigatorHelper.go2DataPickerVC(context);
           },
+        ),
+        ListTile(
+          leading: itemIcon,
+          title: Text("WebView"),
+          onTap: (){
+            NavigatorHelper.go2WebViewVC(context);
+          },
         )
       ],
     );

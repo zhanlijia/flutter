@@ -1,0 +1,95 @@
+/* modify-datepicker */
+
+/* 日期内容 */
+.ui-widget.ui-widget-content {
+  z-index: 9999 !important;
+  border: 1px solid #1b1b1b;
+  background: #313131;
+  width: 279px;
+}
+
+/* 日期头部 */
+.ui-widget-header {
+  border: none;
+  background: #313131;
+}
+
+.ui-datepicker {
+  width: 259px;
+  padding: 0;
+}
+
+.ui-datepicker .ui-datepicker-header {
+  padding: 0;
+}
+
+.ui-datepicker .ui-datepicker-title {
+  height: 30px;
+  line-height: 30px;
+}
+
+
+.ui-datepicker select.ui-datepicker-month,
+.ui-datepicker select.ui-datepicker-year {
+  background-color: #313131;
+  color: #cccccc;
+  border: 0;
+}
+
+.ui-datepicker select.ui-datepicker-month {
+  width: 30%;
+}
+
+.ui-datepicker select.ui-datepicker-year {
+  width: 30%;
+  margin-right: 5%;
+}
+
+.ui-datepicker table {
+  width: 259px;
+  margin: 0 auto 10px;
+}
+
+.ui-datepicker th {
+  width: 14.29%;
+}
+
+.ui-datepicker td {
+  border: 0 !important;
+}
+
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default,
+.ui-button,
+html .ui-button.ui-state-disabled:hover,
+html .ui-button.ui-state-disabled:active {
+  background-color: #313131;
+  color: #cccccc;
+  border: 0;
+  text-align: center;
+  height: 25px;
+  line-height: 21px;
+}
+
+/* 当前日期 */
+.ui-state-highlight,
+.ui-widget-content .ui-state-highlight,
+.ui-widget-header .ui-state-highlight {
+  border: 1px solid #ff8b00;
+  background: #ff8b00;
+  color: #ffffff;
+}
+
+/* 所选日期 */
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active,
+a.ui-button:active,
+.ui-button:active,
+.ui-button.ui-state-active:hover {
+  border: 1px solid #008cd6;
+  background: #008cd6;
+  font-weight: normal;
+  color: #ffffff;
+}

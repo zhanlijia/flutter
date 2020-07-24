@@ -1,0 +1,233 @@
+ .row {
+     text-align: left;
+ }
+
+ .div-driveContent {
+     background: #313131;
+     height: 340px;
+     overflow: auto;
+ }
+
+ .driveContent {
+     display: none;
+ }
+
+ .btn-warp {
+     height: 42px;
+ }
+
+ .btns {
+     display: none;
+ }
+
+ .btn {
+     height: 42px;
+ }
+
+ .target {
+     border-right: 1px solid #1b1b1b;
+     border-bottom: 1px solid #1b1b1b;
+     height: 416px;
+     overflow: auto;
+ }
+
+ .target-title {
+     font-size: 16px;
+     width: 100%;
+     height: 34px;
+     line-height: 24px;
+     background: #1b1b1b;
+     padding: 5px;
+     color: #ffffff;
+ }
+
+ .target .row {
+     border: 1px solid #434343;
+     margin: 0;
+     padding: 10px;
+     padding-left: 20px;
+     cursor: pointer;
+ }
+
+ .target .row:hover {
+     border: 1px solid #008cd6;
+     color: #ffffff;
+ }
+
+ .active-target {
+     background: #008cd6;
+     color: #ffffff;
+ }
+
+ /* 打印排版模态框 */
+ #Layout.modal-dialog {
+     width: 95%
+ }
+
+ #Layout .modal-content {
+     width: 91%;
+ }
+
+ #Layout .row {
+     text-align: left;
+ }
+
+ #Layout .map {
+     width: 100%;
+     height: 145px;
+     /* padding: 2px; */
+     border: 1px solid #434343;
+ }
+
+ #Layout .active-map {
+     border: 1px solid #008cd6;
+ }
+
+ #Layout .layout-warp .col-xs-6 {
+     padding:1px 5px;
+ }
+
+ #Layout .layout-warp .col-xs-4 {
+     padding:1px 5px;
+ }
+
+ #Layout .layout-warp .col-xs-3 {
+     padding:1px 5px;
+ }
+
+ #Layout .layout-warp .print-map {
+     max-width: 100%;
+     max-height: 100%;
+     z-index: 99;
+     width: 100%;
+     /* height: 100%; */
+     /* vertical-align: middle; */
+ }
+
+ #Layout .storagedImage-box .col-xs-6 {
+     padding: 1px;
+ }
+
+ #Layout .print-map-warp {
+     display: inline-flex;
+     justify-content: center;
+     align-items: center;
+     background: #434343;
+     width: 100%;
+     height: 100%;
+ }
+
+ #Layout .layout-warp .col-xs-12 {
+     padding: 10px
+ }
+
+ #Layout .modal-dialog {
+     /* width: 1480px; */
+     width: 95%;
+ }
+
+ #Layout .storagedImage-box {
+     background: #313131;
+     height: 582.8px;
+     overflow-y: auto;
+ }
+
+ #Layout .insertPage-box {
+     display: flex;
+     justify-content: space-around;
+     flex-wrap: wrap;
+     background: #313131;
+     height: 582.8px;
+     /* width: 504px; */
+     width: 100%;
+     margin: 0 auto;
+     padding: 10px;
+ }
+
+ #Layout .page-num {
+     margin-top: 190px;
+     height: 40px;
+     line-height: 40px;
+     text-align: center;
+ }
+
+
+ #Layout .bigscreen_btn {
+     bottom: 10%;
+     width: 10%;
+     height: 14%;
+ }
+
+ #Layout .warpdiv {
+     height: 712.8px;
+     margin-left: 15px;
+ }
+
+ #Layout .pageBtn-warp {
+     bottom: 20px;
+ }
+
+ #transfer .input-group-addon,
+ #transfer .form-control {
+     height: 42px;
+ }
+
+ #CD .input-group-addon,
+ #CD .form-control {
+     background: #434343;
+ }
+
+ #bottom,
+ #bottom-Printer {
+     border-bottom: 0;
+ }
+
+ #bottom .col-sm-2,
+ #bottom .col-sm-6,
+ #bottom-Printer .col-sm-6 {
+     display: inline-flex;
+     padding-left: 0;
+ }
+
+ #bottom .row .col-sm-2:first-child,
+ #bottom .row .col-sm-6:first-child,
+ #bottom-Printer .row .col-sm-6:first-child {
+     padding-left: 15px;
+ }
+
+ #bottom input,
+ #bottom-Printer input {
+     margin-right: 4px;
+ }
+
+
+ .span-output-type-title {
+     display: block;
+     margin-top: 10px;
+     margin-bottom: 10px;
+     text-align: right;
+     font-weight: 400;
+ }
+
+ .div-buttom {
+     height: 335px;
+     border: 1px solid #1b1b1b;
+ }
+
+ .nav-tabs>li.active>a,
+ .nav-tabs>li.active>a:focus,
+ .nav-tabs>li.active>a:hover {
+     border-left: 0;
+ }
+
+ .picseq {
+    font-weight: 500;
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    display: inline-block;
+    color: white;
+}
+.right-btn .btn{
+    height: 33px;
+}

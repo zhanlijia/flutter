@@ -44,6 +44,7 @@ import 'package:testflutter/Localizations/LocalizationDelegateVC.dart';
 import 'package:testflutter/Other/DataPickerVC.dart';
 import 'package:testflutter/Other/SortAndDeleteListViewVC.dart';
 import 'package:testflutter/Other/DraggableVC.dart';
+import 'package:testflutter/Other/WebViewVC.dart';
 import 'package:testflutter/Pages/HomePageViewVC.dart';
 import 'package:testflutter/ScrollableWidget/CustomScrollerViewVC.dart';
 import 'package:testflutter/ScrollableWidget/GridViewVC.dart';
@@ -159,8 +160,8 @@ class MyApp extends BaseStatelessWidget {
             return MaterialPageRoute(builder: (context) {
               return ImageVC();
             });
-          case RouteConstant.ImageWithPlaceholder://网络加载图片
-            return MaterialPageRoute(builder: (context){
+          case RouteConstant.ImageWithPlaceholder: //网络加载图片
+            return MaterialPageRoute(builder: (context) {
               return ImageWithPlaceholderVC();
             });
           case RouteConstant.CheckBox: //单选框 复选框
@@ -403,6 +404,10 @@ class MyApp extends BaseStatelessWidget {
             return MaterialPageRoute(builder: (context) {
               return DataPickerVC();
             });
+          case RouteConstant.WebView: //WebView
+            return MaterialPageRoute(builder: (context) {
+              return WebViewVC();
+            });
           default:
             return null;
         }
@@ -421,8 +426,6 @@ class MyApp extends BaseStatelessWidget {
 //      },
 //      home: MyHomePage(title: 'Flutter Demo Home Page'),
     );
-
-
   }
 
   Future<String> a() async {

@@ -353,4 +353,9 @@ class NavigatorHelper {
   static Future go2DataPickerVC(BuildContext context) {
     return Navigator.pushNamed(context, RouteConstant.DataPicker);
   }
+  
+  ///WebView
+  static Future go2WebViewVC(BuildContext context){
+    return Navigator.pushNamed(context, RouteConstant.WebView);
+  }
 }

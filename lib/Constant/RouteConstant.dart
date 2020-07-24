@@ -162,4 +162,6 @@ class RouteConstant {
   static const String Draggable = "Draggable";
 
   static const String DataPicker = "DataPicker";
+
+  static const String WebView = "WebView";
 }

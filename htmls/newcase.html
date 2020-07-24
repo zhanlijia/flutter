@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>ID</title>
+	<link rel="stylesheet" href="src/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="src/css/jquery-ui.min.css">
+	<link rel="stylesheet" href="src/css/select.css">
+	<link rel="stylesheet" href="src/css/customized/modify-datepicker.css" />
+	<link rel="stylesheet" href="src/css/customized/modify-bootstrap.css" />
+	<link rel="stylesheet" href="src/css/customized/style.css" />
+	<link rel="stylesheet" href="src/css/customized/newcase.css">
+	<style>
+		table.dataTable {
+			border-collapse: collapse;
+		}
+
+		.btn {
+			height: 56px;
+		}
+
+		.wrapper {
+			overflow: auto;
+			position: relative;
+			height: 330px;
+		}
+	</style>
+</head>
+
+<body>
+	<header class="container-fluid">
+		<div class="title">ID</div>
+	</header>
+
+	<div class="section container-fluid" id="body-ID">
+		<div class="row">
+
+			<div class="box">
+				<div class="row">
+					<div class="col-sm-4">
+						<div class="input-group">
+							<span class="input-group-addon">{{tips.patientID}}:<span id="req"
+									style="color:red;display: none">
+									*</span></span>
+							<input class="form-control" type="text" id="patientId">
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="checkbox">
+							<label>
+								<input type="checkbox" name="IDCreation" id="AutoCreation" style="height: 28px;">
+								<span>{{tips.autoIDCreation}}:</span>
+							</label>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="input-group">
+							<span class="input-group-addon">{{tips.accessNo}}:</span>
+							<input oninput="numberOnly(this)" class="form-control" type="text" id="accessNo">
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-4">
+						<div class="input-group">
+							<span class="input-group-addon">{{tips.lastName}}:</span>
+							<input class="form-control" type="text" id="lastname">
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="input-group">
+							<span class="input-group-addon">{{tips.gender}}:</span>
+							<select class="form-control" id="gender">
+								<option value="0">{{tips.unknown}}</option>
+								<option value="1">{{tips.male}}</option>
+								<option value="2">{{tips.female}}</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="input-group s-6-4">
+							<span class="input-group-addon">{{tips.height}}:</span>
+							<input oninput="numberOnly(this)" class="form-control" type="text" id="height">
+							<select class="form-control center" id="heightUnit">
+								<option value="0">{{tips.cm}}</option>
+								<option value="1">{{tips.m}}</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-4">
+						<div class="input-group" v-if="tips.firstName">
+							<span class="input-group-addon">{{tips.firstName}}:</span>
+							<input class="form-control" type="text" id="firstname">
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="input-group">
+							<div class="input-group-addon">{{tips.dob}}:</div>
+							<input class="form-control" type="text" value="" id="BOD" autocomplete="off">
+							<div class="input-group-addon">
+								<span class="glyphicon glyphicon-remove" id="clearBOD_Datepicker"></span></div>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="input-group s-6-4">
+							<span class="input-group-addon">{{tips.weight}}:</span>
+							<input oninput="numberOnly(this)" class="form-control" type="text" id="weight">
+							<select class="form-control center" id="weightUnit">
+								<option value="0">{{tips.kg}}</option>
+								<option value="1">{{tips.g}}</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-4">
+						<div class="input-group" v-if="tips.mi">
+							<span class="input-group-addon">{{tips.mi}}:</span>
+							<input class="form-control" type="text" id="MI">
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="input-group s-6-4">
+							<span class="input-group-addon">{{tips.age}}:</span>
+							<input oninput="numberOnly(this)" class="form-control" type="text" id="age">
+							<select class="form-control center" id="ageUnit">
+								<option value="3">{{tips.year}}</option>
+								<option value="2">{{tips.month}}</option>
+								<option value="1">{{tips.day}}</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="input-group">
+							<span class="input-group-addon">{{tips.operator}}:</span>
+							<div class="select-menu">
+								<div class="select-menu-div" data-storagetype="Operator">
+									<input class="select-menu-input" />
+									<i class="arrow fa fa-caret-down"></i>
+								</div>
+								<ul class="select-menu-ul">
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-4">
+						<div class="input-group">
+							<span class="input-group-addon">{{tips.examType}}:</span>
+							<select class="form-control select_exampletype" id="examType">
+								<option value="0">{{tips.ob}}</option>
+								<option value="1">{{tips.obMulitple}}</option>
+								<option value="2">{{tips.gynecology}}</option>
+								<option value="3">{{tips.urology}}</option>
+								<option value="4">{{tips.cardiology}}</option>
+								<option value="5">{{tips.vascular}}</option>
+								<option value="6">{{tips.smallPart}}</option>
+								<option value="7">{{tips.abdomen}}</option>
+								<option value="8">{{tips.tcd}}</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+
+		<div class="row">
+
+			<div class="box">
+				<div class="row">
+					<div class="col-sm-offset-1 col-sm-3">
+						<button type="button" class="btn" id="creatNewPatient">{{tips.creatNewPatient}}</button>
+					</div>
+					<div class="col-sm-2">
+						<button type="button" class="btn" id="endExam">{{tips.endExam}}</button>
+					</div>
+
+					<div class="col-sm-2">
+						<button type="button" class="btn" id="clearEntries">{{tips.clearEntries}}</button>
+					</div>
+					<div class="col-sm-2">
+						<button type="button" class="btn" id="saveExam">{{tips.saveAndStart}}</button>
+
+					</div>
+					<div class="col-sm-2">
+						<button type="button" class="btn" id="exit">{{tips.back}}</button>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+
+
+	<script src="src/js/jquery-3.2.1.min.js" charset="UTF-8"></script>
+	<script src="src/js/bootstrap.min.js" charset="UTF-8"></script>
+	<script src="src/js/vue.min.js" charset="UTF-8"></script>
+	<script src="src/js/jquery-ui.min.js" charset="UTF-8"></script>
+	<script src="src/layer/layer.js" charset="UTF-8"></script>
+	<script src="src/js/select.js" charset="UTF-8"></script>
+	<script src="src/js/customized/commonUtil.js" charset="UTF-8"></script>
+	<script src="src/js/customized/newcase.js" charset="UTF-8"></script>
+	<script id="data-tmpl" type="text/html">
+		<%if(list.length == 0){%>
+
+		<%}else{%>
+		<%for(var i = 0; i < list.length; i++) {%>
+		<tr data-id="<%:=list[i].casemedicalid%>" data-status="<%:=list[i].status%>">
+			<td class="pid"><%:=list[i].patientid%></td>
+			<%if(list[i].name==null){%>
+			<td class="name"></td>
+			<%}else{%>
+			<td class="name"><%:=list[i].name%></td>
+			<%}%>
+			<% var cd=timestampToTime(list[i].createdate);%>
+			<td class="date"><%=cd%></td>
+			<%if(!list[i].examtype){%>
+			<td class="examtype"></td>
+			<%}else{%>
+			<%var examtype=list[i].examtype%>
+			<%if(examtype==0){%>
+			<% examtype=lang.ob.translation; %>
+			<%}else if(examtype==1){%>
+			<% examtype=lang.obMulitple.translation; %>
+			<%}else if(examtype==2){%>
+			<% examtype=lang.gynecology.translation; %>
+			<%}else if(examtype==3){%>
+			<% examtype=lang.urology.translation; %>
+			<%}else if(examtype==4){%>
+			<% examtype=lang.cardiology.translation; %>
+			<%}else if(examtype==5){%>
+			<% examtype=lang.vascular.translation; %>
+			<%}else if(examtype==6){%>
+			<% examtype=lang.smallPart.translation; %>
+			<%}else if(examtype==7){%>
+			<% examtype=lang.abdomen.translation; %>
+			<%}else if(examtype==8){%>
+			<% examtype=lang.tcd.translation; %>
+			<%}%>
+			<td class="examtype"><%=examtype%></td>
+			<%}%>
+			<%	var gender;%>
+			<%if(list[i].gender==0){%>
+			<% gender=lang.unknown.translation; %>
+			<%}else if(list[i].gender==1){%>
+			<% gender=lang.male.translation; %>
+			<%}else if(list[i].gender==2){%>
+			<% gender=lang.female.translation; %>
+			<% }%>
+			<td class="gender"><%=gender%></td>
+			<%if(list[i].age!=0&&list[i].age!=null){%>
+			<%	var ageunit;%>
+			<%if(list[i].ageunit==3){%>
+			<% ageunit=lang.year.translation; %>
+			<%}else if(list[i].ageunit==2){%>
+			<% ageunit=lang.month.translation; %>
+			<%}else if(list[i].ageunit==1){%>
+			<% ageunit=lang.day.translation; %>
+			<% }%>
+			<td class="age"><%:=list[i].age%><%=ageunit%></td>
+			<%}else{%>
+			<td class="age"></td>
+			<% }%>
+			<%	var status;%>
+			<%if(list[i].status==0){%>
+			<% status=lang.active.translation; %>
+			<%}else if(list[i].status==1){%>
+			<% status=lang.pause.translation; %>
+			<%}else{%>
+			<% status=lang.end.translation; %>
+			<% }%>
+			<td class="status"><%=status%></td>
+			<%if(list[i].accessno==null){%>
+			<td class="accessno"></td>
+			<%}else{%>
+			<td class="accessno"><%:=list[i].accessno%></td>
+			<%} %>
+		</tr>
+		<%} %>
+		<%} %>
+	</script>
+
+</body>
+
+</html>

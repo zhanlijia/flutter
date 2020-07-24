@@ -1,0 +1,93 @@
+.st-container {
+	position: relative;
+}
+
+.st-menu {
+    position: fixed;
+    top: 50px;
+	left: 0;
+	z-index: 100;
+	visibility: hidden;
+	width: 300px;
+	height: 100%;
+	background: #1b1b1b;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+.st-menu::after {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.2);
+	content: '';
+	opacity: 1;
+	-webkit-transition: opacity 0.5s;
+	transition: opacity 0.5s;
+}
+
+.st-menu-open .st-menu::after {
+	width: 0;
+	height: 0;
+	opacity: 0;
+	-webkit-transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
+	transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
+}
+
+/* content style */
+
+.st-menu ul {
+	margin: 0;
+	list-style: none;
+	height: 900px;
+	overflow: auto;
+}
+.st-menu ul li{
+	font-weight: bold;
+    height: 330px;
+    margin: 15px;
+	width: 260px;
+	position: relative;
+	border: 1px solid #cccccc;
+	cursor: pointer;
+	padding:15px;
+}
+
+.st-menu ul li:hover{
+	border: 1px solid rgb(0, 140, 214, 233);
+}
+
+.st-menu ul .li-active{
+	border: 1px solid rgb(0, 140, 214, 233);
+}
+
+.st-menu ul li a{
+	text-decoration: none;
+	font-size: 16px;
+	color: #cccccc;
+	width: 100%;
+	text-align: center;
+    margin: 10px 0px;
+}
+
+
+	/* Individual effects */
+
+/* Effect 1: Slide in on top */
+.st-effect-1.st-menu {
+	visibility: visible;
+	-webkit-transform: translate3d(-100%, 0, 0);
+	transform: translate3d(-100%, 0, 0);
+}
+
+.st-effect-1.st-menu-open .st-effect-1.st-menu {
+	visibility: visible;
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+
+.st-effect-1.st-menu::after {
+	display: none;
+}
