@@ -33,7 +33,7 @@ $(document).ready(function () {
     var obj = {}
     obj.command = 'getExamList';
     toFlutter(obj)
-    success_getExamList(debug_data_exam_list)
+//    success_getExamList(debug_data_exam_list)
 });
 
 function success_getExamList(data) {

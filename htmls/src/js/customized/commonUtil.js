@@ -564,12 +564,13 @@ function checkSystem() {
 //JS调用Flutter中的方法
 function toFlutter(obj) {
     var json = JSON.stringify(obj);
-    var sys = checkSystem();
+//    var sys = checkSystem();
 //     if (sys === 'ios') {
 //         controll.otherJsMethodCall(json);
 //     } else {
-         otherJsMethodCall(json);
+//         otherJsMethodCall(json);
 //     }
+    Toaster.postMessage(json);
 }
 
 function get_local_storage(itemname) {
@@ -598,9 +599,14 @@ function getQueryString(name) {
     if (r != null) return unescape(r[2]); return null;
 }
 
+
 function flutter_recv(result) {
+    console.log('++++ flutter_recv  '+result);
+
+    alert('flutter_recv  '+result)
     if (result.command == 'getExamList') {
-        success_getExamInfo(result.data)
+    console.log('++++ getExamList in ');
+    success_getExamList(result.data)
     }
     if (result.command == 'updateExamList') {
         var obj = {}
