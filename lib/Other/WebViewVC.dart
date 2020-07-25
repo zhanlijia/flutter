@@ -15,10 +15,10 @@ class WebViewVC extends BaseStatefulWidget {
 }
 
 class _WebViewVCState extends BaseState<WebViewVC> {
-//  final Completer<WebViewController> _controller =
-//      Completer<WebViewController>();
+  final Completer<WebViewController> _controller =
+      Completer<WebViewController>();
 
-  WebViewController _controller;
+//  WebViewController _controller;
 
   double _height = 1000;
 
@@ -34,7 +34,7 @@ class _WebViewVCState extends BaseState<WebViewVC> {
         ].toSet(),
         javascriptMode: JavascriptMode.unrestricted,
         onWebViewCreated: (controller) {
-          _controller = controller;
+          _controller.complete(controller);
           controller.loadUrl(
               'http://localhost:${controller.serverPort}/htmls/newcase.html');
         },
@@ -171,7 +171,8 @@ class _WebViewVCState extends BaseState<WebViewVC> {
 	]
 }
           """;
-            _controller.evaluateJavascript("flutter_recv($data)");
+            _controller.future.then(
+                (value) => value.evaluateJavascript("flutter_recv($data)"));
           }
 //          Scaffold.of(context).showSnackBar(
 //            SnackBar(content: Text(message.message)),
